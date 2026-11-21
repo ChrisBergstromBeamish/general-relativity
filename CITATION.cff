@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+title: "Do All Frames of Reference Have the Same Yardstick?"
+message: "If you reference or build on this work, please cite it using the DOI of its Zenodo record."
+type: dataset
+authors:
+  - family-names: Bergstrom
+    given-names: Chris
+version: "1.0.0"
+date-released: "2026-11-21"
+url: "https://chrisbergstrombeamish.github.io/general-relativity/Do-All-Frames-of-Reference-Have-the-Same-Yardstick/"
+repository-code: "https://github.com/ChrisBergstromBeamish/general-relativity"
+license: CC-BY-4.0
+keywords:
+  - general relativity
+  - event horizon
+  - frames of reference
+  - black holes
+abstract: >-
+  A research manuscript asking whether all frames of reference share the same
+  yardstick (ruler, clock and scale), and examining the premise that a black
+  hole's event horizon is one boundary shared by every observer. Not peer-reviewed.
