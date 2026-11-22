@@ -1,11 +1,11 @@
 cff-version: 1.2.0
-title: "Do All Frames of Reference Have the Same Yardstick?"
+title: "Why Is It Impossible to Escape from a Black Hole?"
 message: "If you reference or build on this work, please cite it using the concept DOI below (it always resolves to the latest version)."
 type: dataset
 authors:
   - family-names: Bergstrom
     given-names: Chris
-version: "1.1.0"
+version: "1.2.0"
 doi: 10.5281/zenodo.24426897
 date-released: "2026-11-22"
 url: "https://chrisbergstrombeamish.github.io/general-relativity/Do-All-Frames-of-Reference-Have-the-Same-Yardstick/"
