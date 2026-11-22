@@ -5,7 +5,7 @@ type: dataset
 authors:
   - family-names: Bergstrom
     given-names: Chris
-version: "1.2.0"
+version: "1.2.1"
 doi: 10.5281/zenodo.24426897
 date-released: "2026-11-22"
 url: "https://chrisbergstrombeamish.github.io/general-relativity/Do-All-Frames-of-Reference-Have-the-Same-Yardstick/"

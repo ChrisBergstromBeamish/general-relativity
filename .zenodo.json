@@ -4,7 +4,7 @@
   "publication_type": "preprint",
   "access_right": "open",
   "license": "cc-by-4.0",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "publication_date": "2026-11-22",
   "language": "eng",
   "creators": [
@@ -13,7 +13,7 @@
       "affiliation": "Independent Researcher"
     }
   ],
-  "description": "A research manuscript in general relativity. It asks whether all frames of reference share the same yardstick (ruler, clock and scale) and examines the premise that a black hole's event horizon is one boundary shared by every observer. Contents: why the proof that nothing can escape needs the same yardstick and number of steps in every frame, explained for a child, a high school physics teacher and a theoretical physicist; step-count equivalence across frames (the derivation of the Schwarzschild radius); different yardsticks inside the event horizon; the setup for the thought experiment (how different yardsticks inside the horizon enable escape; the boundary zone); the thought experiment reaching the boundary zone; why ruling out redshift inside the horizon is circular; simple proofs that observers A and B have different rulers, clocks and scales; formal ratio calculations between frames A, B, C and D; a worked numerical example; passing information through intermediate frames; time progression and the sign flip; conservation of momentum; granular against continuous universe; the complete update rule and the A → B → C → D calculation (Appendix A); and a reviewer brief for theoretical physicists and AI evaluators, with three sections on the AI review. Part of the public section 'Physics: Particle Reconstruction and General Relativity'. Not peer-reviewed. Versions 1.0.0 and 1.1.0 were titled 'Do All Frames of Reference Have the Same Yardstick?'.",
+  "description": "A research manuscript in general relativity. It asks whether all frames of reference share the same yardstick (ruler, clock and scale) and examines the premise that a black hole's event horizon is one boundary shared by every observer. Contents: the case proof that the lack of a shared event horizon means escape; why the proof that nothing can escape needs the same yardstick and number of steps in every frame, explained for a child, a high school physics teacher and a theoretical physicist; step-count equivalence across frames (the derivation of the Schwarzschild radius); different yardsticks inside the event horizon; the setup for the thought experiment (how different yardsticks inside the horizon enable escape; the boundary zone); the thought experiment reaching the boundary zone; why ruling out redshift inside the horizon is circular; simple proofs that observers A and B have different rulers, clocks and scales; formal ratio calculations between frames A, B, C and D; a worked numerical example; passing information through intermediate frames; time progression and the sign flip; conservation of momentum; granular against continuous universe; the complete update rule and the A → B → C → D calculation (Appendix A); and a reviewer brief for theoretical physicists and AI evaluators, with three sections on the AI review. Part of the public section 'Physics: Particle Reconstruction and General Relativity'. Not peer-reviewed. Versions 1.0.0 and 1.1.0 were titled 'Do All Frames of Reference Have the Same Yardstick?'.",
   "keywords": [
     "general relativity",
     "event horizon",
@@ -34,5 +34,5 @@
       "resource_type": "publication-preprint"
     }
   ],
-  "notes": "Not peer-reviewed. First published on GitHub Pages on 21 November 2026 as 'Do All Frames of Reference Have the Same Yardstick?' (version 1.0.0, DOI 10.5281/zenodo.24426898; version 1.1.0, 22 November 2026 UTC, DOI 10.5281/zenodo.24431223). Version 1.2.0 (22 November 2026, UTC) has the new title, an Introduction of three explanations, a restructured first part (former Chapters 3 and 4 removed, a setup for the thought experiment) and chapters renumbered 1 to 24."
+  "notes": "Not peer-reviewed. First published on GitHub Pages on 21 November 2026 as 'Do All Frames of Reference Have the Same Yardstick?' (version 1.0.0, DOI 10.5281/zenodo.24426898; version 1.1.0, 22 November 2026 UTC, DOI 10.5281/zenodo.24431223). Version 1.2.0 (22 November 2026, UTC; DOI 10.5281/zenodo.24432301) has the new title, an Introduction of three explanations, a restructured first part and chapters renumbered 1 to 24. Version 1.2.1 (22 November 2026, UTC) opens the Introduction with the case proof that the lack of a shared event horizon means escape."
 }
