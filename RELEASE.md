@@ -1,38 +1,46 @@
-# Release v1.2.1 — Frozen Public Record
+# Release v1.2.2 — Frozen Public Record
 
-This page is the **priority stamp**: it asserts that this exact set of files, with these hashes, existed publicly on the date below. The records of the earlier versions, v1.2.0, v1.1.0 and v1.0.0, are kept under [Earlier versions](#earlier-versions).
+This page is the **priority stamp**: it asserts that this exact set of files, with these hashes, existed publicly on the date below. The records of the earlier versions, v1.2.1, v1.2.0, v1.1.0 and v1.0.0, are kept under [Earlier versions](#earlier-versions).
 
 | Field | Value |
 |---|---|
 | **Work** | Why Is It Impossible to Escape from a Black Hole? (versions 1.0.0 and 1.1.0: Do All Frames of Reference Have the Same Yardstick?) |
-| **Version** | 1.2.1 |
+| **Version** | 1.2.2 |
 | **First published** | 2026-11-21 (version 1.0.0, GitHub Pages, from 18:02 UTC) |
-| **This version published** | 2026-11-22 (GitHub Pages, from 04:36 UTC; 21 November, Pacific time) |
+| **This version published** | 2026-11-22 (GitHub Pages, from 04:52 UTC; 21 November, Pacific time) |
 | **Author** | Chris Bergstrom |
 | **Public page** | https://chrisbergstrombeamish.github.io/general-relativity/Do-All-Frames-of-Reference-Have-the-Same-Yardstick/ (the address keeps the first title's words so that existing links keep working) |
 | **License** | CC-BY-4.0 |
 | **DOI** | minted by Zenodo when this GitHub release is published (see the Zenodo record); all versions: 10.5281/zenodo.24426897 |
-| **Git tag** | `v1.2.1` |
-| **SHA-256 of the paper** | `0dfb22338cd7820d2c46d62f5de5954af5accd025434cb4e0bc9831dd076f5c4` |
-| **`HASHES.sha256` manifest digest (SHA-256)** | `5f1099f47b4438736a67b5908b4b3c28c0f1cd3031c0dd655707e9d83ab100fb` |
+| **Git tag** | `v1.2.2` |
+| **SHA-256 of the paper** | `0312853fba4a50c803fd57edee5b951d906f6b78c25132b592579b36b0ef8c4d` |
+| **`HASHES.sha256` manifest digest (SHA-256)** | `90346c13eda95971edc9030a04509a3807b581a26ad1e9ff8d03a5d1e7f22c88` |
 | **Files frozen** | 4: the paper (`Do-All-Frames-of-Reference-Have-the-Same-Yardstick/Do-All-Frames-of-Reference-Have-the-Same-Yardstick.html`), its identical folder copy (`index.html` in the same folder), the landing page (`index.html`) and `.nojekyll` |
 | **Status** | Not peer-reviewed |
 
-## Changes from v1.2.0
+## Changes from v1.2.1
 
-- The Introduction now opens with the case proof that the lack of a shared event horizon means escape: assume that objects A and B cannot escape the event horizon and that both start at the center; if the event horizon is not shared, the one with the larger horizon goes past the other's horizon; so the only way no escape happens is if they share the same event horizon. An opening sentence says the Introduction explains this first part of the proof and sets up the second (same yardstick and same number of steps).
-- The brief for AI reviewers lists this objection ("the lack of a shared horizon is not proof of escape") as answered at the start of the Introduction.
+- The Introduction opens with the three steps of the no-escape proof: no escape requires a shared event horizon; a shared event horizon requires ruler × steps to be the same in every frame; the number of steps is the same in every frame. Therefore the proof requires the ruler inside the event horizon to be the same in every frame.
+- The case proof that the lack of a shared event horizon means escape moves to the roadmap's new first card, "Part 0 (Introduction) — Why the No-Escape Proof Needs the Shared Event Horizon".
+- Part I is titled "Step-Count Equivalence Across Frames (Same Number of Steps to Escape)" in the roadmap, in Chapter 1 and in the contents list.
+- The second of two chapters titled "Different Yardsticks Inside the Event Horizon" is removed (its example is also in the setup for the thought experiment); the chapters are renumbered 1 to 23 and every reference follows.
 
 ## How the priority record works
 
-1. **GitHub**: each tagged release (`v1.0.0`, `v1.1.0`, `v1.2.0`, `v1.2.1`) fixes the commit and the file tree at a timestamp.
+1. **GitHub**: each tagged release (`v1.0.0`, `v1.1.0`, `v1.2.0`, `v1.2.1`, `v1.2.2`) fixes the commit and the file tree at a timestamp.
 2. **`HASHES.sha256`**: the SHA-256 of every frozen file; the digest above covers the manifest itself.
 3. **Zenodo**: each release is archived by Zenodo, which mints a DOI for that version with the deposit date; the concept DOI 10.5281/zenodo.24426897 resolves to the latest version.
-4. **Independent archives**: the Internet Archive's Wayback Machine holds a snapshot of this version's public page taken on 2026-11-22 at 04:36:42 UTC (https://web.archive.org/web/20261122043642/https://chrisbergstrombeamish.github.io/general-relativity/Do-All-Frames-of-Reference-Have-the-Same-Yardstick/?v=1.2.1), byte-identical to the paper above. The address carries `?v=1.2.1` because the Wayback Machine returns its earlier capture for an address it saved within the last hours; GitHub Pages serves the same file with or without it.
+4. **Independent archives**: the Internet Archive's Wayback Machine holds a snapshot of this version's public page taken on 2026-11-22 at 04:53:01 UTC (https://web.archive.org/web/20261122045301/https://chrisbergstrombeamish.github.io/general-relativity/Do-All-Frames-of-Reference-Have-the-Same-Yardstick/?v=1.2.2), byte-identical to the paper above. The address carries `?v=1.2.2` because the Wayback Machine returns its earlier capture for an address it saved within the last hours; GitHub Pages serves the same file with or without it.
 
 To verify a copy: compute its SHA-256 (for example `sha256sum <file>`) and compare it with the value above, or, for an earlier version, with the value in its record below.
 
 ## Earlier versions
+
+**v1.2.1** (2026-11-22, GitHub Pages from 04:36 UTC; tag `v1.2.1`; DOI [10.5281/zenodo.24433473](https://doi.org/10.5281/zenodo.24433473); its stamp is `RELEASE.md` at that tag)
+
+- SHA-256 of the paper: `0dfb22338cd7820d2c46d62f5de5954af5accd025434cb4e0bc9831dd076f5c4`
+- `HASHES.sha256` manifest digest: `5f1099f47b4438736a67b5908b4b3c28c0f1cd3031c0dd655707e9d83ab100fb`
+- Wayback Machine: the public page on 2026-11-22 at 04:36:42 UTC (https://web.archive.org/web/20261122043642/https://chrisbergstrombeamish.github.io/general-relativity/Do-All-Frames-of-Reference-Have-the-Same-Yardstick/?v=1.2.1), byte-identical to it.
 
 **v1.2.0** (2026-11-22, GitHub Pages from 02:37 UTC; tag `v1.2.0`; DOI [10.5281/zenodo.24432301](https://doi.org/10.5281/zenodo.24432301); its stamp is `RELEASE.md` at that tag)
 
