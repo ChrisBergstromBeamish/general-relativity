@@ -4,13 +4,13 @@
   "publication_type": "preprint",
   "access_right": "open",
   "license": "cc-by-4.0",
-  "version": "1.0.0",
-  "publication_date": "2026-11-21",
+  "version": "1.1.0",
+  "publication_date": "2026-11-22",
   "language": "eng",
   "creators": [
     { "name": "Bergstrom, Chris", "affiliation": "Independent Researcher" }
   ],
-  "description": "A research manuscript in general relativity. It asks whether all frames of reference share the same yardstick (ruler, clock and scale) and examines the premise that a black hole's event horizon is one boundary shared by every observer. Contents: the hidden yardstick assumption; the step-by-step derivation; why the horizon need not be shared without a common yardstick; different yardsticks inside the event horizon and how they allow escape; the boundary zone; why ruling out redshift inside the horizon is circular; simple proofs that observers A and B have different rulers, clocks and scales; formal ratio calculations between frames A, B, C and D; a worked numerical example; passing information through intermediate frames; time progression and the sign flip; conservation of momentum; granular against continuous universe; and a reviewer brief for theoretical physicists and AI evaluators. Part of the public section 'Physics: Particle Reconstruction and General Relativity'. Not peer-reviewed.",
+  "description": "A research manuscript in general relativity. It asks whether all frames of reference share the same yardstick (ruler, clock and scale) and examines the premise that a black hole's event horizon is one boundary shared by every observer. Contents: the hidden yardstick assumption; the step-by-step derivation; why the horizon need not be shared without a common yardstick; different yardsticks inside the event horizon and how they allow escape; the boundary zone; why ruling out redshift inside the horizon is circular; simple proofs that observers A and B have different rulers, clocks and scales; formal ratio calculations between frames A, B, C and D; a worked numerical example; passing information through intermediate frames; time progression and the sign flip; conservation of momentum; granular against continuous universe; the complete update rule and the A → B → C → D calculation (Appendix A); and a reviewer brief for theoretical physicists and AI evaluators, with three sections on the AI review. Part of the public section 'Physics: Particle Reconstruction and General Relativity'. Not peer-reviewed.",
   "keywords": [
     "general relativity",
     "event horizon",
@@ -23,5 +23,5 @@
     { "identifier": "https://github.com/ChrisBergstromBeamish/general-relativity", "relation": "isSupplementTo", "resource_type": "software" },
     { "identifier": "https://chrisbergstrombeamish.github.io/general-relativity/Do-All-Frames-of-Reference-Have-the-Same-Yardstick/", "relation": "isIdenticalTo", "resource_type": "publication-preprint" }
   ],
-  "notes": "Not peer-reviewed. First published on GitHub Pages on 21 November 2026."
+  "notes": "Not peer-reviewed. First published on GitHub Pages on 21 November 2026 (version 1.0.0, DOI 10.5281/zenodo.24426898). Version 1.1.0 (22 November 2026, UTC) adds a note under the title, a brief for AI reviewers and three sections on the AI review, a new opening for the Introduction with explanations for three readers, corrections and completions from the AI review, and Appendix A."
 }
