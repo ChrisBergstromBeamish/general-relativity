@@ -1,6 +1,6 @@
 # Reconciling the Schwarzschild Solution with Conservation of Mass-Energy
 
-RESEARCH MANUSCRIPT · DRAFT v0.45
+RESEARCH MANUSCRIPT · DRAFT v0.46
 
 For general relativity to stay consistent with conservation of mass-energy, curvature change must cancel a falling object's kinetic energy gain; this paper tests that agreement. It also investigates whether the Schwarzschild derivation updates its scale to match each new frame of reference along the trajectory.
 
@@ -295,7 +295,7 @@ Now let a body of rest mass m₀ start just inside the event horizon and move in
 
 The requirement is conservation: the complete enclosed energy does not change, dE_enc/dt = 0. Whatever the body gains in motion, something else inside must give up: dK = −dU. And because the pull on A is set by ℳ_enc, the pull on A does not change either: dΦ_g/dt = 0. The source flux is fixed.
 
-The thought experiment asks one question: what geometry, and what rules for converting one frame's readings into another's, make the body's growing local energy consistent with a conserved total and a fixed pull? The clock-step relation, d ln f = g dℓ/c², sets the clock ratios; the ruler relation sets the lengths; the curvature follows from them. One rule, at every place. The next part says what the account must hold.
+The thought experiment asks one question: what geometry, and what rules for converting one frame's readings into another's, make the body's growing local energy consistent with a conserved total and a fixed pull? The clock-step relation, d ln f = g dℓ/c², sets the clock ratios; the ruler relation sets the lengths; the curvature follows from them. One rule, at every place.
 
 ## For a child
 Draw a bubble around the black hole, and sit outside its edge on a bigger bubble. Everything inside the small bubble counts, once, on your own scale: the black hole, the falling stone, the energy of its motion, the energy stored in the pull between them, any heat or light. Nothing goes in or out.
@@ -313,7 +313,7 @@ Conservation: \(dE_{\mathrm{enc}}/dt=0\), so \(dK=-dU\) when only kinetic and po
 
 The question: which geometry and which frame-conversion rules make the body's growing local energy consistent with the conserved total and the fixed flux?
 
-## For a theoretical physicist (the setup, verbatim)
+## For a theoretical physicist (The Complete Explanation)
 The central stipulation is that the source mass is the mass equivalent of the complete enclosed energy, with every contribution expressed in the same observer's units and counted once.
 
 The setup. Consider a black hole enclosed by a Gaussian surface \(\Sigma_{\mathrm{source}}\). An observer \(A\), associated with a second Gaussian surface \(\Sigma_{\mathrm{observer}}\), is situated outside the black hole's event horizon. Statements about the horizon's location refer to \(A\)'s description.
@@ -457,13 +457,85 @@ Integrating this relation determines clock ratios; applying the stipulated ruler
 
 The thought experiment therefore asks: what geometry and frame-conversion rules make the falling body's changing local energy consistent with conservation of the complete enclosed energy and its exterior gravitational source flux?
 
-### Accounting for All the Energy
-The thought experiment stands or falls on one account. Every kind of energy inside the Gaussian surface is counted, once, in A's units, from a stated reference configuration; the mass that pulls is the mass equivalent of that complete count; and conservation says the count does not change while nothing crosses the surface. The chain is: complete energy accounting → mass equivalent → force and work → clock and ruler relations → curvature.
+### Why Uncanceled Kinetic Gain Would Allow us to Create Energy Out of Nothing
+Inside a sealed Gaussian surface with nothing crossing the boundary, total energy must stay fixed. If a falling body gains kinetic energy and the gravitational/curvature term does not drop by an equal amount—or if the frame scale is not updated to keep units and enclosed mass consistent—the ledger ends up with extra energy inside a closed box. That uncompensated gain is what lets a thought-experiment machine create energy out of nothing.
 
-What the account must hold. Each kind of energy, with how it enters:
+The machine, step by step.
 
-- Rest energy: every body's m₀c², with whatever binding its measured mass already contains counted there and nowhere else.
-- Kinetic energy: (γ − 1)m₀c² as the frame the body passes reads it, converted into A's units.
+- (a) Put two charged particles together. Two like charges push each other apart, so holding them together stores energy. Call it U.
+- (b) Move them away from the surface of a heavy object. This will require energy. Lifting a load of mass m through a height h, where the pull is g, costs m g h. Here m is the mass of the two particles.
+- (c) Let them expand away. The kinetic energy now has a mass. Our system became heavier. The stored energy has become motion, K = U, and motion with the energy K has the mass K/c².
+- (d) Let them fall down to the heavy mass. This will generate more energy than was required in step (b). The way down gives back (m + K/c²) g h. The way up cost m g h.
+
+At the bottom, stop the particles and use their energy of motion to put them together again. The machine is back at step (a), with K g h/c² left over. Every turn would make that much energy out of nothing.
+
+The way out. The stored energy already had the mass U/c² in step (b). Then the way up costs (m + U/c²) g h, the way down gives back the same amount, and nothing is left over. Stored energy has mass before it becomes motion, and when it becomes motion, the motion's mass is exactly the mass the stored energy gives up. That is the cancellation. An account that gives mass to the gain without taking it from the store is this machine.
+
+In this paper's terms. An energy E read by a frame at rest counts far away as E f, where f is that frame's clock rate (Section 3, Step 2). The way up from f₁ to f₂ costs (mc² + U)(f₂ − f₁). The way down gives back (mc² + K)(f₂ − f₁), and K = U. Leave U out of the way up, and every turn yields U(f₂ − f₁).
+
+## For a child
+Imagine a sealed toy box with a tiny marble and a spring inside, and nothing is allowed to go in or out of the box. When the marble rolls faster, it gets extra "go-energy," which has to come from somewhere already inside the box—like the spring unwinding a matching amount. If the marble gets faster without anything inside losing that much energy (or if someone keeps changing the ruler size halfway through so the numbers look bigger), the box suddenly has more total energy than it started with—like making energy out of thin air.
+
+## For a high school physics teacher
+In a closed system with zero energy crossing the boundary, mechanical and internal energy must balance so that a gain in kinetic energy matches an equal drop in potential energy:
+
+- Sealed boundary means zero net change: Nothing crosses the Gaussian surface, so total enclosed energy cannot rise or fall on its own.
+- Kinetic gain needs a matching drop: As a body falls and speeds up, its kinetic energy increases. For total energy to stay constant, the gravitational/curvature potential energy must decrease by the exact same amount.
+- How a "free energy" loophole opens: If curvature change fails to cancel that kinetic gain—or if the calculation fails to update the frame scale along the trajectory so energies and enclosed mass are compared on mismatched scales—you can extract net kinetic energy or work inside the closed boundary without paying an equal ledger reduction. Repeating or tapping that imbalance looks like creating energy from nothing.
+
+## For a theoretical physicist
+Within the four-step accounting chain—complete energy count in observer A's units, enclosed mass equivalent \(\mathcal{M}_{\text{enc}} = E[\text{inside}]/c^2\), forces/work \(F = -\partial U/\partial q\) and \(\int F\,dq = U(q_0) - U(q)\), and geometry reconstruction via \(d\ln f = g\,d\ell/c^2\)—energy conservation across a sealed Gaussian surface with zero boundary flux requires
+
+\[\frac{dE}{dt} = \frac{dK}{dt} + \sum \frac{dU}{dt} + \frac{dE_{\text{other}}}{dt} = 0\]
+
+where \(\Delta K = (\gamma - 1)m_0 c^2\) is converted into A's units and potential energy is assigned spatially inside the surface:
+
+- Failure of curvature cancellation: If a falling body gains \(\Delta K \gt 0\) inside the surface while the gravitational/curvature potential term decreases by less than \(\Delta K\) (with zero flux across the boundary and no offsetting drop in other internal terms), then \(\Delta E_{\text{enc}} \gt 0\). A closed boundary with a positive net energy increment violates conservation and yields energy out of nothing.
+- Failure to update frame scale along the trajectory: If the derivation does not update the scale to match each new frame along the path—holding a frozen scale or inconsistent yardstick—comparing initial, falling, and reset states in mismatched scales can leave a residual energy or work surplus (\(\oint F\,dq \neq 0\) or an uncompensated \(\Delta K\) in A's units) around a closed cycle.
+- Source and geometry breakdown: Because \(\mathcal{M}_{\text{enc}} = E[\text{inside}]/c^2\) feeds the gravitational source and the clock/ruler relations (\(f_B/f_A = \exp[\int g\,d\ell/c^2]\)), an uncompensated energy gain inside a sealed surface breaks both conservation and the consistency between the source energy and the reconstructed metric geometry.
+
+### Our Previous Thought Experiment, but with Charged Particles
+To illustrate our next idea, we change the thought experiment by replacing the central pulling mass inside a closed Gaussian surface with a cluster of charges. Instead of falling inward, the charged particles expand outward. As the body accelerates, the pattern is the same as before: its kinetic energy climbs—increasing its relativistic energy and inertia—so every potential energy channel that feeds that acceleration must be tracked once in observer A's units without double counting or inventing extra mass-energy.
+
+## For a child
+Imagine a closed box with a bunch of charged bits in the middle instead of a heavy rock, and they push apart and fly outward. As things speed up, they get more "go-energy" and act "heavier" when moving fast. To keep the box's total score honest, all that extra moving energy has to come out of the stored push-apart energy already inside the box—nothing sneaks in from outside, nothing gets counted twice, and moving faster doesn't magically make brand-new energy out of nothing.
+
+## For a high school physics teacher
+Replacing the central pulling mass inside a closed Gaussian surface with a cluster of charges that expands outward keeps the same conservation logic while shifting the driving interaction:
+
+- Outward expansion and kinetic gain: As like-sign charges repel and expand outward, electrostatic potential energy—or interior electric field energy \(\frac{1}{2}\varepsilon_0 \int E^2\,dV\)—converts into kinetic energy \((\gamma - 1)m_0 c^2\) (mapped into observer A's units), raising the moving bodies' relativistic energy/inertia.
+- Complete ledger inside the surface: Every potential term that can feed the acceleration (electrostatic, magnetic/current, thermal, or other internal potential energies) must be counted once with clear spatial assignment inside the Gaussian surface so the enclosed mass equivalent stays consistent.
+- Conservation holds when nothing crosses: With zero net flux across the boundary, the drop in stored potential/field energy pays for the kinetic energy gain so total enclosed energy does not spontaneously increase.
+
+## For a theoretical physicist
+In a closed Gaussian surface with zero boundary flux, replacing the central mass with an expanding cluster of charges tests the exact same accounting chain—complete energy count in A's units, enclosed mass equivalent \(\mathcal{M}_{\text{enc}} = E[\text{inside}]/c^2\), forces/work (\(F = -\partial U/\partial q\), \(\int F\,dq = U(q_0) - U(q)\)), and geometry reconstruction via \(d\ln f = g\,d\ell/c^2\), ruler relations, and curvature:
+
+- Kinetic inertia and potential depletion: As the expanding charge configuration accelerates, the kinetic energy \((\gamma - 1)m_0 c^2\) (evaluated in the passing frame and converted to A's units) increases, adding a kinetic mass-equivalent increment \((\gamma - 1)m_0\). In a conservative enclosed system (\(dE/dt = 0\)), that gain is balanced by an equal reduction in electrostatic/field energy (either charge-configuration energy or \(\frac{1}{2}\varepsilon_0 \int E^2\,dV\) restricted to the interior, never both) plus any magnetic \(\int B^2/(2\mu_0)\,dV\) or other internal terms.
+- Spatial boundary and anti-double-counting discipline: Field energy extending outside the Gaussian surface lies outside the account, and potential energy is never counted twice—neither as both charge/field energy and a separate duplicate term nor by treating kinetic gain as newly created mass-energy rather than an internal conversion.
+- Metric and source consistency: Because \(\mathcal{M}_{\text{enc}} = E[\text{inside}]/c^2\) enters the gravitational source and clock/ruler relations, keeping every converting potential channel in the ledger preserves consistency between internal energy exchange and the reconstructed geometry.
+
+### Accounting for All the Energy Inside a Closed Boundary
+Any thought experiment about energy conservation and gravity stands or falls on a single complete ledger inside a Gaussian surface. Every energy contribution inside that boundary is counted once in observer A's units relative to a stated reference state, converted into an enclosed mass equivalent that drives gravity, while nothing crosses the surface.
+
+## For a child
+Imagine keeping a master list of every kind of energy inside a closed room—like rest energy, moving energy, spring energy, heat, light, and electric or magnetic energy—all measured with the same ruler and counted only once. Nothing is allowed to sneak in or out of the room, and if one kind of energy goes up (like something moving faster), another kind inside the room has to go down by the same amount so the total stays the same.
+
+## For a high school physics teacher
+To keep energy conservation and gravitational bookkeeping straight inside a closed Gaussian surface, all energy inside the boundary must be summed once in observer A's units from a defined reference configuration:
+
+- Rest, kinetic, and gravitational energy: Rest energy \(m_0 c^2\) (with any binding already inside measured mass counted there only), kinetic energy \((\gamma - 1)m_0 c^2\) as read by the passing frame and converted into A's units, and gravitational pair/self-binding energy (represented here by the clock rate \(f\) of the frame held at rest).
+- Electromagnetic, nuclear, and weak channels: Electrostatic energy (charge configuration or \(\frac{1}{2}\varepsilon_0 \int E^2\,dV\), never both, and only the portion inside the surface), magnetic energy \(\int B^2/(2\mu_0)\,dV\) with current carriers and sources included, nuclear binding \((Zm_p + Nm_n - m_{\text{nucleus}})c^2\) (already inside measured nuclear mass), and weak-decay energy \(Q = (m_{\text{initial}} - \sum m_{\text{final}})c^2\) among products inside the surface.
+- Field, chemical, mechanical, surface, and thermal terms: Scalar/Higgs potential \(\int V(\phi)\,dV\) (keeping gradient and time-evolution energy separate and avoiding duplicate rest-mass counting), chemical bond energy \(\Delta U_{\text{chem}}/c^2\), elastic strain \(\frac{1}{2}kx^2\) (\(kx^2/(2c^2)\) mass equivalent), surface energy \(\int u_{\text{surface}}\,dA\) with area-change heat, and thermal, excitation, and trapped radiation energy.
+
+## For a theoretical physicist
+The ledger enforces a single non-overlapping inventory inside a closed Gaussian surface with zero boundary flux, mapped into observer A's units relative to a stated reference configuration:
+
+- Matter, motion, and gravitational binding: Rest energy \(m_0 c^2\) absorbing intrinsic binding already reflected in measured mass; passing-frame kinetic energy \((\gamma - 1)m_0 c^2\) converted into A's units; and gravitational pair plus self-binding energy tied to the rest-frame clock rate \(f\).
+- Gauge, nuclear, and decay contributions: Electrostatic energy—either charge-configuration energy or interior field energy \(\frac{1}{2}\varepsilon_0 \int E^2\,dV\) restricted to the volume inside the surface, never both—with exterior field energy excluded; magnetic energy \(\int B^2/(2\mu_0)\,dV\) including current carriers and maintaining sources; nuclear binding \((Zm_p + Nm_n - m_{\text{nucleus}})c^2\) already present in \(m_{\text{nucleus}}\); and weak-decay release \(Q = (m_{\text{initial}} - \sum m_{\text{final}})c^2\) tracked among retained decay products.
+- Scalar, chemical, elastic, interfacial, and thermal/radiative terms: Scalar-field potential \(\int V(\phi)\,dV\) (including Higgs) with gradient and time-derivative terms counted separately and no double-counted rest mass; chemical energy \(\Delta U_{\text{chem}}/c^2\); elastic strain \(\frac{1}{2}kx^2\) (\(\Delta m = kx^2/(2c^2)\)); interfacial energy \(\int u_{\text{surface}}\,dA\) with heat exchanged during area changes; and remaining thermal, excited-state, and unescaped radiation energy inside the surface.
+
+Here's our list of the types of potential energy we need to account for:
+
 - Gravitational potential energy: the interaction of each pair, counted once, and a body's own gravitational self-binding; in this paper it is the clock rate of the frame held at rest, f.
 - Electrostatic potential energy: the charge configuration, or equally the field energy ε₀∫E²dV/2, never both; field energy that extends beyond the surface lies outside it.
 - Magnetic interaction energy: ∫B²dV/2μ₀, with the current carriers and any source that maintains the field inside the account.
@@ -473,157 +545,6 @@ What the account must hold. Each kind of energy, with how it enters:
 - Chemical bond energy: ΔU_chem/c², relative to a stated reference configuration, released as heat, motion, light or excitation.
 - Elastic strain energy: ½kx² for a spring, kx²/2c² of extra mass, released into motion or heat.
 - Surface and interfacial energy: ∫u_surface dA, with the heat exchanged when the area changes.
-- Thermal energy, excitation and radiation: everything else inside the surface: heat, excited states, and any light that has not yet left.
-
-The four steps. (1) Choose a reference configuration and count each contribution once: E = E₀ + ΔK + ΣΔU + ΔE_other, all in A's units, and keep only what lies inside the surface, ℳ_enc = E[inside]/c². Knowing a system's total potential energy does not say how much of it lies inside a given surface; the spatial assignment is part of the account. (2) Balance every internal conversion: dE/dt = 0, so dK/dt + ΣdU/dt + dE_other/dt = 0; a fall in one potential energy must appear elsewhere in the account, and if it stays inside the surface the enclosed mass equivalent does not change. (3) Get the forces and the work from the interaction energies: F = −∂U/∂q and ∫F dq = U(q₀) − U(q), with heat, radiation and state changes entering the same balance. (4) Use the complete energy as the gravitational source, then reconstruct the geometry: the holding acceleration enters the clock-step relation d ln f = g dℓ/c², whose integral gives the clock ratios, f_B/f_A = exp[∫g dℓ/c²]; the ruler relation gives the lengths; the curvature follows.
-
-Two things the account must never do. Count an energy twice (a nucleus's binding in its measured mass and again as a separate negative term; a field's energy and the equivalent interaction energy), or convert kinetic energy into mass units as if that created new mass-energy: in a conservative system the loss of potential energy pays for the gain in kinetic energy exactly, and the total is unchanged.
-
-## For a child
-Think of a jar with everything in it: the black hole, the stone, the energy of the stone's motion, the energy stored in the pull between them, any heat, any light. Write every bit down once, in your own units, and add it up. The lid stays on, so the total never changes. When the stone falls faster, that extra came from somewhere in the jar, and it is already on the list. The pull you feel from the jar is set by the total, so it never changes either.
-
-## For a high school physics teacher
-One account, one observer, one reference configuration. The list above is the complete set of entries; the rule for each is written beside it. The three equations that do the work are: E = E₀ + ΔK + ΣΔU + ΔE_other inside the surface; dE/dt = 0 with nothing crossing, so dK = −dU when only kinetic and potential energy trade; and d ln f = g dℓ/c², the clock-step relation, by which the potential energy is the clock rate of the frame held at rest. The mass that pulls is ℳ_enc = E/c², and it is constant. What is still to be fixed by the derivation is the gravitational response: how the holding acceleration follows from ℳ_enc. That is Section 3.
-
-## For a theoretical physicist (the general procedure, verbatim)
-The reviewer's general procedure, verbatim.
-
-The general solution starts with one account in one reference frame.
-
-Step 1: Choose a reference state and count each contribution once.
-
-Let \(A\) be the reference observer, and let \(E_{0,A}\) be the complete energy of a specified reference configuration. Write changes from that configuration as
-
-\[
-\boxed{
-E_A
-=
-E_{0,A}
-+\Delta K_A
-+\sum_{\alpha\in\mathcal I}\Delta U_{\alpha,A}
-+\Delta E_{\mathrm{other},A}.
-}
-\]
-
-Here:
-
-- \(\mathcal I\) contains nonoverlapping interaction-energy contributions.
-
-- \(E_{\mathrm{other},A}\) contains remaining thermal, excitation, radiation and dynamical field energy.
-
-- Every term uses the same explicit conversion into \(A\)’s energy units.
-
-This prevents a nucleus’s binding energy, for example, from appearing both in its measured mass and as an additional negative energy.
-
-For a chosen Gaussian surface, retain only the energy assigned inside it:
-
-\[
-\boxed{
-M_{\mathrm{enc}}^A(t)
-=
-\frac{E_A[\text{inside the surface},t]}{c^2}.
-}
-\]
-
-The spatial assignment matters. Knowing a system’s total potential energy does not by itself specify how much lies inside a particular surface.
-
-Step 2: Balance all internal conversions.
-
-For the closed-system conservation model we are constructing, require
-
-\[
-\boxed{
-\frac{dE_A}{dt}=0.
-}
-\]
-
-Using the account above,
-
-\[
-\boxed{
-\frac{dK_A}{dt}
-+
-\sum_{\alpha}\frac{dU_{\alpha,A}}{dt}
-+
-\frac{dE_{\mathrm{other},A}}{dt}
-=0.
-}
-\]
-
-Thus a decrease in one potential-energy contribution must appear elsewhere in the account. If the energy remains inside the surface, conversion into motion, heat or radiation does not by itself change the total enclosed mass equivalent.
-
-Step 3: Obtain forces and work from the specified interaction models.
-
-For a conservative configuration coordinate \(q\), with the other relevant variables fixed,
-
-\[
-\boxed{
-F_q=-\frac{\partial U_{\mathrm{total}}}{\partial q},
-\qquad
-U_{\mathrm{total}}=\sum_{\alpha}U_\alpha.
-}
-\]
-
-For a one-coordinate conservative motion,
-
-\[
-\boxed{
-\int_{q_0}^{q}F_q\,dq
-=
-U_{\mathrm{total}}(q_0)-U_{\mathrm{total}}(q).
-}
-\]
-
-If that work goes entirely into kinetic energy,
-
-\[
-\boxed{
-K(q)
-=
-K(q_0)
-+
-U_{\mathrm{total}}(q_0)
--
-U_{\mathrm{total}}(q).
-}
-\]
-
-When heat, radiation or state changes also occur, their energy changes enter the same balance. A single scalar potential does not replace those additional channels.
-
-Step 4: Use the complete energy distribution as the gravitational source, then reconstruct geometry.
-
-This step has two distinct forces:
-
-Quantity | Role | 
-
-Chemical, electric, magnetic, elastic and other interaction forces | Transfer energy between the entries above | 
-
-Gravitational holding force | Enters the clock-step relation after the gravitational response to the complete source has been calculated | 
-
-For a prescribed gravitational holding acceleration \(g_{\mathrm{hold}}\), your clock rule gives
-
-\[
-\boxed{
-d\ln f=\frac{g_{\mathrm{hold}}\,d\ell}{c^2}.
-}
-\]
-
-Its integrated solution is
-
-\[
-\boxed{
-\frac{f_B}{f_A}
-=
-\exp\!\left[
-\frac1{c^2}
-\int_A^B g_{\mathrm{hold}}\,d\ell
-\right].
-}
-\]
-
-Then apply your specified ruler relation to obtain the metric and calculate its curvature.
-
-The required inputs are therefore the interaction energies, their spatial distribution, one consistent frame-conversion rule, and the gravitational response law. This construction supplies the common accounting procedure; the last two inputs must be fixed explicitly to complete the calculation.
 
 ### The Hypothesis
 1. The gravitational force between the two Gaussian surfaces is time invariant. That is conservation of mass-energy: the pull is set by the complete enclosed count, rest energy, kinetic energy and potential energy together, and with nothing crossing the surface the count does not change.
