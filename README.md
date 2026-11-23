@@ -5,7 +5,7 @@
 ## General relativity
 
 - [Why Is It Impossible to Escape from a Black Hole?](https://chrisbergstrombeamish.github.io/general-relativity/Do-All-Frames-of-Reference-Have-the-Same-Yardstick/) (first published 2026-11-21 as "Do All Frames of Reference Have the Same Yardstick?"; version 1.2.3 published 2026-11-22, UTC)
-- [Reconciling the Schwarzschild Solution with Conservation of Mass-Energy](https://chrisbergstrombeamish.github.io/general-relativity/Reconciling-the-Schwarzschild-Solution-with-Conservation-of-Mass-Energy/) (the second paper; research draft v0.32, first published 2026-11-22, UTC; not yet a tagged release and not yet archived on Zenodo; not peer-reviewed; the folder also holds the draft's text as Markdown)
+- [Reconciling the Schwarzschild Solution with Conservation of Mass-Energy](https://chrisbergstrombeamish.github.io/general-relativity/Reconciling-the-Schwarzschild-Solution-with-Conservation-of-Mass-Energy/) (the second paper; research draft v0.36, first published 2026-11-22, UTC; not yet a tagged release and not yet archived on Zenodo; not peer-reviewed; the folder also holds the draft's text as Markdown)
 
 ## Priority record
 
