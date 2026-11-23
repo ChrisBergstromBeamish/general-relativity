@@ -1,6 +1,6 @@
 # Reconciling the Schwarzschild Solution with Conservation of Mass-Energy
 
-RESEARCH MANUSCRIPT · DRAFT v0.37
+RESEARCH MANUSCRIPT · DRAFT v0.38
 
 Reconciling the Schwarzschild Solution with Conservation of Mass-EnergyThe Strong Schwarzschild Solution uses ℳ, the mass measured far away, held the same while the frame of reference changes its scale, the condition that requires the mass that frame reads to change, to ℳ/s, and its event horizon with it (first paper, Appendix A).
 
@@ -2087,7 +2087,9 @@ Place R (A at 200; released from rest at 990) | Clock rate f (rel. to A) | Scale
 200 | 1.00000 | 1.000 | not reached from rest (γ would be 0.050) | M, horizon at L (A's values) | 
 
 ### How Much Mass an Event Horizon Needs
-Step 9. How much mass an event horizon needs. The matter that makes the field is counted the same way as the probe of Step 2: a piece of rest mass \(dm\) held at rest at \(r\) enters the far observer's count at \(f(r)\,dm\) [H3]. The count is \(\int f\,dm\), and the horizon condition \(L=R\) at the matter's own radius reads \(\int f\,dm=c^2R/2G\). For a shell of rest mass \(m_0\) held at \(R\) this closes on itself, \(\mathcal M=m_0\sqrt{1-L/R}\) with \(L=2G\mathcal M/c^2\); with \(y=2Gm_0/c^2R\), \[\boxed{\frac LR=\frac y2\Big(\sqrt{y^2+4}-y\Big)Bare ratio y = 2Gm₀/c²R | L/R | Far count ℳ/m₀ | 
+Step 9. How much mass an event horizon needs. The matter that makes the field is counted the same way as the probe of Step 2: a piece of rest mass \(dm\) held at rest at \(r\) enters the far observer's count at \(f(r)\,dm\) [H3]. The count is \(\int f\,dm\), and the horizon condition \(L=R\) at the matter's own radius reads \(\int f\,dm=c^2R/2G\). For a shell of rest mass \(m_0\) held at \(R\) this closes on itself, \(\mathcal M=m_0\sqrt{1-L/R}\) with \(L=2G\mathcal M/c^2\); with \(y=2Gm_0/c^2R\), \[\boxed{\frac LR=\frac y2\Big(\sqrt{y^2+4}-y\Big)\lt1}\] for every finite \(y\). The far count saturates at \(c^2R/2G\): no finite rest mass held at rest puts the horizon at the matter, because the extra rest mass is cancelled by its own clock rate. [DERIVED from H1, H3] Motion at a fixed radius does not help: a piece in motion there enters at \(\gamma f\,dm\) [H3 for a free body, the hypothesis, with H2], and a shell whose pieces share a finite \(\gamma\) obeys the same equation with \(y\) replaced by \(\gamma y\), still with \(L/R\lt1\). What reaches the condition \(\int\gamma f\,dm=c^2R/2G\) is infall: a shell released from rest outside its own horizon falls with its count fixed, so \(L\) is fixed, and reaches \(R=L\), where the condition holds with equality, in a finite time of its own (Step 6). What happens at that moment is the step across the edge (Section 14). The horizon's place depends on the energy of what is inside, light included: a net addition of far-counted energy \(E\) inside the surface, a photon sent in from outside, adds \(2GE/c^4\) to \(L\); a photon emitted by matter already inside leaves the complete count unchanged. [DERIVED from H1]
+
+Bare ratio y = 2Gm₀/c²R | L/R | Far count ℳ/m₀ | 
 
 1 | 0.618034 | 0.6180 | 
 
