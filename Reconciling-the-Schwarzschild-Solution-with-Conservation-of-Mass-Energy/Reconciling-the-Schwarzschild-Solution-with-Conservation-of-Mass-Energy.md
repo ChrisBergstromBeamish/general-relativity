@@ -1,6 +1,6 @@
 # Reconciling the Schwarzschild Solution with Conservation of Mass-Energy
 
-RESEARCH MANUSCRIPT · DRAFT v0.46
+RESEARCH MANUSCRIPT · DRAFT v0.47
 
 For general relativity to stay consistent with conservation of mass-energy, curvature change must cancel a falling object's kinetic energy gain; this paper tests that agreement. It also investigates whether the Schwarzschild derivation updates its scale to match each new frame of reference along the trajectory.
 
@@ -545,6 +545,152 @@ Here's our list of the types of potential energy we need to account for:
 - Chemical bond energy: ΔU_chem/c², relative to a stated reference configuration, released as heat, motion, light or excitation.
 - Elastic strain energy: ½kx² for a spring, kx²/2c² of extra mass, released into motion or heat.
 - Surface and interfacial energy: ∫u_surface dA, with the heat exchanged when the area changes.
+
+## For a child
+Think of a jar with everything in it: the black hole, the stone, the energy of the stone's motion, the energy stored in the pull between them, any heat, any light. Write every bit down once, in your own units, and add it up. The lid stays on, so the total never changes. When the stone falls faster, that extra came from somewhere in the jar, and it is already on the list. The pull you feel from the jar is set by the total, so it never changes either.
+
+## For a high school physics teacher
+One account, one observer, one reference configuration. The list above holds the kinds of potential energy, with the rule for each beside it; rest energy, kinetic energy and heat are entries too. The three equations that do the work are: E = E₀ + ΔK + ΣΔU + ΔE_other inside the surface; dE/dt = 0 with nothing crossing, so dK = −dU when only kinetic and potential energy trade; and d ln f = g dℓ/c², the clock-step relation, by which the potential energy is the clock rate of the frame held at rest. The mass that pulls is ℳ_enc = E/c², and it is constant. What is still to be fixed by the derivation is the gravitational response: how the holding acceleration follows from ℳ_enc. That is Section 3.
+
+## For a theoretical physicist (the general procedure, verbatim)
+The reviewer's general procedure, verbatim.
+
+The general solution starts with one account in one reference frame.
+
+Step 1: Choose a reference state and count each contribution once.
+
+Let \(A\) be the reference observer, and let \(E_{0,A}\) be the complete energy of a specified reference configuration. Write changes from that configuration as
+
+\[
+\boxed{
+E_A
+=
+E_{0,A}
++\Delta K_A
++\sum_{\alpha\in\mathcal I}\Delta U_{\alpha,A}
++\Delta E_{\mathrm{other},A}.
+}
+\]
+
+Here:
+
+- \(\mathcal I\) contains nonoverlapping interaction-energy contributions.
+
+- \(E_{\mathrm{other},A}\) contains remaining thermal, excitation, radiation and dynamical field energy.
+
+- Every term uses the same explicit conversion into \(A\)’s energy units.
+
+This prevents a nucleus’s binding energy, for example, from appearing both in its measured mass and as an additional negative energy.
+
+For a chosen Gaussian surface, retain only the energy assigned inside it:
+
+\[
+\boxed{
+M_{\mathrm{enc}}^A(t)
+=
+\frac{E_A[\text{inside the surface},t]}{c^2}.
+}
+\]
+
+The spatial assignment matters. Knowing a system’s total potential energy does not by itself specify how much lies inside a particular surface.
+
+Step 2: Balance all internal conversions.
+
+For the closed-system conservation model we are constructing, require
+
+\[
+\boxed{
+\frac{dE_A}{dt}=0.
+}
+\]
+
+Using the account above,
+
+\[
+\boxed{
+\frac{dK_A}{dt}
++
+\sum_{\alpha}\frac{dU_{\alpha,A}}{dt}
++
+\frac{dE_{\mathrm{other},A}}{dt}
+=0.
+}
+\]
+
+Thus a decrease in one potential-energy contribution must appear elsewhere in the account. If the energy remains inside the surface, conversion into motion, heat or radiation does not by itself change the total enclosed mass equivalent.
+
+Step 3: Obtain forces and work from the specified interaction models.
+
+For a conservative configuration coordinate \(q\), with the other relevant variables fixed,
+
+\[
+\boxed{
+F_q=-\frac{\partial U_{\mathrm{total}}}{\partial q},
+\qquad
+U_{\mathrm{total}}=\sum_{\alpha}U_\alpha.
+}
+\]
+
+For a one-coordinate conservative motion,
+
+\[
+\boxed{
+\int_{q_0}^{q}F_q\,dq
+=
+U_{\mathrm{total}}(q_0)-U_{\mathrm{total}}(q).
+}
+\]
+
+If that work goes entirely into kinetic energy,
+
+\[
+\boxed{
+K(q)
+=
+K(q_0)
++
+U_{\mathrm{total}}(q_0)
+-
+U_{\mathrm{total}}(q).
+}
+\]
+
+When heat, radiation or state changes also occur, their energy changes enter the same balance. A single scalar potential does not replace those additional channels.
+
+Step 4: Use the complete energy distribution as the gravitational source, then reconstruct geometry.
+
+This step has two distinct forces:
+
+Quantity | Role | 
+
+Chemical, electric, magnetic, elastic and other interaction forces | Transfer energy between the entries above | 
+
+Gravitational holding force | Enters the clock-step relation after the gravitational response to the complete source has been calculated | 
+
+For a prescribed gravitational holding acceleration \(g_{\mathrm{hold}}\), your clock rule gives
+
+\[
+\boxed{
+d\ln f=\frac{g_{\mathrm{hold}}\,d\ell}{c^2}.
+}
+\]
+
+Its integrated solution is
+
+\[
+\boxed{
+\frac{f_B}{f_A}
+=
+\exp\!\left[
+\frac1{c^2}
+\int_A^B g_{\mathrm{hold}}\,d\ell
+\right].
+}
+\]
+
+Then apply your specified ruler relation to obtain the metric and calculate its curvature.
+
+The required inputs are therefore the interaction energies, their spatial distribution, one consistent frame-conversion rule, and the gravitational response law. This construction supplies the common accounting procedure; the last two inputs must be fixed explicitly to complete the calculation.
 
 ### The Hypothesis
 1. The gravitational force between the two Gaussian surfaces is time invariant. That is conservation of mass-energy: the pull is set by the complete enclosed count, rest energy, kinetic energy and potential energy together, and with nothing crossing the surface the count does not change.
