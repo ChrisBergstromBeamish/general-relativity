@@ -1,6 +1,6 @@
 # Reconciling the Schwarzschild Solution with Conservation of Mass-Energy
 
-RESEARCH MANUSCRIPT · DRAFT v0.36
+RESEARCH MANUSCRIPT · DRAFT v0.37
 
 Reconciling the Schwarzschild Solution with Conservation of Mass-EnergyThe Strong Schwarzschild Solution uses ℳ, the mass measured far away, held the same while the frame of reference changes its scale, the condition that requires the mass that frame reads to change, to ℳ/s, and its event horizon with it (first paper, Appendix A).
 
@@ -6640,7 +6640,7 @@ The first paper's explanation of escape was that the Schwarzschild solution keep
 The thought experiment. A at 200 and B at 900 are frames held at rest inside; C at 1,000 is A's event horizon, the place where A's clock comparison with a frame held at rest vanishes, and no frame is held exactly there (first paper, A.2); the boundary zone is a pair of frames held at rest at C − δ and C + δ; D is at 1,100, outside. Photon 1 goes from A to B. B reads it and emits a new photon 2, with the energy it read, toward the boundary zone. The frame at C − δ reads photon 2, and the frame at C + δ emits a new photon 3, with that energy, to D. Each leg uses one rule, the reading rule of the first paper (A.2: a frame at rest reads a photon from the reference frame at s times its energy, with s the frame's scale relative to that reference), inside one account, with real numbers. The same photon carried through all three legs gives the same numbers (the twist at the end); the relay keeps each step plain.
 
 ### The Proof
-Part 1. The horizon as a condition on the count. For the far observer the horizon is at \(L=2G\mathcal M_{\mathrm{enc}}/c^2\), and \(\mathcal M_{\mathrm{enc}}c^2\) is the sum of the entries inside: \(\int\gamma f\,dm\) for matter, and for light its far-counted energy. The horizon reaches a radius \(R\) when \[\sum\text{entries inside }R\ \ge\ \frac{c^2R}{2G}.\] Matter held at rest never satisfies it (Section 3, Step 9: \(\int f\,dm\lt c^2R/2G\) for every finite rest mass). Motion does, \(\gamma\gt1\) raising an entry, and light does: a photon of far-counted energy \(E\) inside the surface adds \(2GE/c^4\) to \(L\). The place of the horizon depends on the energy of what is inside, the photon's included. [DERIVED from H1 to H3]
+Part 1. The horizon as a condition on the count. For the far observer the horizon is at \(L=2G\mathcal M_{\mathrm{enc}}/c^2\), and \(\mathcal M_{\mathrm{enc}}c^2\) is the sum of the entries inside: \(\int\gamma f\,dm\) for matter, and for light its far-counted energy. The horizon reaches a radius \(R\) when \[\sum\text{entries inside }R\ \ge\ \frac{c^2R}{2G}.\] Matter held at rest never satisfies it (Section 3, Step 9: \(\int f\,dm\lt c^2R/2G\) for every finite rest mass), and neither does matter kept at a fixed radius with any finite \(\gamma\); a shell that falls with its count fixed reaches \(R=L\), where it holds with equality. Light counts too: a photon sent in from outside with far-counted energy \(E\) adds \(2GE/c^4\) to \(L\). The place of the horizon depends on the energy of what is inside, the photon's included. [DERIVED from H1 to H3]
 
 Part 2. Photon 1, A to B. B's scale relative to A is \(s_B=\sqrt{(1-L/R_A)/(1-L/R_B)}=6\) [A.1]. B reads photon 1 at \(6E_0\) [A.2]; the entry, the reading times B's clock rate \(1/6\), is \(E_0\) [A.3]. Real numbers, inside A's account. [DERIVED]
 
