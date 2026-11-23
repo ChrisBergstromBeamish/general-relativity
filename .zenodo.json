@@ -4,7 +4,7 @@
   "publication_type": "preprint",
   "access_right": "open",
   "license": "cc-by-4.0",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "publication_date": "2026-11-23",
   "language": "eng",
   "creators": [
@@ -34,5 +34,5 @@
       "resource_type": "publication-preprint"
     }
   ],
-  "notes": "Not peer-reviewed. First published on GitHub Pages on 21 November 2026 as 'Do All Frames of Reference Have the Same Yardstick?' (version 1.0.0, DOI 10.5281/zenodo.24426898; version 1.1.0, 22 November 2026 UTC, DOI 10.5281/zenodo.24431223). Version 1.2.0 (22 November 2026, UTC; DOI 10.5281/zenodo.24432301) has the new title, an Introduction of three explanations, a restructured first part and chapters renumbered 1 to 24. Version 1.2.1 (22 November 2026, UTC; DOI 10.5281/zenodo.24433473) opens the Introduction with the case proof that the lack of a shared event horizon means escape. Version 1.2.2 (22 November 2026, UTC; DOI 10.5281/zenodo.24433618) opens it with the three steps of the no-escape proof, moves the case proof to Part 0 of the roadmap, removes a duplicate chapter and renumbers the chapters 1 to 23. Version 1.2.3 (22 November 2026, UTC; DOI 10.5281/zenodo.24434074) rewrites Part 0 with a box for theoretical physicists and removes the Introduction's three explanations. Version 1.3.0 (23 November 2026, UTC) rewrites the Conclusion on the form of the second paper's Conclusion, every paragraph of the earlier Conclusion kept, and adds a note linking to the full Schwarzschild derivation and its diff in the second paper."
+  "notes": "Not peer-reviewed. First published on GitHub Pages on 21 November 2026 as 'Do All Frames of Reference Have the Same Yardstick?' (version 1.0.0, DOI 10.5281/zenodo.24426898; version 1.1.0, 22 November 2026 UTC, DOI 10.5281/zenodo.24431223). Version 1.2.0 (22 November 2026, UTC; DOI 10.5281/zenodo.24432301) has the new title, an Introduction of three explanations, a restructured first part and chapters renumbered 1 to 24. Version 1.2.1 (22 November 2026, UTC; DOI 10.5281/zenodo.24433473) opens the Introduction with the case proof that the lack of a shared event horizon means escape. Version 1.2.2 (22 November 2026, UTC; DOI 10.5281/zenodo.24433618) opens it with the three steps of the no-escape proof, moves the case proof to Part 0 of the roadmap, removes a duplicate chapter and renumbers the chapters 1 to 23. Version 1.2.3 (22 November 2026, UTC; DOI 10.5281/zenodo.24434074) rewrites Part 0 with a box for theoretical physicists and removes the Introduction's three explanations. Version 1.3.0 (23 November 2026, UTC; DOI 10.5281/zenodo.24470735) rewrites the Conclusion on the form of the second paper's Conclusion, every paragraph of the earlier Conclusion kept, and adds a note linking to the full Schwarzschild derivation and its diff in the second paper. Version 1.3.1 (23 November 2026, UTC) replaces the lines under the title with two sentences, removes the three labels under the title and rewords the note's sentence on the diff viewer; the chapters and Appendix A are unchanged."
 }
