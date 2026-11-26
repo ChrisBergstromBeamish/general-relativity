@@ -1,11 +1,11 @@
 {
-  "title": "Why Is It Impossible to Escape from a Black Hole?",
+  "title": "Physics: Particle Reconstruction and General Relativity",
   "upload_type": "publication",
   "publication_type": "preprint",
   "access_right": "open",
   "license": "cc-by-4.0",
-  "version": "1.3.2",
-  "publication_date": "2026-11-25",
+  "version": "2.0.0",
+  "publication_date": "2026-11-26",
   "language": "eng",
   "creators": [
     {
@@ -13,14 +13,17 @@
       "affiliation": "Independent Researcher"
     }
   ],
-  "description": "A research manuscript in general relativity. It asks whether all frames of reference share the same yardstick (ruler, clock and scale) and examines the premise that a black hole's event horizon is one boundary shared by every observer. Contents: the three steps of the no-escape proof; the case proof that the lack of a shared event horizon means escape; why the proof that nothing can escape needs the same yardstick and number of steps in every frame, explained for a child, a high school physics teacher and a theoretical physicist; step-count equivalence across frames (the derivation of the Schwarzschild radius); different yardsticks inside the event horizon; the setup for the thought experiment (how different yardsticks inside the horizon enable escape; the boundary zone); the thought experiment reaching the boundary zone; why ruling out redshift inside the horizon is circular; simple proofs that observers A and B have different rulers, clocks and scales; formal ratio calculations between frames A, B, C and D; a worked numerical example; passing information through intermediate frames; time progression and the sign flip; conservation of momentum; granular against continuous universe; the complete update rule and the A → B → C → D calculation (Appendix A); a Conclusion that states what is shown, the premises of general relativity the paper removes, the postulates it keeps and the observations that could decide; and a reviewer brief for theoretical physicists and AI evaluators, with three sections on the AI review. Part of the public section 'Physics: Particle Reconstruction and General Relativity'. Not peer-reviewed. Versions 1.0.0 and 1.1.0 were titled 'Do All Frames of Reference Have the Same Yardstick?'.",
+  "description": "A folder of research papers. Relativity: Reconciling the Schwarzschild Solution with Conservation of Mass-Energy, version 1.0.0, the current paper; Why Is It Impossible to Escape from a Black Hole?, version 1.3.2, superseded by it. Validation: the redshift data for observations with large redshifts (Section 19 of the second paper); the pulse-profile calculation on NASA's NICER observations is in its own repository (https://github.com/ChrisBergstromBeamish/fast-nicer-pulse-profile-modeling). Internal Spaces: Spin from Internal Geometry, an internal space that provides spin. Not peer-reviewed.",
   "keywords": [
     "general relativity",
+    "Schwarzschild solution",
+    "conservation of mass-energy",
     "event horizon",
     "frames of reference",
     "black holes",
     "redshift",
-    "thought experiment"
+    "internal spaces",
+    "spin"
   ],
   "related_identifiers": [
     {
@@ -29,10 +32,20 @@
       "resource_type": "software"
     },
     {
+      "identifier": "https://chrisbergstrombeamish.github.io/general-relativity/Reconciling-the-Schwarzschild-Solution-with-Conservation-of-Mass-Energy/",
+      "relation": "hasPart",
+      "resource_type": "publication-preprint"
+    },
+    {
       "identifier": "https://chrisbergstrombeamish.github.io/general-relativity/Do-All-Frames-of-Reference-Have-the-Same-Yardstick/",
-      "relation": "isIdenticalTo",
+      "relation": "hasPart",
+      "resource_type": "publication-preprint"
+    },
+    {
+      "identifier": "https://chrisbergstrombeamish.github.io/general-relativity/Internal-Spaces/Spin-from-Internal-Geometry/",
+      "relation": "hasPart",
       "resource_type": "publication-preprint"
     }
   ],
-  "notes": "Not peer-reviewed. First published on GitHub Pages on 21 November 2026 as 'Do All Frames of Reference Have the Same Yardstick?' (version 1.0.0, DOI 10.5281/zenodo.24426898; version 1.1.0, 22 November 2026 UTC, DOI 10.5281/zenodo.24431223). Version 1.2.0 (22 November 2026, UTC; DOI 10.5281/zenodo.24432301) has the new title, an Introduction of three explanations, a restructured first part and chapters renumbered 1 to 24. Version 1.2.1 (22 November 2026, UTC; DOI 10.5281/zenodo.24433473) opens the Introduction with the case proof that the lack of a shared event horizon means escape. Version 1.2.2 (22 November 2026, UTC; DOI 10.5281/zenodo.24433618) opens it with the three steps of the no-escape proof, moves the case proof to Part 0 of the roadmap, removes a duplicate chapter and renumbers the chapters 1 to 23. Version 1.2.3 (22 November 2026, UTC; DOI 10.5281/zenodo.24434074) rewrites Part 0 with a box for theoretical physicists and removes the Introduction's three explanations. Version 1.3.0 (23 November 2026, UTC; DOI 10.5281/zenodo.24470735) rewrites the Conclusion on the form of the second paper's Conclusion, every paragraph of the earlier Conclusion kept, and adds a note linking to the full Schwarzschild derivation and its diff in the second paper. Version 1.3.1 (23 November 2026, UTC; DOI 10.5281/zenodo.24478000) replaces the lines under the title with two sentences, removes the three labels under the title and rewords the note's sentence on the diff viewer; the chapters and Appendix A are unchanged. Version 1.3.2 (25 November 2026, UTC) names step 3 of the Introduction (the number of steps is the same in every frame) as a premise that the companion paper, Reconciling the Schwarzschild Solution with Conservation of Mass-Energy, tests, and adds one line to Appendix A, A.6: that the law's formula holds for two frames on opposite sides of the event horizon is a premise. Nothing else is changed."
+  "notes": "Not peer-reviewed. Versions 1.0.0 to 1.3.2 of this record held the first paper alone, Why Is It Impossible to Escape from a Black Hole? (versions 1.0.0 and 1.1.0 titled 'Do All Frames of Reference Have the Same Yardstick?'; version 1.3.2: DOI 10.5281/zenodo.24544542; the DOIs of every version are in RELEASE.md). Version 2.0.0 is the first to hold the whole folder: the second paper, Reconciling the Schwarzschild Solution with Conservation of Mass-Energy, at version 1.0.0, in a release for the first time; the first paper unchanged but for one line on its folder page saying that it is superseded; the redshift data; and the first document on internal spaces."
 }
