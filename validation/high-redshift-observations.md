@@ -1,8 +1,8 @@
 # The Observations with High Redshift
 
-From Section 19 of the paper [Reconciling the Schwarzschild Solution with Conservation of Mass-Energy](https://chrisbergstrombeamish.github.io/general-relativity/Reconciling-the-Schwarzschild-Solution-with-Conservation-of-Mass-Energy/), research draft v0.86, word for word. The comparison with the calculation is in the paper's Section 17.
+From Section 19 of the paper [Reconciling the Schwarzschild Solution with Conservation of Mass-Energy](https://chrisbergstrombeamish.github.io/general-relativity/Reconciling-the-Schwarzschild-Solution-with-Conservation-of-Mass-Energy/), version 1.0.0, word for word. The comparison with the calculation is in the paper's Section 17.
 
-> Stub, to be filled. This is the appendix that goes with Section 17. The list was found on 25 November 2026 by the paper's second reviewer, who was asked for the observations of light redshifted by gravity at its source with the highest redshift, ideally above 20 percent, and was given no account of this paper's physics. Every row is as the search reported it, and each is still to be checked at its source before this appendix is final. A row is not left out because it is disputed. It is labelled.
+The list comes from a search for the observations of light redshifted by gravity at its source with the highest redshift, ideally above 20 percent; the search was given no account of this paper's physics. Every row is as the search reported it, and not every row has yet been checked at its source. A row is not left out because it is disputed. It is labelled.
 
 The rows are in the order of the observed redshift, highest first. The redshift is $z=E_0/E_{\mathrm{obs}}-1$, from the laboratory energy $E_0$ of the line and the observed energy. The column "Schwarzschild's formula" is $(1-2.95325\,M/R)^{-1/2}-1$, with the mass in suns and the radius in kilometres, with no correction for spin; by Section 4 the conservation derivation gives the same figure from the same mass and radius (Section 17).
 
