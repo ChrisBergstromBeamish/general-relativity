@@ -10,8 +10,8 @@ RELATIVITY
 
 * Reconciling the Schwarzschild Solution with Conservation of Mass-Energy
   https://chrisbergstrombeamish.github.io/general-relativity/Reconciling-the-Schwarzschild-Solution-with-Conservation-of-Mass-Energy/
-  The current paper. Version 1.0.1, DOI 10.5281/zenodo.24592165 (release v2.3.0 of this folder; version 1.0.0: DOI 10.5281/zenodo.24573232, release v2.0.0); not peer-reviewed. Its folder also holds the paper's text as Markdown. Section 20 of the paper holds its full AI audit: the prompt, the results and the discussion with the auditor.
-  Final version uploaded 2026-11-27 14:49:56 UTC.
+  The current paper. Version 1.1.0 (release v2.4.0 of this folder; version 1.0.1: DOI 10.5281/zenodo.24592165, release v2.3.0; version 1.0.0: DOI 10.5281/zenodo.24573232, release v2.0.0); not peer-reviewed. Its folder also holds the paper's text as Markdown. Section 20 of the paper holds its full AI audit: the prompt, the results and the discussion with the auditor.
+  Final version uploaded 2026-11-27 16:17:56 UTC.
 
 * Curved Space from f · dr
   https://chrisbergstrombeamish.github.io/general-relativity/Relativity/Curved-Space-from-f-dr/
@@ -35,8 +35,8 @@ RELATIVITY
 
 * What Comes After Forever?
   https://chrisbergstrombeamish.github.io/general-relativity/Relativity/What-Comes-After-Forever/
-  A photon slips past the edge of A's observable universe. A cannot watch. A can work it out: past the edge, time runs the other way, distances come out imaginary, and every answer comes in two.
-  Final version uploaded 2026-11-27 14:49:56 UTC.
+  A photon slips past the edge of A's observable universe. A cannot watch. A can work it out: past the edge, time runs the other way, distances come out imaginary, every answer comes in two, and the photon is in two places at once.
+  Final version uploaded 2026-11-27 16:17:56 UTC.
 
 * Who Pays for the Falling Stone?
   https://chrisbergstrombeamish.github.io/general-relativity/Relativity/Who-Pays-for-the-Falling-Stone/
