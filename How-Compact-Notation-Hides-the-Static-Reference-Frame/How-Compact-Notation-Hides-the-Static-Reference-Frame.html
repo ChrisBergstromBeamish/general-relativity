@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How Compact Notation Hides the Static Reference Frame</title>
+<style>
+:root{--bg:#fbfaf6;--fg:#1d1d1b;--muted:#55595c;--link:#1f4f59;--line:#d5dfd8;--panel:#eef4f1}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#17181a;--fg:#e8e6e1;--muted:#a3a19b;--link:#8ab4e0;--line:#3a3f3d;--panel:#1f2523}}
+:root[data-theme="dark"]{--bg:#17181a;--fg:#e8e6e1;--muted:#a3a19b;--link:#8ab4e0;--line:#3a3f3d;--panel:#1f2523}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.65 Georgia,"Times New Roman",serif}
+main{max-width:820px;margin:0 auto;padding:36px 16px 80px}
+header h1{font-size:38px;line-height:1.15;margin:0 0 10px;font-weight:600}
+header p{color:var(--muted);margin:0 0 22px}
+a{color:var(--link)}
+h2{font-size:25px;margin:30px 0 10px;font-weight:600;border-top:1px solid var(--line);padding-top:18px}
+h3{font:600 18px system-ui,sans-serif;margin:22px 0 6px}
+p.lead{font-weight:600;margin-bottom:4px}
+.display{overflow-x:auto;margin:10px 0}
+mjx-container[display="true"]{overflow-x:auto;overflow-y:hidden}
+</style>
+<script>window.MathJax={tex:{inlineMath:[["\\(","\\)"]],displayMath:[["\\[","\\]"]],tags:"none"},chtml:{scale:0.95}};</script><script async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+<main>
+<header><h1>How Compact Notation Hides the Static Reference Frame</h1><p>Part of the section Relativity of <a href="https://chrisbergstrombeamish.github.io/general-relativity/">Physics: Particle Reconstruction and General Relativity</a>. Author: Chris Bergstrom.</p></header>
+<article>
+<p>In standard General Relativity, the reference frame hides inside the metric tensor (\(g_{\mu \nu }\)) and the coordinate differentials (\(dx^{\mu }\)). When you write a compact line element like \(ds^2 = g_{\mu\nu} dx^\mu dx^\nu\), the single symbol \(g_{\mu \nu }\) acts as a black box that absorbs all the physical adjustments to rulers and clocks. Specifically, \(g_{00}\) encodes the local clock rate relative to a distant clock, while \(g_{rr}\) encodes the stretching of radial rulers. Because these adjustments are baked into the geometry itself rather than written out as explicit scaling factors on mass, force, and energy, an analyst can easily manipulate the indices without realizing that the underlying coordinate grid (\(t, r\)) belongs to a single, fixed observer—usually someone sitting infinitely far away in flat space—rather than moving and rescaling with the particle or photon.</p>
+<p>You can see this static frame assumption exposed the moment you unpack the geodesic equation, \(\frac{d^2 x^\mu}{d\lambda^2} + \Gamma^\mu_{\alpha\beta} \frac{dx^\alpha}{d\lambda} \frac{dx^\beta}{d\lambda} = 0\), which governs how a photon or falling mass moves. Here, the connection coefficients (\(\Gamma _{\alpha \beta }^{\mu }\)) are constructed from partial derivatives of the metric with respect to those fixed background coordinates (\(\partial _{\sigma }g_{\mu \nu }\)). When standard derivations compute the energy of a photon using \(E = -p_\mu u^\mu\), a subtle mismatch occurs if \(p_{\mu }\) is transported along the path using the static background coordinates while \(u^{\mu }\) (the observer's four-velocity) is evaluated at two different locations without explicitly transforming the measurement apparatus between them. The notation treats the coordinate basis \(\partial _{\mu }\) as a single continuous scaffolding across the entire manifold, silently holding the distant observer's ruler and clock fixed even as the physical object moves deeper into the gravitational potential.</p>
+<p>To prove that this frame wasn't updated in a standard calculation, you only need to check the time-translation assumption built into the static metric components (\(\partial_t g_{\mu\nu} = 0\)). By setting the time derivatives of the metric to zero, the formalism locks the entire spacetime to a global coordinate clock \(t\) that never updates its tick rate along the trajectory; all local time dilation is pushed off onto the ratio \(\sqrt{-g_{00}(r)}\). If you instead enforce an active frame update at every step \(d\mathbf{r}\)—rescaling the local clock, ruler, and mass-energy equivalent so that the local speed of light and local conservation of \(\mathbf{F} \cdot d\mathbf{r}\) hold directly in the moving frame—those hidden metric factors come out of the black box. Doing so reveals that what compact tensor notation treats as a "non-conservation" or a purely geometric curvature effect is actually the uncompensated shift between a static coordinate grid and a continuously updating physical reference frame.</p>
+<p>To see how compact notation hides the static reference frame, let’s trace a photon climbing vertically out of a gravitational field from a lower radius \(r_{1}\) (say, near a star) to a higher radius \(r_{2}\) (far away in flat space).</p>
+<h2>1. The Compact Tensor Setup (Where the Frame Hides)</h2>
+<p>In standard General Relativity, the static spacetime around a spherical mass \(M\) is written using the Schwarzschild line element:</p>
+<div class="display">\[ds^{2}=-\left(1-\frac{2GM}{c^{2}r}\right)c^{2}dt^{2}+\left(1-\frac{2GM}{c^{2}r}\right)^{-1}dr^{2}+r^{2}d\Omega ^{2}\]</div>
+<p>To simplify the notation, define the redshift factor \(\alpha(r) = \sqrt{1 - \frac{2GM}{c^2 r}}\). Now the line element looks clean and compact:</p>
+<div class="display">\[ds^{2}=-\alpha (r)^{2}c^{2}dt^{2}+\alpha (r)^{-2}dr^{2}\]</div>
+<p>When a photon travels radially outward, it follows a null geodesic (\(ds^2 = 0\)), and because the metric has no \(t\)-dependence (\(\partial_t g_{\mu\nu} = 0\)), the geodesic equation gives a conserved coordinate momentum component:</p>
+<div class="display">\[p_{t}=g_{tt}\frac{dt}{d\lambda }=-\alpha (r)^{2}c^{2}\frac{dt}{d\lambda }=\text{constant}\equiv -E_{\infty }\]</div>
+<p>Notice what just happened: the notation hides the fact that \(t\) is the static clock of an observer at infinity. The coordinate energy \(E_{\infty }\) never changes along the flight, so in the compact coordinate ledger, it looks like nothing happened to the photon at all.</p>
+<h2>2. Unpacking the Local Rulers and Clocks</h2>
+<p>To find the energy actually measured by local observers at \(r_{1}\) and \(r_{2}\), you have to unpack the static frame by projecting \(p_{\mu }\) onto each local observer's four-velocity \(u^{\mu }\). For a stationary observer at radius \(r\), their proper time \(d\tau\) ticks slower than the global clock \(dt\):</p>
+<div class="display">\[d\tau =\alpha (r)\,dt\implies u^{t}=\frac{dt}{d\tau }=\frac{1}{\alpha (r)}\]</div>
+<p>Now compute the locally measured energy \(E_{\text{local}} = -p_t u^t\) at both radii:</p>
+<p>At the bottom (\(r_{1}\)): \(E_{1}=-(-E_{\infty })\left(\frac{1}{\alpha (r_{1})}\right)=\frac{E_{\infty }}{\alpha (r_{1})}\)</p>
+<p>At the top (\(r_2 \to \infty\), where \(\alpha(r_2) = 1\)): \(E_{2}=\frac{E_{\infty }}{1}=E_{\infty }\)</p>
+<p>Because \(\alpha(r_1) &lt; 1\), we get \(E_2 &lt; E_1\). In standard GR language, people often summarize this by saying "the photon lost energy climbing out of the gravitational well."</p>
+<h2>3. Proof That the Frame Wasn't Updated (The \(\mathbf{F} \cdot d\mathbf{r}\) Ledger)</h2>
+<p>If you take the statement \(E_2 &lt; E_1\) at face value without updating your clock and ruler, it looks like energy vanished from the universe. Let's prove that the discrepancy comes entirely from comparing two un-updated frames, using the \(\mathbf{F} \cdot d\mathbf{r}\) work-energy ledger:</p>
+<p>Assign the photon its mass-energy equivalent: At radius \(r\), a photon of local energy \(E\) has an effective inertial and gravitational mass \(m_{\text{eff}} = \frac{E}{c^2}\).</p>
+<p>Calculate the work done against gravity over a proper step \(dr_{\text{proper}}\): In the local frame, the gravitational force pulling downward is \(F = -m_{\text{eff}} g_{\text{local}}\). Over a proper radial step \(dr_{\text{proper}} = \alpha(r)^{-1} dr\), the change in energy is:</p>
+<div class="display">\[dE=\mathbf{F}\cdot d\mathbf{r}_{\text{proper}}=-\left(\frac{E}{c^{2}}\right)\left(\frac{GM}{r^{2}\alpha (r)}\right)\left(\frac{dr}{\alpha (r)}\right)=-E\frac{GM}{c^{2}r^{2}\alpha (r)^{2}}dr\]</div>
+<p>Integrate from \(r_{1}\) to \(r_2 \to \infty\): Separating variables (\(\frac{dE}{E}\)) and integrating using \(\alpha(r)^2 = 1 - \frac{2GM}{c^2 r}\) gives:</p>
+<div class="display">\[\ln \left(\frac{E_{2}}{E_{1}}\right)=\frac{1}{2}\ln \left(1-\frac{2GM}{c^{2}r_{1}}\right)=\ln \alpha (r_{1})\implies E_{2}=\alpha (r_{1})E_{1}\]</div>
+<p class="lead">What this proves:</p>
+<p>In the static coordinate frame (\(t, r\)), the photon's coordinate energy \(E_{\infty }\) was completely constant the entire time—the apparent drop from \(E_{1}\) to \(E_{2}\) was purely the ratio of the local clock rates \(\frac{d\tau_1}{dt} = \alpha(r_1)\).</p>
+<p>In the continuously updated proper frame, the drop from \(E_{1}\) to \(E_{2}\) is accounted for penny-for-penny by the \(\int \mathbf{F} \cdot d\mathbf{r}\) work done against the gravitational potential, which transferred \(\Delta E = E_1 - E_2\) into the gravitational binding energy of the system.</p>
+<p>Compact tensor notation (\(p_t = \text{const}\)) skipped the intermediate step of updating the ruler (\(dr_{\text{proper}} = \alpha^{-1} dr\)) and clock (\(d\tau = \alpha dt\)) along the path—making the conservation law look invisible until you unpack the metric back into explicit mechanics.</p>
+<p>Here is the direct \(\mathbf{F} \cdot d\mathbf{r}\) derivation for a massive particle falling from rest at infinity down to radius \(r\). Watch how every single relativistic metric term—time dilation, radial length contraction, and mass-energy rescaling—appears in plain sight as an explicit physical accounting entry rather than being hidden inside abstract tensor indices.</p>
+<h3>Step 1: Start With Work and Mass-Energy Equivalence</h3>
+<p>Imagine dropping a test mass \(m_{0}\) from rest at infinity (\(r \to \infty\)) toward a spherical mass \(M\). In classical mechanics, you integrate force over distance:</p>
+<div class="display">\[dK=\mathbf{F}\cdot d\mathbf{r}\]</div>
+<p>In relativity, kinetic energy has an inertial mass equivalent (\(E = mc^2\)). As the object falls, its total local energy \(E_{\text{local}} = \gamma m_0 c^2\) increases—which means its effective gravitational mass \(m_{\text{eff}} = \frac{E_{\text{local}}}{c^2}\) also increases as it gains speed.</p>
+<p>To conserve total energy as measured by a distant observer (who started the particle with total energy \(E_\infty = m_0 c^2\) at infinity), the falling object's local energy gain must be offset by the gravitational potential drop, keeping its coordinate energy constant:</p>
+<div class="display">\[E_{\text{total}}=\alpha (r)E_{\text{local}}=m_{0}c^{2}\]</div>
+<p>where \(\alpha(r)\) is the local clock/energy scaling factor we are about to uncover directly from \(\mathbf{F} \cdot d\mathbf{r}\).</p>
+<h3>Step 2: Set Up the Local Force Step</h3>
+<p>At any radius \(r\), take an infinitesimal inward step \(dr_{\text{proper}}\) measured by a local stationary ruler. The local gravitational force pulls inward with magnitude:</p>
+<div class="display">\[F_{\text{local}}=\frac{GMm_{\text{eff}}}{r^{2}\sqrt{1-\frac{2GM}{c^{2}r}}}=\frac{GM}{r^{2}\sqrt{1-\frac{2GM}{c^{2}r}}}\left(\frac{E_{\text{local}}}{c^{2}}\right)\]</div>
+<p>Notice that we cannot pretend \(m_{\text{eff}}\) stays fixed at \(m_{0}\)—it scales dynamically with \(E_{\text{local}}\) at every single step. Now apply the work-energy theorem in the local frame:</p>
+<div class="display">\[dE_{\text{local}}=-F_{\text{local}}\,dr_{\text{proper}}=-\frac{GME_{\text{local}}}{c^{2}r^{2}\sqrt{1-\frac{2GM}{c^{2}r}}}\,dr_{\text{proper}}\]</div>
+<p>(The minus sign appears because the force points inward while \(r\) decreases.)</p>
+<h3>Step 3: Expose the Ruler and Clock Rescaling</h3>
+<p>Look closely at the differential equation we just wrote:</p>
+<div class="display">\[\frac{dE_{\text{local}}}{E_{\text{local}}}=-\frac{GM}{c^{2}r^{2}\sqrt{1-\frac{2GM}{c^{2}r}}}\,dr_{\text{proper}}\]</div>
+<p>If you forgot to update your ruler (\(dr_{\text{proper}} = dr\)), integrating from \(\infty \) to \(r\) would give \(E_{\text{local}} = m_0 c^2 e^{1-\sqrt{1-2GM/c^2 r}}\), which does not match the stationary observers' clock rate \(\alpha(r)\)!</p>
+<p>Why? Because the local ruler itself is stretched by the gravitational field's energy density. To keep the local speed of light constant (\(c = \frac{dr_{\text{proper}}}{d\tau}\)) and balance the spatial curvature created by the field's binding energy, the proper ruler step must stretch relative to the distant coordinate grid by:</p>
+<div class="display">\[dr_{\text{proper}}=\frac{dr}{\sqrt{1-\frac{2GM}{c^{2}r}}}\]</div>
+<p>Substitute this updated ruler into our \(\mathbf{F} \cdot d\mathbf{r}\) equation:</p>
+<div class="display">\[\frac{dE_{\text{local}}}{E_{\text{local}}}=-\frac{GM}{c^{2}r^{2}\left(1-\frac{2GM}{c^{2}r}\right)}\,dr\]</div>
+<h3>Step 4: Integrate to Recover the Exact Relativistic Factors</h3>
+<p>Now integrate both sides from infinity (\(E_{\text{local}} = m_0 c^2\)) down to radius \(r\):</p>
+<div class="display">\[\int _{m_{0}c^{2}}^{E_{\text{local}}}\frac{dE^{\prime }}{E^{\prime }}=-\int _{\infty }^{r}\frac{GM}{c^{2}r^{\prime 2}\left(1-\frac{2GM}{c^{2}r^{\prime }}\right)}\,dr^{\prime }\]</div>
+<p>Using the substitution \(u = 1 - \frac{2GM}{c^2 r'}\) (so \(du = \frac{2GM}{c^2 r'^2} dr'\)), the right-hand side integrates cleanly:</p>
+<div class="display">\[\ln \left(\frac{E_{\text{local}}}{m_{0}c^{2}}\right)=-\frac{1}{2}\ln \left(1-\frac{2GM}{c^{2}r}\right)=\ln \left(\frac{1}{\sqrt{1-\frac{2GM}{c^{2}r}}}\right)\]</div>
+<p>Exponentiating both sides gives the exact local energy of the falling mass:</p>
+<div class="display">\[E_{\text{local}}=\frac{m_{0}c^{2}}{\sqrt{1-\frac{2GM}{c^{2}r}}}\]</div>
+<h3>Why Everything Is Visible Here</h3>
+<p>In the \(\mathbf{F} \cdot d\mathbf{r}\) approach, you cannot accidentally use a stale frame of reference without breaking the integral right in front of your eyes. Every term—mass-energy scaling, ruler stretching, and clock dilation—has to be updated explicitly at each step just to make the work-energy ledger close.</p>
+</article>
+</main>
+</body>
+</html>
