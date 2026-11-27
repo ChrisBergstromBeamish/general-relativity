@@ -1,0 +1,568 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Magnetism: what turns when a spinning charge passes moving charges?</title>
+<style>
+:root{--bg:#fbfaf6;--fg:#1d1d1b;--muted:#55595c;--link:#1f4f59;--line:#d5dfd8;--panel:#eef4f1;--code:#f3f1ea}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#17181a;--fg:#e8e6e1;--muted:#a3a19b;--link:#8ab4e0;--line:#3a3f3d;--panel:#1f2523;--code:#202224}}
+:root[data-theme="dark"]{--bg:#17181a;--fg:#e8e6e1;--muted:#a3a19b;--link:#8ab4e0;--line:#3a3f3d;--panel:#1f2523;--code:#202224}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.65 Georgia,"Times New Roman",serif}
+main{max-width:880px;margin:0 auto;padding:36px 16px 80px}
+header h1{font-size:40px;line-height:1.15;margin:0 0 10px;font-weight:600}
+header h1.long{font-size:30px;line-height:1.2}
+header p.series{color:var(--muted);margin:0 0 18px}
+.abstract{border-left:3px solid var(--line);padding:2px 14px;margin:0 0 18px}
+.abstract p{color:var(--fg);margin:8px 0}
+nav{display:flex;flex-wrap:wrap;gap:6px 14px;font:14px system-ui,sans-serif;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:10px 0;margin:0 0 26px}
+a{color:var(--link)}
+section{border-bottom:1px solid var(--line);padding:6px 0 22px}
+h2{font-size:27px;margin:24px 0 10px;font-weight:600}
+h3{font:600 19px system-ui,sans-serif;margin:20px 0 6px}
+h4,h5,h6{font:600 16px system-ui,sans-serif;margin:16px 0 4px}
+.display{overflow-x:auto;margin:10px 0}
+li .display{margin:8px 0}
+li p{margin:6px 0}
+.tablewrap{overflow-x:auto}
+.mdtab{border-collapse:collapse;font-size:14.5px;margin:10px 0;min-width:520px}
+.mdtab td,.mdtab th{border:1px solid var(--line);padding:5px 9px;text-align:left;vertical-align:top}
+.mdtab th{background:var(--panel)}
+.mdtab .r{text-align:right}
+.mdtab .c{text-align:center}
+details{background:var(--panel);border-radius:6px;padding:8px 14px;margin:12px 0}
+summary{cursor:pointer;font:600 15px system-ui,sans-serif}
+blockquote{border-left:3px solid var(--line);margin:10px 0;padding:2px 14px;color:var(--muted)}
+code{font:0.88em ui-monospace,Consolas,monospace}
+pre.code{background:var(--code);border:1px solid var(--line);border-radius:6px;padding:12px 14px;overflow-x:auto;font:13px/1.45 ui-monospace,Consolas,monospace}
+pre.code code{font:inherit}
+footer{color:var(--muted);font:14px system-ui,sans-serif;padding:18px 0 0}
+mjx-container[display="true"]{overflow-x:auto;overflow-y:hidden}
+mjx-container mjx-assistive-mml{width:1px!important;height:1px!important}
+</style>
+<script>function scrollWide(){document.querySelectorAll('mjx-container:not([display="true"])').forEach(function(c){var s=c.style;s.display=s.maxWidth=s.overflowX=s.overflowY=s.verticalAlign="";var p=c.parentElement;while(p&&getComputedStyle(p).display.indexOf("inline")===0)p=p.parentElement;if(p&&c.getBoundingClientRect().width>p.clientWidth){s.display="inline-block";s.maxWidth="100%";s.overflowX="auto";s.overflowY="hidden";s.verticalAlign="middle";}});}
+window.MathJax={tex:{inlineMath:[["\\(","\\)"]],displayMath:[["\\[","\\]"]],tags:"none"},options:{processHtmlClass:"mathjax"},chtml:{scale:0.95},startup:{pageReady:function(){return MathJax.startup.defaultPageReady().then(function(){scrollWide();window.addEventListener("resize",scrollWide);});}}};</script><script async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+<main>
+<header><h1>Magnetism: what turns when a spinning charge passes moving charges?</h1><p class="series">Part of the series <a href="../">Attributes</a></p><div class="abstract mathjax"><p><strong>Abstract.</strong> The magnetic observations considered here require no internal space of their own. A charged centre bends, a prepared spin turns, and a suspended magnet transfers angular momentum to its support. Each measurement distinguishes responses of quantities already present in the construction. As built, no construction exerts a force on a centre through its charge, even from a source at rest, and the frames’ own carriage of the rest axes turns the spin by \(1-\gamma\) per turn of the velocity, zero at low speed. On one spin doublet, rotation fixes the direction of a weak magnetic moment and leaves one signed coefficient. The electron trap measures that coefficient. The constructions do not give its value or the factor two. The charge construction supplies a separate result for neutral matter. One whole wave with exactly zero total charge can have a positive, negative or zero reading when its charge density is sampled unevenly. In iron, joint rotation gives an angular-momentum balance. If the rod receives the entire axial transfer and all changing moments have one spin slope, its mechanical ratio equals the one-packet ratio exactly.</p></div></header>
+<nav aria-label="Contents" class="mathjax"><a href="#s-1">1. Scope</a><a href="#s-2">2. Method</a><a href="#s-3">3. Premises</a><a href="#s-4">4. Dependencies</a><a href="#s-5">5. Appendices for the premises</a><a href="#s-6">6. Mathematical traceability</a><a href="#s-7">7. Definition of completeness and completion tests</a><a href="#s-8">8. Summary of the first seven sections</a><a href="#s-9">9. What turns a charged centre?</a><a href="#s-10">10. How fast does the spin turn?</a><a href="#s-11">11. The departure from two and the electric-dipole test</a><a href="#s-12">12. One neutral wave, its reflection, and the proton</a><a href="#s-13">13. Iron, paramagnetism and diamagnetism</a><a href="#s-14">14. Does this attribute need an internal space of its own?</a><a href="#s-15">15. Verification</a><a href="#s-16">16. What is not yet understood</a><a href="#s-17">17. Observation register</a></nav>
+<section class="cc mathjax" id="s-1"><h2>1. Scope</h2><p><strong>HINT · Chris, 27 November 2026.</strong> “We should check if this is enough. Are there any other attributes of larger particles or matter such as magnetism that need a fundamental attribute?”</p><a id="observations"></a><h3>Observations</h3><p><strong>OBSERVED</strong> identifies the operation and the instrument reading reported by the experimenters. <strong>IMPORT</strong> identifies a reduction, calibration or conventional unit. A <strong>constraint</strong> helps choose the geometry by requiring it to distinguish two preparations. An <strong>anchor</strong> fixes a numerical parameter of an identified construction. The table names that parameter wherever an anchor is available.</p><div class="tablewrap"><table class="mdtab"><tr><th>Experiment</th><th>OBSERVED instrument reading</th><th>Geometric use and numerical provenance</th></tr><tr><td><strong>MG-D01 · Gerlach and Stern, 1922</strong></td><td>A collimated beam of neutral silver atoms deposited silver on a plate. With the magnet excited, the deposit opened into two branches across the gradient.</td><td><strong>Constraint.</strong> An atomic preparation and its analyzer must account for two resolved outputs. Assigning an effective spin doublet interprets the positions. Converting the separation into a moment requires the gradient, speed and flight geometry. <a href="https://doi.org/10.1007/BF01326983">Primary paper</a></td></tr><tr><td><strong>MG-D02 · Thomson, 1897</strong></td><td>Cathode rays made a spot whose displacement changed with the electric plates and magnetic coils. The spot and apparatus geometry registered bending.</td><td><strong>Constraint</strong> on a charge-dependent centre response. In a separate reference-beam calibration with independently known charge, inertia and speed, the measured curvature is an <strong>anchor</strong> for the setting \(B\) in MG-P7. Inferring the charge-to-inertia ratio from the same bend uses a response model. <a href="https://doi.org/10.1080/14786449708621070">Primary paper</a></td></tr><tr><td><strong>MG-D03 · Fan et al., 2023</strong></td><td>For one trapped electron, an axial-frequency shift indicated a transition as the cyclotron and anomaly drives were scanned. Both resonance settings were frequencies.</td><td><strong>Constraint</strong> on the spin response. It becomes an <strong>anchor</strong> for the low-speed coefficient \(k_e\) once a construction contains the response that P8 tests and the two resonance readings are connected to the centre and spin responses. The reported free-particle reduction, including trap, relativistic and cavity corrections, gives \(r_e\simeq1.00115965\). No parameter of the isolated spin geometry is fixed by assigning it that number. <a href="https://doi.org/10.1103/PhysRevLett.130.071801">Primary paper</a></td></tr><tr><td><strong>MG-D04 · Muon \(g-2\) Collaboration, 2021</strong></td><td>Calorimeters registered decay-positron energies and arrival times after injection into a storage ring. The counts oscillated. NMR probes measured a proton reference frequency around the ring.</td><td><strong>Constraint.</strong> A moving-muon construction must reproduce the count oscillation relative to the apparatus reference. The reported \(g_\mu/2\simeq1.00116592\) uses beam corrections, magnetic calibration and external ratios. The muon-to-electron inertia ratio from muonium spectroscopy involves bound-state quantum electrodynamics. The reduced value is comparison-only. <a href="https://doi.org/10.1103/PhysRevLett.126.141801">Primary paper</a></td></tr><tr><td><strong>MG-D05 · Mooser et al., 2014</strong></td><td>For a trapped proton, the investigators measured motional frequencies and the spin-flip resonance. They detected spin changes through the axial frequency.</td><td><strong>Constraint</strong> on the signed slope of the whole proton. The reported reduction is \(\mu_p/\mu_N\simeq+2.79285\). The nuclear magneton uses the proton’s inertia. A measured absolute slope can anchor a sampling strength only after the proton wave and normalized sampling profile have been identified. <a href="https://doi.org/10.1038/nature13388">Primary paper</a></td></tr><tr><td><strong>MG-D06 · Alvarez and Bloch, 1940 · Greene et al., 1979 · Baumann et al., 1988</strong></td><td>A neutron beam showed a resonance in transmitted counts. Precision work compared neutron and proton-reference precession in a common setting. A separate experiment reversed an electric setting and found no significant neutron-beam displacement.</td><td><strong>Constraints.</strong> The neutron has a measurable magnetic response of opposite sense to the proton’s and a finite charge bound about zero. The reduced moment is about \(-1.91304\,\mu_N\). The free neutron-to-proton moment ratio used below is a tabulated comparison. The measured reference frequency and the free-proton reduction are distinguished. <a href="https://doi.org/10.1103/PhysRev.57.111">Neutron resonance</a> · <a href="https://doi.org/10.1103/PhysRevD.20.2139">Precession comparison</a> · <a href="https://doi.org/10.1103/PhysRevD.37.3107">Charge test</a> · <a href="https://physics.nist.gov/cuu/Constants/">Recommended constants</a></td></tr><tr><td><strong>MG-D07 · Einstein and de Haas, 1915 · Barnett, 1915 · Beck, 1919</strong></td><td>Reversing the magnetization of suspended iron produced torsional motion. In the converse experiment Barnett rotated material and measured the resulting magnetization.</td><td><strong>Constraints</strong> on angular-momentum transfer in both directions. The 1915 twist is the direct observation. Its original reduction favoured the orbital scale, near one in units \(e/(2M_e)\). Later mechanical work gives the near-two scale. Quantitative comparison requires the suspension calibration, change of magnetization and external torque. Einstein and de Haas, <em>Experimental proof of the existence of Ampère’s molecular currents</em>, KNAW Proceedings 18 (1915). Beck, <em>Annalen der Physik</em> 365 (1919), 109. <a href="https://doi.org/10.1103/PhysRev.6.239">Barnett, <em>Magnetization by Rotation</em></a></td></tr><tr><td><strong>MG-D08 · Roussy et al., 2023 · Abel et al., 2020</strong></td><td>The molecular-ion experiment compared spin-precession frequencies under reversals. The neutron experiment compared precession under electric reversal with a comagnetometer. Neither found a significant permanent-dipole signal.</td><td><strong>Constraints</strong> on a spin-linked electric slope. Reported 90% bounds are \(\lvert d_e\rvert&lt;4.1\times10^{-30}\,e\,\mathrm{cm}\) and \(\lvert d_n\rvert&lt;1.8\times10^{-26}\,e\,\mathrm{cm}\). The electron conversion uses a computed electric setting inside the molecule. These finite limits are reductions. <a href="https://doi.org/10.1126/science.adg4084">Electron</a> · <a href="https://doi.org/10.1103/PhysRevLett.124.081803">Neutron</a></td></tr><tr><td><strong>MG-D09 · Faraday, 1845–46 · Curie, 1895</strong></td><td>Different specimens moved toward or away from the stronger setting between magnet poles. Curie measured material response as excitation and temperature varied.</td><td><strong>Constraints</strong> on the sign and temperature dependence of the specimen response. A numerical susceptibility requires specified composition, shape, temperature, setting calibration and magnetization reduction. Faraday, <em>Experimental Researches in Electricity</em>, twentieth series. Curie, <em>Propriétés magnétiques des corps à diverses températures</em>.</td></tr><tr><td><strong>MG-D10 · MoEDAL, 2019</strong></td><td>Exposed trapping material was passed through a superconducting magnetometer. No reproducible persistent-current signal attributable to trapped magnetic charge was found in the searched sample.</td><td><strong>Constraint</strong>, finite in sample and sensitivity. Production-model exclusions and exclusions by rest energy are <strong>IMPORT</strong>. A confirmed magnetic charge would require a signed source reading beyond the smooth global curl of MG-P7. This is the search in the table that directly tests that possibility. <a href="https://doi.org/10.1103/PhysRevLett.123.021802">Primary paper</a></td></tr></table></div><p><strong>HINT · Chris.</strong> “Also a "field" isn't a thing just like mass isn't a thing. Both are a collection of attributes. So, it can't have energy or a mass equivent. If you want to talk about a field, talk about specific attributes, but not the field.”</p><p>Here \(\mathbf B\) names an oriented, calibrated response of moving test charge to a preparation of moving source charges. The laboratory axes and a current-reversal operation establish its direction and sign. The source, receiver, spin analyzer and mechanical support are physical participants. Energies below belong to specified waves, bodies or their interaction.</p><h3>Scope obligations</h3><div class="tablewrap"><table class="mdtab"><tr><th>Obligation</th><th>Decisive calculation</th></tr><tr><td><a id="mg-o1"></a><strong>MG-O1 · Centre motion</strong></td><td>Vary the charge response with respect to external position and velocity. Determine what a uniformly moving source contributes if the comparison angle is shared between frames.</td></tr><tr><td><a id="mg-o2"></a><strong>MG-O2 · Spin transport and moment</strong></td><td>Hold the worldline fixed, compare rest-axis transports, and determine the dimension of the rotation-covariant dipole response.</td></tr><tr><td><a id="mg-o3"></a><strong>MG-O3 · Small excess and electric null</strong></td><td>Compare spin and velocity turns on one clock. Take the spin difference before differentiating an electric response.</td></tr><tr><td><a id="mg-o4"></a><strong>MG-O4 · One whole hadron</strong></td><td>Evaluate total and sampled circulation on positive, neutral, reflected and linearly polarized waves. Give the two equations for the two measured moments.</td></tr><tr><td><a id="mg-o5"></a><strong>MG-O5 · Matter</strong></td><td>Account for axial angular impulse and differentiate a material response including both population changes and changes of an occupied state.</td></tr><tr><td><a id="mg-o6"></a><strong>MG-O6 · Necessity</strong></td><td>Exhibit the responses on existing states, test whether a magnetic direction can vary independently on the doublet, and identify an observation that would exceed the construction.</td></tr></table></div><h3>Domain and assumptions</h3><p>The single-packet calculation is local, weak in source excitation and linear in the dipole setting. The exact speed-dependent comparisons concern planar transverse bends in a flat laboratory. The trap coefficient is the low-speed limit. Silver spot spacing, iron domains and the conversion of storage-ring counts to a free-muon moment require their own apparatus or material constructions. Maxwell’s equations, the Dirac equation, spin-statistics and a constituent model of the proton supply no step of the magnetic derivation.</p></section>
+<section class="cc mathjax" id="s-2"><h2>2. Method</h2><div class="tablewrap"><table class="mdtab"><tr><th>Preparation and operation</th><th>Clock, reference and reading</th></tr><tr><td>Pass a packet with given charge and inertia through a steady source-current preparation. Reverse the current or the packet velocity.</td><td>Measure laboratory positions on one clock \(t\). Compare the change of transverse momentum with the velocity. An independently characterized reference beam can calibrate the setting. <a href="#mg-o1">MG-O1</a></td></tr><tr><td>Prepare transverse spin on the same packet. Refer successive readings to the same laboratory analyzer.</td><td>Compare instantaneous comoving axes using proper time \(\tau\), then express the spin and velocity angles on the laboratory clock. In a separate gradient experiment, register the two axial branches. <a href="#mg-o2">MG-O2</a> · <a href="#mg-o3">MG-O3</a></td></tr><tr><td>Prepare one wave on the charge interval. Reverse its value-plane circulation while holding the physical reference orientation fixed.</td><td>Keep the endpoints, internal wave clock and sampling profile fixed. Compare total charge and signed Fourier readings. The internal coordinate is measured along the charge interval. <a href="#mg-o4">MG-O4</a></td></tr><tr><td>Reverse the magnetization of a suspended specimen. Separately, vary the excitation of a specimen held at fixed temperature.</td><td>In the first experiment account for angular impulse about the suspension axis. In the second compare moment per volume at nearby settings, holding composition and shape fixed. <a href="#mg-o5">MG-O5</a></td></tr></table></div><p>The test of necessity has two parts. First construct the measured distinctions on the existing variables. Then ask whether the apparatus measures any additional state at fixed values of those variables and fixed source preparation. A coefficient assigned to a species can reproduce a number. Its assignment alone supplies no evidence for an independent degree of freedom. <a href="#mg-o6">MG-O6</a></p></section>
+<section class="cc mathjax" id="s-3"><h2>3. Premises</h2><p><strong>DERIVED</strong> labels a mathematical implication. Every physical <strong>UNTRACED</strong> or <strong>IMPORT</strong> antecedent remains attached to its application. MG-P7–P11 specify hypotheses whose consequences can be tested against observations. Their physical origin is part of the question.</p><div class="tablewrap"><table class="mdtab"><tr><th>ID</th><th>Statement, provenance, domain and use</th><th>Foundation</th></tr><tr><td><a id="mg-p1"></a><strong>MG-P1</strong></td><td><strong>UNTRACED.</strong> Electric charge P1–P6 specify a fixed interval, oriented real value plane, quadratic wave action, fixed ends, finite-energy preparations and \(q=\kappa_QJ_Q\). Used for charge, centre normalization and the hadron examples.</td><td><a href="#mg-a1">A1</a></td></tr><tr><td><a id="mg-p2"></a><strong>MG-P2</strong></td><td><strong>UNTRACED.</strong> Charge coupling specifies a periodic response wave, registered source profile, common interaction clock and \(H_{\rm int}=\Omega J_Q\). Its receiver variable \(z\) is a mode amplitude. Used for the centre obstruction, neutral drive and electric slope.</td><td><a href="#mg-a2">A2</a></td></tr><tr><td><a id="mg-p3"></a><strong>MG-P3</strong></td><td><strong>IMPORT.</strong> The gravity paper’s special relativity at one place. Instantaneous orthonormal frames use signature \((-+++)\), invariant local speed \(C\) and proper time. Uniform-frame comparisons across the apparatus use a flat laboratory.</td><td><a href="#mg-a3">A3</a></td></tr><tr><td><a id="mg-p4"></a><strong>MG-P4</strong></td><td><strong>UNTRACED.</strong> Inertia IP1–IP3 connect a nonempty inertia wave’s clock to the timelike centre. Its proper energy is \(E_*&gt;0\). Used for centre momentum and magnetic units.</td><td><a href="#mg-a4">A4</a></td></tr><tr><td><a id="mg-p5"></a><strong>MG-P5</strong></td><td><strong>UNTRACED.</strong> Spin M1 and A1–A4 specify physical rotations, a round internal three-sphere, a unit right-character sector and its positive-action lowest doublet. T1 compares spin in specified axes. V1 connects axial channels to calibrated analyzer outputs. V2 enters if count probabilities are used.</td><td><a href="#mg-a5">A5</a></td></tr><tr><td><a id="mg-p6"></a><strong>MG-P6</strong></td><td><strong>UNTRACED.</strong> Spin A5 specifies an energy overlap with one rotor. Used for the common shift, branch forces and the closed packet–rotor balance.</td><td><a href="#mg-a6">A6</a></td></tr><tr><td><a id="mg-p7"></a><strong>MG-P7</strong></td><td><strong>UNTRACED.</strong> The external-path comparison being tested is \(A=\Omega\,dt-\mathbf a\cdot d\mathbf X\). The uniform-source calculation additionally requires a static temporal comparison in the source rest frame and a common angle for the two frames. Superposition is a separate hypothesis where several sources are used.</td><td><a href="#mg-a7">A7</a></td></tr><tr><td><a id="mg-p8"></a><strong>MG-P8</strong></td><td><strong>UNTRACED.</strong> The weak energy of an isolated isotropic doublet is linear in one magnetic setting and Hermitian bilinear in its amplitudes. Its canonical bracket evolves the spin. The finite-speed calculation separately tests a rest rotation proportional to the projected centre generator, with coefficient \(k\).</td><td><a href="#mg-a8">A8</a></td></tr><tr><td><a id="mg-p9"></a><strong>MG-P9</strong></td><td><strong>UNTRACED.</strong> The hadron response being tested physically samples a whole wave’s circulation density with a common profile, orientation and strength. Its time-averaged use requires the detector to read that mean. The diagnostic integral itself is defined on MG-P1.</td><td><a href="#mg-a9">A9</a></td></tr><tr><td><a id="mg-p10"></a><strong>MG-P10</strong></td><td><strong>UNTRACED.</strong> For a spin-only reversal in suspended matter, the mechanical closure requires that the corrected axial spin transfer goes to the rod and that one spin slope accounts for all counted moment changes.</td><td><a href="#mg-a10">A10</a></td></tr><tr><td><a id="mg-p11"></a><strong>MG-P11</strong></td><td><strong>UNTRACED.</strong> A material response depends on the possible joint preparations, their populations at the stated temperature and their setting-dependent energies. Section 13 uses explicit local examples of those functions.</td><td><a href="#mg-a11">A11</a></td></tr><tr><td><a id="mg-p12"></a><strong>MG-P12</strong></td><td><strong>IMPORT</strong> where used for electrons. Antisymmetry under exchange of identical complete one-particle states restricts joint occupations. It enters only the material discussion.</td><td><a href="#mg-a12">A12</a></td></tr><tr><td><a id="mg-p13"></a><strong>MG-P13</strong></td><td><strong>OBSERVED.</strong> The apparatus readings MG-D01–D10 identify the distinctions the constructions must carry.</td><td><a href="#mg-a13">A13</a></td></tr><tr><td><a id="mg-p14"></a><strong>MG-P14</strong></td><td><strong>IMPORT.</strong> Experimental reductions, conventional magnetons, SI action calibration and the reported numerical comparisons. No value containing a QED reduction is used as a geometric anchor.</td><td><a href="#mg-a14">A14</a></td></tr></table></div></section>
+<section class="cc mathjax" id="s-4"><h2>4. Dependencies</h2><div class="tablewrap"><table class="mdtab"><tr><th>Construction</th><th>Result used and conditions of use</th></tr><tr><td><strong>Electric charge</strong>, Q-03–Q-07, §13</td><td>The action gives both the integral and the density of charge. “This flux runs along the internal interval.” The finite-energy domain has fixed ends. The construction explicitly leaves external localization and the relation of its internal clock to another observer’s clock outside its result. <a href="https://chrisbergstrombeamish.github.io/general-relativity/Internal-Spaces/Electric-Charge/Electric-Charge.html#charge-section-10">Charge balance</a> · <a href="https://chrisbergstrombeamish.github.io/general-relativity/Internal-Spaces/Electric-Charge/Electric-Charge.html#charge-section-13">Exports</a></td></tr><tr><td><strong>Colour</strong>, CC-A04, §§13–14</td><td>Its abstract states, “Their energy difference gives a signed source reading.” CC-A04 gives \(E_+-E_-=\nu J_C\). Its two free colour energies are independent of external separation. Section 13 also constructs a three-line positive wave on the <em>electric</em> interval. Only that electric solution enters the magnetic example. <a href="https://chrisbergstrombeamish.github.io/general-relativity/Internal-Spaces/Color/Color.html">Abstract</a> · <a href="https://chrisbergstrombeamish.github.io/general-relativity/Internal-Spaces/Color/Color.html#a04">CC-A04</a> · <a href="https://chrisbergstrombeamish.github.io/general-relativity/Internal-Spaces/Color/Color.html#cc-13">Electric decomposition</a></td></tr><tr><td><strong>Flavour</strong></td><td>“The proposed particle-type identifier is the occupied standing-mode sector of a nonzero pure-mode preparation.” Mixtures retain their modal energy shares. These readings can distinguish preparations for which different slopes are measured. They give no conversion from magnetic setting to spin rate. <a href="https://chrisbergstrombeamish.github.io/general-relativity/Internal-Spaces/Flavor/Flavor.html#scope">Flavour scope</a></td></tr><tr><td><strong>Spin</strong>, M1, A5, T1</td><td>At fixed \(Q=s_0\), the two axial eigenchannels carry \(S_{\mathbf n}=\pm s_0/2\). The kinetic term gives \(\partial L/\partial\boldsymbol\omega_{\rm body}=\mathbf S\). For a moving particle “the specified comoving observer and transport of its rest axes are also required”. The overlap’s scalar energy contributes to its translational force. <a href="https://chrisbergstrombeamish.github.io/general-relativity/Internal-Spaces/Spin-from-Internal-Geometry/Spin-from-Internal-Geometry.html#spin-eq-rotations-06">Rotation charge and channels</a> · <a href="https://chrisbergstrombeamish.github.io/general-relativity/Internal-Spaces/Spin-from-Internal-Geometry/Spin-from-Internal-Geometry.html#spin-eq-interaction-12">Force</a> · <a href="https://chrisbergstrombeamish.github.io/general-relativity/Internal-Spaces/Spin-from-Internal-Geometry/Spin-from-Internal-Geometry.html#spin-eq-curvature-05">Transport</a></td></tr><tr><td><strong>Inertia</strong>, IP3</td><td>“For any prescribed center force with no additional internal drive, center variation gives” \(\dot{\mathbf P}=\mathbf F\). The nonempty wave gives \(M_I=E_*/C^2\). The demonstration with a spring supplies a response to a specified force. <a href="https://chrisbergstrombeamish.github.io/general-relativity/Internal-Spaces/Inertia/Inertia.html#ip3">Inertia construction</a></td></tr><tr><td><strong>Gravitational coupling</strong>, GP2</td><td>“Its deformation is determined by an explicit comparison between its reference tangent and the external tidal tensor.” The local magnetic experiment has no applied tidal setting. <a href="https://chrisbergstrombeamish.github.io/general-relativity/Internal-Spaces/Gravitational-Coupling/Gravitational-Coupling.html#gp2">Tidal comparison</a></td></tr><tr><td><strong>Charge coupling</strong>, EQ-G4–G5</td><td>“A spatial force requires an explicit dependence on external position; no such dependence is supplied by the internal overlap alone.” Its comparison lives on \((z,t)\), and its reciprocal force is \(F_z=-J_Q\partial_z\Omega\). Its energy contains no spin variable. <a href="https://chrisbergstrombeamish.github.io/general-relativity/Internal-Spaces/Charge-Coupling/Charge-Coupling.html#eqscope">Scope</a> · <a href="https://chrisbergstrombeamish.github.io/general-relativity/Internal-Spaces/Charge-Coupling/Charge-Coupling.html#eqg4">Action</a> · <a href="https://chrisbergstrombeamish.github.io/general-relativity/Internal-Spaces/Charge-Coupling/Charge-Coupling.html#eqg5">Comparison connection</a></td></tr></table></div><p>Geometry distinguishes an external event, an internal argument and a comparison between readings. The force-carrying excitation supplies a specified overlap and a collinear experiment. Identifying it with a moving-charge source would require a further construction. The published Granularity and Collapse examples treat complete packets and particular outcomes. Neither calculates many-electron occupations or a hadron magnetic sampler. The baryon document labels three constituent quarks for an ordinary baryon <strong>IMPORT</strong>. <a href="https://chrisbergstrombeamish.github.io/general-relativity/Bridge/Geometry/#GEO-P16">Geometry</a> · <a href="https://chrisbergstrombeamish.github.io/general-relativity/Bridge/Force-Carrying-Excitation/">Force-carrying excitation</a> · <a href="https://chrisbergstrombeamish.github.io/general-relativity/Bridge/Granularity/">Granularity</a> · <a href="https://chrisbergstrombeamish.github.io/general-relativity/Bridge/Collapse/">Collapse</a> · <a href="https://chrisbergstrombeamish.github.io/general-relativity/Bridge/Granularity-Collapse-Spin-and-Curvature/">Spin, granularity and collapse</a> · <a href="https://chrisbergstrombeamish.github.io/general-relativity/Bridge/Baryon-Number-Constraints/#BNC-E14">Baryon constraints</a></p></section>
+<section class="cc mathjax" id="s-5"><h2>5. Appendices for the premises</h2><p><a id="mg-a1"></a><strong>MG-A1 · Charge.</strong> On \(0\leq\xi\leq L\), write \(\epsilon(u,w)=u_1w_2-u_2w_1\). The action density is \(\alpha(\lvert u_\tau\rvert^2-v_Q^2\lvert u_\xi\rvert^2)/2\). Variation with fixed ends gives \(u_{\tau\tau}=v_Q^2u_{\xi\xi}\). Set \(\rho_J=\alpha\epsilon(u,u_\tau)\) and \(j_J=-\alpha v_Q^2\epsilon(u,u_\xi)\). Then</p><div class="display">\[
+\partial_\tau\rho_J
+=\alpha v_Q^2\epsilon(u,u_{\xi\xi})
+=\alpha v_Q^2\partial_\xi\epsilon(u,u_\xi)
+=-\partial_\xi j_J.
+\]</div><p>At both ends \(u=0\), so \(dJ_Q/d\tau=-[j_J]_0^L=0\). These are <strong>DERIVED</strong> on P1. Identifying \(q=\kappa_QJ_Q\) is the physical input. \(J_Q\) has units of action and \(\kappa_Q\) units of charge per action. <a href="#mg-p1">P1</a> · <a href="#mg-o4">O4</a></p><p><a id="mg-a2"></a><strong>MG-A2 · Charge response.</strong> In EQ-G4,</p><div class="display">\[
+\Omega=g_Q\kappa_Qq_s\lambda C_{\rm ov}\sin(\eta z).
+\]</div><p>Here \(q_s\) is the signed source charge, \(\lambda\) its envelope, \(C_{\rm ov}\) the registered profile overlap and \(g_Q\) its calibration. With \(R(u_1,u_2)=(-u_2,u_1)\), the comparison derivative is \(D_tu=\dot u-\Omega Ru\). Differentiation of the kinetic term gives</p><div class="display">\[
+\partial_\Omega L_Q=-\alpha\int D_tu\cdot Ru\,d\xi=-J_Q,\qquad
+\partial_zL_Q=-J_Q\partial_z\Omega.
+\]</div><p>In comparison coordinates the circulation uses \(D_tu\). If \(\dot\Phi=\Omega\), then \(D_t[\operatorname{Rot}(\Phi)u^{(0)}]=\operatorname{Rot}(\Phi)\dot u^{(0)}\). A common rotation of the wave and intrinsic momentum preserves their oriented area. <a href="#mg-p2">P2</a> · <a href="#mg-o1">O1</a></p><p><a id="mg-a3"></a><strong>MG-A3 · Local frames.</strong> The gravity paper says that a change between frames in motion at one place “leaves the sideways rulers alone”. Its law list labels special relativity at one place <strong>IMPORT</strong>. With \(f=\sqrt{1-\lvert\mathbf V\rvert^2/C^2}\), its timelike normalization gives \(d\tau=f\,dt\) and \(\gamma=1/f\). Rotating an instantaneous orthonormal rest triad preserves those clock and ruler comparisons. Section 10 calculates the carriage obtained by composing boosts without a spatial rotation in the instantaneous rest frame. <a href="#mg-p3">P3</a> · <a href="#mg-o2">O2</a> · <a href="https://chrisbergstrombeamish.github.io/general-relativity/Reconciling-the-Schwarzschild-Solution-with-Conservation-of-Mass-Energy/">Gravity paper, local comparison and law list</a></p><p><a id="mg-a4"></a><strong>MG-A4 · Inertia.</strong> The centre-clock action is \(L=fL_*(u,u_t/f)\). Holding \(u,u_t\) fixed gives \(\partial_f L=L_*-p_*u_\tau=-E_*\), with the contraction integrated over the internal circle. Since \(\partial_{V_i}f=-V_i/(C^2f)\),</p><div class="display">\[
+P_i=\frac{E_*V_i}{C^2f},\qquad M_I=\frac{E_*}{C^2},\qquad
+\mathbf P=\gamma M_I\mathbf V .
+\]</div><p>This is the kinetic momentum whose change the centre experiment measures. <a href="#mg-p4">P4</a> · <a href="#mg-o1">O1</a></p><p><a id="mg-a5"></a><strong>MG-A5 · Spin.</strong> On the selected round \(S^3\) with normalized Haar measure, the lowest unit-character sector has two amplitudes \(c\), with \(c^\dagger c=1\). A physical turn acts by \(\Phi_c(g^{-1}U)=\Phi_{gc}(U)\), where \(g=\exp(-i\theta\,\mathbf n\cdot\boldsymbol\sigma/2)\). Differentiation gives generators \(\sigma_i/2\). At packet action \(s_0\), set \(b=\sqrt{s_0}c\). The rotation charge and the brackets are</p><div class="display">\[
+S_i=\tfrac12 b^\dagger\sigma_i b,\qquad
+\{b_i,\bar b_j\}=-i\delta_{ij},\qquad
+\{S_i,S_j\}=-\tfrac i4 b^\dagger[\sigma_i,\sigma_j]b
+=\epsilon_{ijk}S_k.
+\]</div><p>The eigenvalues of \(\mathbf n\cdot\boldsymbol\sigma\) are \(+1,-1\). V1 connects the associated two channels to two calibrated ports. A coherent mean projection can vary continuously between the channel values. <a href="#mg-p5">P5</a> · <a href="#mg-o2">O2</a></p><p><a id="mg-a6"></a><strong>MG-A6 · Rotor.</strong> At fixed separation the spin construction’s overlap gives \(H=\bar\omega Q+L^2/(2\mathcal J)-\Gamma\mathbf n\cdot\mathbf S\). The spin and rotor brackets give \(\dot{\mathbf S}=-\Gamma\mathbf n\times\mathbf S\) and \(\dot{\mathbf L}=+\Gamma\mathbf n\times\mathbf S\). Their sum is constant on this closed preparation. Section 13 derives the many-packet axial balance and identifies the additional specimen conditions. <a href="#mg-p6">P6</a> · <a href="#mg-o5">O5</a></p><p><a id="mg-a7"></a><strong>MG-A7 · External-path comparison.</strong> In P7, \(a_i\) has units of inverse external length. At fixed canonical \(J_Q\), A2 gives the interaction in the reduced Lagrangian as \(-J_Q\Omega+J_Qa_iV_i\). Its pullback at \(d\mathbf X=0\) is the temporal comparison. The dependence on the external path is <strong>UNTRACED</strong>. Section 9 tests what follows from it. <a href="#mg-p7">P7</a> · <a href="#mg-o1">O1</a></p><p><a id="mg-a8"></a><strong>MG-A8 · Spin response.</strong> The energy of the stated degree is \(-\sum_i B_i b^\dagger M_i b\). Reality makes the three \(2\times2\) matrices \(M_i\) Hermitian. Simultaneous rotation of the setting and the state reduces their twelve real coefficients to one in §10. A nonzero source interaction and its strength require a physical construction. <a href="#mg-p8">P8</a> · <a href="#mg-o2">O2</a></p><p><a id="mg-a9"></a><strong>MG-A9 · Hadron sampling.</strong> A bounded internal sampling profile \(w\) gives \(\int w\rho_J\,d\xi\). Divide by the positive reference action to obtain a dimensionless \(W\). The energy under test is</p><div class="display">\[
+H_{\rm samp}=-\Lambda W(\mathbf S/s_0)\cdot\mathbf B.
+\]</div><p>Thus \(\Lambda\) has units of magnetic moment. For the positive axial channel the measured slope is \(\Lambda W/2\). This normalization matters in the absolute proton comparison. The charge geometry itself supplies neither \(w\) as a detector response nor \(\Lambda\). <a href="#mg-p9">P9</a> · <a href="#mg-o4">O4</a></p><p><a id="mg-a10"></a><strong>MG-A10 · Mechanical boundary.</strong> Along the suspension axis write</p><div class="display">\[
+\Delta J_{\rm rod}+\sum_i\Delta S_i+\Delta J_{\rm other}=J_{\rm ext},
+\]</div><p>where \(J_{\rm ext}\) is the external angular impulse. Joint rotation gives the balance for a closed Hamiltonian in §13. The spin-only specimen interpretation additionally needs \(J_{\rm ext}-\Delta J_{\rm other}=0\) after corrections and a common moment slope. These are the two specimen conditions of the closure. <a href="#mg-p10">P10</a> · <a href="#mg-o5">O5</a></p><p><a id="mg-a11"></a><strong>MG-A11 · Material preparation.</strong> If \(h\) labels a whole sample preparation of energy \(E_h(B)\) and population fraction \(p_h\), then \(\mu_h=-E'_h(B)\) under the energy-slope identification, \(\sum_h p_h=1\), and \(\mathcal M=-\sum_h p_hE'_h/\mathcal V\). For identical independent units counted separately, their number multiplies the sum. Normalization alone leaves both \(p'_h\) and \(E''_h\) undetermined. <a href="#mg-p11">P11</a> · <a href="#mg-o5">O5</a></p><p><a id="mg-a12"></a><strong>MG-A12 · Exclusion.</strong> If the joint amplitude has exchange symmetry \(A(v,u)=-A(u,v)\), then \(A(u,u)=-A(u,u)\), so \(A(u,u)=0\). Applying this algebra to physical electrons uses the <strong>IMPORT</strong> in P12. M1 describes the rotation of one packet. <a href="#mg-p12">P12</a> · <a href="#mg-o5">O5</a></p><p><a id="mg-a13"></a><strong>MG-A13 · Experimental foundation.</strong> MG-D01–D10 give the apparatus, operation, reading and provenance. Reversing a source, preparing the opposite spin channel and reversing an electric setting are distinct operations. The neutron’s charge bound and magnetic moment come from separate experiments. <a href="#mg-p13">P13</a> · <a href="#observations">Observations</a></p><p><a id="mg-a14"></a><strong>MG-A14 · Comparison units.</strong> Write \(e&gt;0\), \(\mu_B=e\hbar/(2M_e)\) and \(\mu_N=e\hbar/(2M_p)\). Converting an \(S_\parallel=s_0/2\) branch into these units requires the action calibration. The reported lepton factors place the sign of the electric charge in \(q\). In this convention the electron moment is antiparallel to its spin. <a href="#mg-p14">P14</a> · <a href="#mg-o2">O2</a> · <a href="#mg-o4">O4</a></p></section>
+<section class="cc mathjax" id="s-6"><h2>6. Mathematical traceability</h2><div class="tablewrap"><table class="mdtab"><tr><th>Result and derivation</th><th>Physical dependencies, domain and obligation</th><th>Verification</th></tr><tr><td><a href="#mg-centre">Centre variation and uniformly moving source</a></td><td><a href="#mg-p1">P1</a>, <a href="#mg-p2">P2</a> give the internal force. <a href="#mg-p3">P3</a>, <a href="#mg-p4">P4</a> give the centre momentum. The magnetic force, induction, loop angle and orbital slope require <a href="#mg-p7">P7</a>. The moving-source normalization also requires its static and common-angle hypotheses. <a href="#mg-o1">O1</a></td><td><a href="#mg-ver">Action derivatives, work, source boost, loop and orbital energy</a></td></tr><tr><td><a href="#mg-axes">Rest-axis carriage and moment direction</a></td><td><a href="#mg-p3">P3</a>, <a href="#mg-p5">P5</a> give the bare-boost result for a freely carried spin. The finite-speed response on a source-driven trajectory additionally uses <a href="#mg-p4">P4</a>, <a href="#mg-p7">P7</a>, <a href="#mg-p8">P8</a>. The unique bilinear direction uses P5 and the isotropic domain of P8. <a href="#mg-o2">O2</a></td><td><a href="#mg-ver">Tetrad constraints, independent four-vector angle calculation and matrix coefficients</a></td></tr><tr><td><a href="#mg-excess">Excess, rotor gradient and electric slope</a></td><td><a href="#mg-p2">P2</a>, <a href="#mg-p5">P5</a>, <a href="#mg-p6">P6</a> for the exported slopes. <a href="#mg-p7">P7</a>, <a href="#mg-p8">P8</a> for the magnetic interpretation. <a href="#mg-p13">P13</a>, <a href="#mg-p14">P14</a> for comparison. <a href="#mg-o3">O3</a></td><td><a href="#mg-ver">Frequency ratios, common shift, branch forces and electric difference</a></td></tr><tr><td><a href="#mg-hadron">Neutral wave and proton</a></td><td><a href="#mg-p1">P1</a> gives the wave identities. <a href="#mg-p2">P2</a> gives its reciprocal force. The physical moment uses <a href="#mg-p5">P5</a>, <a href="#mg-p9">P9</a> and <a href="#mg-p14">P14</a>. <a href="#mg-o4">O4</a></td><td><a href="#mg-ver">Wave equation, energy, Fourier integrals, reflection and absolute normalization</a></td></tr><tr><td><a href="#mg-matter">Iron and susceptibility</a></td><td><a href="#mg-p5">P5</a>, <a href="#mg-p6">P6</a> give the joint rotation generator. <a href="#mg-p8">P8</a>, <a href="#mg-p10">P10</a> give the spin-only rod ratio. The orbital share also needs P7 and a specified two-component balance. <a href="#mg-p11">P11</a> and, where used, <a href="#mg-p12">P12</a> enter material occupations. <a href="#mg-o5">O5</a></td><td><a href="#mg-ver">Torque sum, second recipient and opposite susceptibility signs</a></td></tr><tr><td><a href="#mg-verdict">Internal-space verdict</a></td><td>The preceding witnesses account for each distinction in <a href="#mg-p13">P13</a>. Additional unreviewed laws or imports for the logical sufficiency inference: <strong>none</strong>. <a href="#mg-o6">O6</a></td><td><a href="#mg-ver">Doublet dimension, wave and material examples</a></td></tr></table></div></section>
+<section class="cc mathjax" id="s-7"><h2>7. Definition of completeness and completion tests</h2><p>A mathematical consequence is complete here when its hypotheses are named, the calculation reaches the measured distinction and an alternative allowed preparation tests the claimed necessity. A numerical prediction additionally requires the wave, source preparation, sampling and calibration to be fixed independently of the value predicted.</p><p>The finite checks pass for the source derivative, centre variation, moving-source normalization, rest-axis carriage, doublet covariance, electric spin difference, neutral and positive waves, axial transfer and both signs of material response. The analytic proofs establish their domains. The species coefficients, silver spot spacing, absolute hadron moments and specimen susceptibilities still lack independent numerical derivations from the seven constructions.</p></section>
+<section class="cc mathjax" id="s-8"><h2>8. Summary of the first seven sections</h2><p><strong>For a child.</strong> A beam can bend, and the spin of a particle in the beam can turn. We can watch the two turns separately. The electron’s spin makes a little more than one turn for each turn of its path at low speed. A neutron gives a different clue. One wave can have parts that cancel when the whole charge is counted, yet give a reading when an instrument samples the parts unequally. <a href="#mg-axes">Spin</a> · <a href="#mg-hadron">Neutral wave</a></p><p><strong>For a physics teacher.</strong> In a low-speed magnetic bend, \(g/2\) counts spin turns per velocity turn. Equal turning gives \(g=2\). Composing rotation-free boosts gives the exact ratio \(1-\gamma\), which tends to zero at low speed. The trap therefore requires a source-dependent spin response. A suspended body that receives the entire axial spin transfer inherits the one-packet gyromagnetic ratio exactly when one spin slope accounts for the moment change. <a href="#mg-axes">Carriage</a> · <a href="#mg-matter">Iron</a></p><p><strong>For a theoretical physicist.</strong> The charge-coupling curvature has an internal-amplitude leg. If the static comparison extends to a single external one-form, its Lorentz transform fixes the uniform-source velocity term with coefficient \(1/C^2\). On the lowest spin doublet, equivariance leaves one Hermitian bilinear vector reading. Neither the external extension nor the coefficient connecting that reading to a source follows from the isolated wave actions. <a href="#mg-centre">Centre</a> · <a href="#mg-axes">Doublet</a></p><a id="mg-centre"></a></section>
+<section class="cc mathjax" id="s-9"><h2>9. What turns a charged centre?</h2><p>The charge comparison and the centre momentum come from <a href="#mg-a1">A1</a>, <a href="#mg-a2">A2</a> and <a href="#mg-a4">A4</a>. The calculation fulfils <a href="#mg-o1">MG-O1</a>.</p><p>The existing comparison and its curvature are</p><div class="display">\[
+A=\Omega(z,t)\,dt,\qquad dA=(\partial_z\Omega)\,dz\wedge dt.
+\]</div><p>Its variation gives \(-J_Q\partial_z\Omega\) on the receiver amplitude \(z\). Neither the external position \(\mathbf X\) nor its velocity \(\mathbf V\) appears in the interaction. Thus \(\partial_{\mathbf X}L_{\rm int}=\partial_{\mathbf V}L_{\rm int}=0\) for a variation of the external centre holding the internal preparation fixed. <strong>The constructions as written exert no force on a centre through its charge, even for a source at rest.</strong> Reversing the source’s motion at fixed exported charge, envelope and internal profiles also leaves the receiver equation unchanged. The spin construction has a separation-dependent rotor force, calculated in §11, with different participants and dependencies.</p><h3>Variation on an external path</h3><p>Conditionally on P7, the comparison rate on a centre path is \(\Omega-\mathbf a\cdot\mathbf V\). At fixed \(J_Q\),</p><div class="display">\[
+L_{\rm int}=-J_Q\Omega+J_Qa_iV_i .
+\]</div><p>Taking the two derivatives in the centre variation gives</p><div class="display">\[
+\begin{aligned}
+\partial_{X^i}L_{\rm int}
+ &amp;=-J_Q\partial_i\Omega+J_QV^j\partial_i a_j,\\
+\frac{d}{dt}\partial_{V^i}L_{\rm int}
+ &amp;=J_Q(\partial_ta_i+V^j\partial_j a_i),\\
+\dot P_i
+ &amp;=J_Q[-\partial_i\Omega-\partial_ta_i+
+                     V^j(\partial_i a_j-\partial_j a_i)] .
+\end{aligned}
+\]</div><p>Define \(\mathbf E=(-\nabla\Omega-\partial_t\mathbf a)/\kappa_Q\) and \(\mathbf B=(\nabla\times\mathbf a)/\kappa_Q\). In the steady, purely magnetic preparation this gives</p><div class="display">\[
+\boxed{\dot{\mathbf P}=q\,\mathbf V\times\mathbf B},\qquad
+\mathbf V\cdot\dot{\mathbf P}=0.
+\]</div><p>For uniform \(\mathbf B=B\hat{\mathbf z}\) perpendicular to the velocity, write \(\dot{\mathbf V}=\mathbf V\times(\omega_c\hat{\mathbf z})\). Constant speed and A4 give \(\omega_c=qB/(\gamma M_I)\) on the laboratory clock. At low speed \(\omega_c=qB/M_I\). Once one reference bend fixes \(B\), reversal with test charge, velocity or an independently reversed source curl is a further test.</p><p>The canonical centre momentum is \(\mathbf p=\mathbf P+J_Q\mathbf a\). The second term belongs to the source–receiver comparison in this action. Indeed \(A\mapsto A+d\chi\) sends \(\mathbf a\mapsto\mathbf a-\nabla\chi\) and changes \(L_{\rm int}\) by \(-J_Q\,d\chi/dt\). The kinetic impulse is invariant. The separate canonical term \(J_Q\mathbf a\) changes with the comparison convention. A closed momentum account requires the source coordinates and their reciprocal variation in the same translation-invariant action.</p><h3>Uniform source motion</h3><p>Three conditions matter here. The source at rest must produce a separation-dependent comparison \(A_0=\Omega_0(\mathbf X_0)\,dt_0\) in a static gauge. A stationary radial spatial term on a regular simply connected patch can be removed as a gradient. The two frames must assign the same comparison angle to a given path with the same endpoint references. Both statements about the charge comparison are <strong>UNTRACED</strong>. The coordinate transformation is the <strong>IMPORT</strong> P3.</p><p>Let the source move uniformly with velocity \(\mathbf u\) in the laboratory and put \(\gamma_u=(1-u^2/C^2)^{-1/2}\). Then</p><div class="display">\[
+dt_0=\gamma_u\left(dt-\frac{\mathbf u\cdot d\mathbf X}{C^2}\right).
+\]</div><p>Evaluate \(\Omega_0\) at the transformed event. Equating the coefficients in the <em>same</em> one-form gives</p><div class="display">\[
+A=\gamma_u\Omega_0\,dt-
+       \frac{\gamma_u\Omega_0}{C^2}\,\mathbf u\cdot d\mathbf X,\qquad
+\boxed{\Omega=\gamma_u\Omega_0,\qquad \mathbf a=\frac{\Omega\mathbf u}{C^2}.}
+\]</div><p>There is <strong>no independent magnetic normalization</strong> in this uniform-source calculation. The velocity-dependent share of the path rate is exactly \(\mathbf u\cdot\mathbf V/C^2\).</p><p>The force has a simple fractional reading in a specified geometry. At a transverse separation let \(\nabla\Omega\perp\mathbf u\), and take \(\mathbf V\parallel\mathbf u\). A uniformly translated profile has \(\partial_t\Omega=-\mathbf u\cdot\nabla\Omega=0\) there. Also,</p><div class="display">\[
+\mathbf V\times(\nabla\Omega\times\mathbf u)
+=(\mathbf V\cdot\mathbf u)\nabla\Omega-(\mathbf V\cdot\nabla\Omega)\mathbf u.
+\]</div><p>Substitution in the centre variation yields</p><div class="display">\[
+\mathbf F_\perp=-J_Q\nabla\Omega
+              \left(1-\frac{\mathbf u\cdot\mathbf V}{C^2}\right).
+\]</div><p>At \(u=V=0.6C\) in the same direction the remaining fraction is \(0.64\). For other directions the displayed vector expression gives the force. For several source populations, cancellation of the laboratory static terms and addition of the spatial terms further require additive comparisons and the appropriate source densities. Net charge alone does not establish those conditions.</p><p>The first quantity the charge-coupling Geometry has to produce is \(\Omega_0(\mathbf X_0)\). It must also explain why the angle is shared between frames and how an accelerating or changing source prepares the comparison. An electrostatic measurement of a charge followed by a galvanometer reading on discharge, as in the Weber–Kohlrausch comparison of 1856, constrains the relative static and current scales. An independently measured clock-and-ruler \(C\) makes the coefficient \(1/C^2\) testable. No historical speed value is needed for the derivation.</p><h3>Three further consequences of P7</h3><ol><li><strong>Changing current.</strong> At instantaneous rest the force is \(J_Q(-\nabla\Omega-\partial_t\mathbf a)\). At zero scalar gradient the changing source alone gives \(-J_Q\partial_t\mathbf a\). For a spatially uniform drive with zero curl this integrates to \(\Delta\mathbf P=-J_Q[\mathbf a(t_2)-\mathbf a(t_1)]\). The changing-current deflection in Faraday’s induction experiments of 1831 is a <strong>constraint</strong> on the source dynamics and the response of the receiving circuit. The circuit is a many-charge receiver.</li><li><strong>Charge-wave angle.</strong> A2 gives \(\dot\Phi=\Omega-\mathbf a\cdot\mathbf V\). Compare two paths between the same endpoints and with equal temporal contributions. For a stationary spatial comparison their angle difference is<div class="display">   \[
+   \Delta\Phi_{\rm spatial}=-\oint\mathbf a\cdot d\mathbf X
+   =-\int_\Sigma(\nabla\times\mathbf a)\cdot d\boldsymbol\Sigma
+   \pmod{2\pi}.
+   \]</div><p>The sign follows from the definition of \(A\). A gradient integrates to zero on the loop. This is a rotation of the charge wave’s value plane. Connecting that angle to a particular interference instrument would require its readout.</p></li><li><strong>Charge circling in external space.</strong> For uniform weak \(\mathbf B\), use \(\mathbf a=(\kappa_Q/2)\mathbf B\times\mathbf X\). In a low-speed bound orbit with a setting-independent binding energy \(U(\mathbf X)\), the Hamiltonian at fixed canonical momentum is<div class="display">   \[
+   H=\frac{\lvert\mathbf p-\tfrac q2\mathbf B\times\mathbf X\rvert^2}{2M_I}
+       +U(\mathbf X)
+    =H_0-\frac{q}{2M_I}\mathbf B\cdot(\mathbf X\times\mathbf p)+O(B^2).
+   \]</div><p>The energy slope at zero setting is therefore</p><div class="display">   \[
+   \boxed{\boldsymbol\mu_L=\frac{q}{2M_I}\mathbf L,\qquad g_L=1.}
+   \]</div><p>This is exact for the stated linear slope at low speed. The orbit is in external space. The internal interval flux of A1 has its own coordinate and units.</p></li></ol><a id="mg-axes"></a></section>
+<section class="cc mathjax" id="s-10"><h2>10. How fast does the spin turn?</h2><p>The frame comparison, rotation charge and response class are <a href="#mg-a3">A3</a>, <a href="#mg-a5">A5</a> and <a href="#mg-a8">A8</a>. The calculation fulfils <a href="#mg-o2">MG-O2</a>.</p><h3>The rest axes of an accelerated packet</h3><p>Let \(U\) be the four-velocity, \(a=dU/d\tau\), and \(e_i\) three orthonormal rest axes:</p><div class="display">\[
+U\cdot U=-C^2,\qquad U\cdot e_i=0,\qquad e_i\cdot e_j=\delta_{ij}.
+\]</div><p>Differentiation fixes \(U\cdot\dot e_i=-a\cdot e_i\). Expanding in the basis \((U,e_j)\) and differentiating \(e_i\cdot e_j\) gives</p><div class="display">\[
+\boxed{\frac{de_i}{d\tau}=\frac{a\cdot e_i}{C^2}U+\Omega_{ij}e_j,\qquad
+                 \Omega_{ij}=-\Omega_{ji}.}
+\]</div><p>Substitution preserves the frame relations for every antisymmetric \(\Omega\). A sequence of instantaneous boosts with no added rest-frame rotation has \(\Omega_{ij}=0\). This gives a definite, calculable carriage. T1 permits a free spin to be carried in those axes. Identifying the actual spin of a source-driven packet with a particular carriage is the physical question.</p><p>To calculate the reading, take a transverse bend at speed \(V&gt;0\). Write \(\beta=V/C\), let \(\hat{\mathbf t}\) point along the velocity at laboratory angle \(\phi\), and take \(\hat{\mathbf n}=\hat{\mathbf z}\times\hat{\mathbf t}\). Axes obtained by boosting the tangent and normal are</p><div class="display">\[
+U=(\gamma C,\gamma V\hat{\mathbf t}),\qquad
+e_t=(\gamma\beta,\gamma\hat{\mathbf t}),\qquad e_n=(0,\hat{\mathbf n}).
+\]</div><p>Using \(d\hat{\mathbf t}/d\phi=\hat{\mathbf n}\) gives \(e_n\cdot de_t/d\tau=\gamma\,d\phi/d\tau\). Write a unit rest spin as \(s=\cos\psi\,e_t+\sin\psi\,e_n\). Its signed rotation rate relative to boost-only rest axes, per proper time, is</p><div class="display">\[
+w'=\frac{d\psi}{d\tau}+\gamma\frac{d\phi}{d\tau}.
+\]</div><p>The rest polarization referred to laboratory axes has angle \(\phi_s=\phi+\psi\). This specifies the observable at finite speed: undo the instantaneous boost and compare the resulting rest-spin direction with the laboratory analyzer. Since \(dt=\gamma\,d\tau\),</p><div class="display">\[
+\frac{d\phi_s}{dt}=(1-\gamma)\frac{d\phi}{dt}+\frac{w'}{\gamma}.
+\]</div><p>Consequently the boost-only answer, \(w'=0\), is</p><div class="display">\[
+\boxed{\frac{\omega_s}{\omega_c}=1-\gamma.}
+\]</div><p>Both signed rates use the same convention, so their ratio is also \(d\phi_s/d\phi\). It is \(-0.25\) at \(0.6C\) and tends to zero at low speed. The electron trap requires a turning by the source beyond this carriage.</p><h3>A source-dependent carriage that can be tested</h3><p>Use the normalized setting tensor \(F\) whose action on \(x=(x^0,\mathbf x)\) is</p><div class="display">\[
+Fx=\left(\mathbf E\cdot\mathbf x/C,\ x^0\mathbf E/C+\mathbf x\times\mathbf B\right).
+\]</div><p>On the P7 centre trajectory, \(dU/d\tau=(q/M_I)FU\), by the force and momentum calculation in §9. P8 now tests one further physical hypothesis: the rotation of the rest axes is \(k\) times the spatial projection of this same generator. For an axis \(e_i\), its component toward \(e_j\) is \(k(q/M_I)e_j\cdot Fe_i\). No existing spin–charge overlap supplies this identification.</p><p>Take \(\mathbf E=E_n\hat{\mathbf n}\) and \(\mathbf B=B_z\hat{\mathbf z}\). The centre equation gives</p><div class="display">\[
+\frac{d\phi}{dt}=\frac{q}{\gamma M_I}(E_n/V-B_z).
+\]</div><p>Acting on \(e_t\) and projecting onto \(e_n\) gives</p><div class="display">\[
+w'=k(q/M_I)e_n\cdot Fe_t
+   =k\frac q{M_I}\gamma(VE_n/C^2-B_z).
+\]</div><p>Inserting each pure setting in the preceding angle equation yields</p><div class="display">\[
+\boxed{\begin{aligned}
+r_B&amp;=1-\gamma+k\gamma=1+\gamma(k-1)
+                              &amp;&amp;\text{in a magnetic bend},\\
+r_E&amp;=1-\gamma+k\gamma\beta^2 &amp;&amp;\text{in a transverse electric bend}.
+\end{aligned}}
+\]</div><p>Both formulas hold at every speed in the stated domain, <strong>conditional on the projected-generator response</strong>. The frame comparison alone gives neither that response nor \(k\). For \(k=1\), the very generator that turns \(U\) also carries the axes. Magnetic spin and velocity turning are then exactly equal. Electric bending gives \(r_E=1-1/\gamma\), only \(0.00125078\) at \(0.05C\). More generally \(r_E\to0\) at low speed for every fixed \(k\).</p><h3>Which quantity is two?</h3><p>The spin construction uses \(D_\tau b=\partial_\tau b-i\boldsymbol\omega_\tau\cdot\boldsymbol\sigma b/2\). For \(D_\tau b=0\), an initially transverse state \((1,1)/\sqrt2\) acquires phase factors \(e^{+i\theta/2}\) and \(e^{-i\theta/2}\) about \(z\). Forming the spin gives</p><div class="display">\[
+\frac{2}{s_0}(S_x,S_y,S_z)=(\cos\theta,-\sin\theta,0).
+\]</div><p>The measured spin turns through the full angle. The half-angle accounts for the sign of the amplitude after a \(2\pi\) turn. It sets no magnetic frequency.</p><p>In the weak, low-speed magnetic test,</p><div class="display">\[
+\boxed{\boldsymbol\omega_s=\frac{g_\ell}{2}\frac q{M_I}\mathbf B,\qquad
+ \dot{\mathbf S}=\mathbf S\times\boldsymbol\omega_s,\qquad
+ r_\ell=\frac{\omega_s}{\omega_c}=k_\ell=\frac{g_\ell}{2}.}
+\]</div><div class="tablewrap"><table class="mdtab"><tr><th>Physical carriage in the magnetic test</th><th class="r">Low-speed \(\omega_s/\omega_c\)</th><th class="r">\(g\)</th></tr><tr><td>Boosts only. The exact ratio is \(1-\gamma\).</td><td class="r">\(0\)</td><td class="r">\(0\)</td></tr><tr><td>Axes turning at half the velocity-turn rate in the low-speed comparison.</td><td class="r">\(1/2\)</td><td class="r">\(1\)</td></tr><tr><td>The same generator turns the axes and the velocity.</td><td class="r">\(1\)</td><td class="r">\(2\)</td></tr></table></div><p>The middle example has a local interpretation. The ordinary angular velocity of the velocity vector is \(-\omega_c\hat{\mathbf z}\). At the origin of rotating axes the acceleration acquires \(-2\boldsymbol\Omega_{\rm frame}\times\mathbf V\). Taking \(\boldsymbol\Omega_{\rm frame}=-\omega_c\hat{\mathbf z}/2\) cancels the instantaneous transverse bend in that low-speed comparison. Making the prepared spin follow those axes would be additional physics.</p><p>Every real \(k\) satisfies the instantaneous frame constraints. The choices \(0,\tfrac12,1\) for \(k\) illustrate three transports. The first two fail the low-speed electron reading. The third needs no independently adjustable multiplier once the same-generator hypothesis is specified and lies within \(0.116\%\) of the reading. The trap resolves the difference. <strong>Exactly two does not follow from the constructions.</strong> Furthermore, the common formula \(k=1\) with moment proportional to total \(q\mathbf S/M_I\) fails for the proton and gives zero for the neutron. Any explanation specific to charged leptons must identify which feature of their prepared waves produces their response.</p><h3>The direction that is forced</h3><p>Write \(M_i=u_i I+T_{ij}\sigma_j\) in A8. Simultaneous rotation of the setting and the doublet requires</p><div class="display">\[
+u=Ru,\qquad T=RTR^{\mathsf T}
+\]</div><p>for every proper rotation \(R\). Half-turns about the coordinate axes set \(u=0\) and eliminate every off-diagonal entry of \(T\). A rotation cycling the axes equates the three diagonal entries. A scalar multiple of the identity satisfies all the equations. Absorbing the normalization into a signed \(\gamma_s\) gives</p><div class="display">\[
+H_1=-\gamma_s\mathbf B\cdot\mathbf S,\qquad
+\boldsymbol\mu=-\nabla_{\mathbf B}H_1=\gamma_s\mathbf S.
+\]</div><p>The bracket in A5 gives \(\dot S_i=-\gamma_s B_j\epsilon_{ijk}S_k\), or \(\dot{\mathbf S}=\gamma_s\mathbf S\times\mathbf B\). The fixed-axis energy and the corresponding rotating-axis description express the same turning.</p><p><strong>Collinearity is forced.</strong> On one isotropic doublet the space of Hermitian bilinear vector readings is one-dimensional. The sign and size of its coefficient remain free. For an atom independently identified with an effective doublet, the two axial branch forces are \(F_z^\pm=\pm\gamma_{\rm Ag}(s_0/2)\partial_zB\). This gives two opposite forces and two available channels. Spot spacing additionally depends on the silver slope and the apparatus.</p><a id="mg-excess"></a></section>
+<section class="cc mathjax" id="s-11"><h2>11. The departure from two and the electric-dipole test</h2><p>The calculation uses <a href="#mg-a2">A2</a>, <a href="#mg-a5">A5</a>, <a href="#mg-a6">A6</a>, <a href="#mg-a8">A8</a> and the <a href="#mg-a14">comparison units</a>. It fulfils <a href="#mg-o3">MG-O3</a>.</p><p>For co-turning signed readings put \(\omega_a=\omega_s-\omega_c\). Then</p><div class="display">\[
+a_\ell=\frac{\omega_a}{\omega_c}=r_\ell-1,\qquad
+g_\ell=2(1+a_\ell)
+\]</div><p>in the low-speed magnetic comparison. The rounded electron ratio gives \(g_e=2.00231930\), an excess of \(0.115965\%\) over equal turning. The rounded muon reduction gives \(g_\mu=2.00233184\), an excess of \(0.116592\%\). MG-D04 explains how a storage-ring count oscillation enters that second comparison.</p><p>The existing spin reading can carry the residual as</p><div class="display">\[
+\delta H_\ell=-\delta\gamma_\ell\,\mathbf S\cdot\mathbf B,\qquad
+\delta\gamma_\ell=a_\ell q/M_I .
+\]</div><p>A separately identified preparation can have its own coefficient. <strong>Assigning \(k_e=1.00115965\) and \(k_\mu=1.00116592\) uses two free numbers to match two reported values. Neither magnitude is predicted by that assignment.</strong> The rotation calculation supplies the common direction and the form of the dependence. A geometry that calculates either coefficient before using its resonance would make a numerical prediction.</p><h3>What the spin–rotor overlap predicts</h3><p>In A5 of the spin construction the internal energy density is \(\omega_0[Q+(2/3)\mathbf m\cdot\mathbf S]\). The normalized rotor profile is \(1+\mathbf m\cdot\mathbf n\). The Haar averages \(\int m_i=0\) and \(\int m_im_j=\delta_{ij}/3\) give</p><div class="display">\[
+H_{\rm int}=-\varepsilon\omega_0
+       [Q+(2/9)\mathbf n\cdot\mathbf S],\qquad
+\Gamma=2\varepsilon\omega_0/9,\qquad
+\bar\omega=(1-\varepsilon)\omega_0 .
+\]</div><p>The two mode frequencies are \(\bar\omega\mp\Gamma/2\). Their common downward shift and their splitting therefore satisfy</p><div class="display">\[
+\boxed{\omega_0-\bar\omega=(9/2)\Gamma.}
+\]</div><p>Identifying a varying rotor overlap with the lepton excess would also predict this common shift. The construction gives no relation \(\varepsilon(\mathbf B)\) for a trapped lepton.</p><p>There is a second, independent test. Differentiating the <em>whole</em> overlap energy with respect to separation gives</p><div class="display">\[
+\mathbf F=\omega_0[Q+(2/9)\mathbf n\cdot\mathbf S]\,\nabla\varepsilon.
+\]</div><p>In the two channels, \(\mathbf n\cdot\mathbf S=\pm Q/2\). Thus the force factors relative to \(\omega_0Q\nabla\varepsilon\) are \(10/9\) and \(8/9\). In a fixed-sign gradient both go to the same side of the zero-force trajectory. The two branches split about a displaced centre. By contrast the dipole energy of §10 gives opposite forces about that trajectory. An on/off plate with a registered undeflected line tests the distinction. The number of branches alone cannot determine the common displacement. A5 supplies no justification for dropping its scalar term and using its remaining splitting as the silver force.</p><h3>The electric zero</h3><p>Let \(\mathcal E\) be an electric control of the charge-coupling construction. Compare opposite spin preparations with the same charge state and spin apparatus. \(H_Q+H_E+\Omega J_Q\) has no spin argument and the exported spin energy has no \(\mathcal E\) argument. Hence</p><div class="display">\[
+\boxed{d_{\rm spin}=-\tfrac12\partial_{\mathcal E}(H_+-H_-)=0.}
+\]</div><p>This is an <strong>exact zero of the existing exports</strong>. The same calculation with only the P7 centre comparison also gives zero spin-linked magnetic energy slope. The silver branches and electron resonance require a nonzero magnetic spin response. Once its physical construction is supplied, the electric derivative must be evaluated on that construction. Rotation covariance permits a spin-linked electric term. MG-D08 bounds it.</p><p>For comparison in common units, converting \(e\,\mathrm{cm}\) to SI and using the reported moment magnitudes gives \(C|d|/|\mu|\lesssim2.1\times10^{-19}\) for the electron and \(8.9\times10^{-13}\) for the neutron. The limits, magnetons and numerical reductions are <strong>IMPORT</strong>.</p><a id="mg-hadron"></a></section>
+<section class="cc mathjax" id="s-12"><h2>12. One neutral wave, its reflection, and the proton</h2><p><strong>HINT · Chris, 16 November 2026.</strong> “I don't think it has the three patterns, just what is observed. That said, you might see the patterns if you take the fourier transform (or the equivalent for the internal space).  The stability comes from the small amount of admissable possibilities that are passed from granularity to collapse.”</p><p><a href="#mg-a1">A1</a> gives the wave and <a href="#mg-a2">A2</a> its existing drive. The interpretation of a sampled integral as a moment uses <a href="#mg-a9">A9</a>. This fulfils <a href="#mg-o4">MG-O4</a>.</p><p>Use dimensionless \(x\in[0,\pi]\), \(v_Q=\omega_1=\kappa_Q=1\), and \(\alpha=2/\pi\). In this section \(t\) is the charge-wave clock. The lowest positive circular preparation has reference action one. Prepare</p><div class="display">\[
+u(x,t)=\sin x\,(\cos t,\sin t)
+       +\frac{\sin2x}{\sqrt2}(\cos2t,-\sin2t).
+\]</div><p>Each term vanishes at the endpoints and satisfies \(u_{tt}=u_{xx}\). A circular line of amplitude \(b\), frequency \(m\) and sense \(\sigma=\pm1\) has \(J_m=\sigma mb^2\) and \(E_m=m^2b^2\), by integrating \(\sin^2(mx)\) and \(\cos^2(mx)\), each of integral \(\pi/2\). Orthogonality removes integrated cross terms. Here \(J_1=1,J_2=-1\), the energies are \(1,2\), and \(E_Q=3,\ q=0\). The electric construction’s minimum at zero charge is the vacuum. The displayed occupied wave proves existence at finite energy. Its persistence under the isolated wave equation supplies no neutron binding calculation.</p><p>The local determinant, formed before integration, is</p><div class="display">\[
+\epsilon(u,u_t)=\sin^2x-\sin^22x
+-\tfrac1{\sqrt2}\sin x\sin2x\cos3t .
+\]</div><p>Define \(W_k=(2/\pi)\int_0^\pi\cos(kx)\epsilon(u,u_t)\,dx\). The cross term is odd about the midpoint. Using \(\sin^2(mx)=(1-\cos2mx)/2\) gives, at <strong>every</strong> time,</p><div class="display">\[
+\boxed{W_0=0,\qquad W_2=-\tfrac12,\qquad W_4=+\tfrac12.}
+\]</div><p>Since \(\sin x\sin2x=(\cos x-\cos3x)/2\), the odd profile gives \(W_1=-\cos(3t)/(2\sqrt2)\).</p><p>For a general line \(\sin(mx)[a_m\cos mt+b_m\sin mt]\) with real two-vectors \(a_m,b_m\), the line circulation is \(J_m=m\epsilon(a_m,b_m)\). Time averaging over one fundamental period removes cross terms between distinct lines. Thus</p><div class="display">\[
+\overline{\rho_J}=(2/\pi)\sum_mJ_m\sin^2(mx),\qquad
+\boxed{\overline W_{2m}=-J_m/2,\quad m\ge1.}
+\]</div><p>The mean density is mirror symmetric, so every antisymmetric sampling profile has zero mean. Instantaneous even readings can beat for lines of the same parity. For instance, positive circular lines of amplitudes \(1,b\) at \(m=1,3\) give \(W_2=-1/2+2b\cos2t\). A real detector’s sampling symmetry and averaging time must come from its construction.</p><div class="tablewrap"><table class="mdtab"><tr><th>One preparation</th><th class="r">Total \(J_Q\)</th><th class="r">\(W_2\)</th></tr><tr><td>Lowest positive circular wave</td><td class="r">\(+1\)</td><td class="r">\(-1/2\)</td></tr><tr><td>Two-line neutral wave above</td><td class="r">\(0\)</td><td class="r">\(-1/2\)</td></tr><tr><td>Active reflection \(u_2\mapsto-u_2\) of the neutral wave</td><td class="r">\(0\)</td><td class="r">\(+1/2\)</td></tr><tr><td>Occupied linear neutral wave, \(u_2=0\)</td><td class="r">\(0\)</td><td class="r">\(0\)</td></tr><tr><td>Reflected neutral wave with both amplitudes scaled by \(a\)</td><td class="r">\(0\)</td><td class="r">\(+a^2/2\)</td></tr></table></div><p>Reflection at fixed physical orientation reverses the determinant pointwise and preserves energy. Scaling both components multiplies the determinant by \(a^2\). In the charge-coupling construction the reciprocal force \(F_z=-J_Q\partial_z\Omega\) vanishes for every neutral entry. Their density readings are nonetheless distinguishable.</p><h3>The two measured moments as equations on one interval</h3><p>Expand the bounded sampling profile in the interval cosine basis as \(w(x)=w_0+\sum_{k\ge1}w_k\cos(kx)\), with \(w_0\) its mean. Orthogonality gives, in reference-action units,</p><div class="display">\[
+\overline W_h=w_0J_Q^{(h)}-\tfrac12\sum_{m\ge1}w_{2m}J_m^{(h)},
+\qquad
+\sum_mJ_m^{(n)}=0,\qquad \sum_mJ_m^{(p)}=1 .
+\]</div><p>The sums also follow by integrating the bounded profile against the mean density. The constant part samples the net charge. It drops out for the neutron and contributes \(w_0\) for the proton.</p><p>Take equally oriented positive spin branches and a common signed \(\Lambda\). A9 gives \(\mu_h=(\Lambda/2)\overline W_h\). The two independent constraints on the geometry and its sampling are therefore</p><div class="display">\[
+\boxed{
+\frac{\overline W_n}{\overline W_p}=R_{np},\qquad
+\frac{\Lambda}{2}\,\overline W_p=\mu_p,\qquad \overline W_p\ne0.}
+\]</div><p>Here the comparison targets are \(R_{np}\simeq-0.684979\) and \(\mu_p\simeq2.79285\,\mu_N\). For a zero-mean profile the equations reduce to</p><div class="display">\[
+\frac{\sum_m w_{2m}J_m^{(n)}}{\sum_m w_{2m}J_m^{(p)}}=R_{np},
+\qquad
+-\frac{\Lambda}{4}\sum_mw_{2m}J_m^{(p)}=\mu_p .
+\]</div><p>One factor \(1/2\) comes from the Fourier integral and the other from \(S_\parallel/s_0\). Equivalently the branch calibration is \(\Lambda_+=\Lambda/2\).</p><p><strong>The sign already tests the interpretation.</strong> With \(w=\cos2x\), the plain positive wave and the unreflected neutral wave have the same reading, hence the same moment sign. They fail the observed sign comparison. The linear neutral wave has pointwise zero density and cannot represent the neutron in <em>any</em> linear density-sampling explanation of its nonzero moment. The reflected, scaled example gives</p><div class="display">\[
+\frac{\mu_n}{\mu_p}=-a^2.
+\]</div><p>Using the tabulated comparison \(R_{np}=-0.68497935\) as a numerical input gives \(a=\sqrt{-R_{np}}=0.827635\) to six places. The ratio fixes this illustrative amplitude by hand.</p><p>The proton wave is a physical unknown as well. The positive example in the colour construction is one wave on the electric interval. Its \(m=1,2,3\) lines have squared amplitudes \(2/3,1/3,1/9\) and senses \(+,+,-\). Hence their circulations are \(2/3,2/3,-1/3\), their energies sum to \(3\), and</p><div class="display">\[
+(\overline W_2,\overline W_4,\overline W_6)=(-1/3,-1/3,+1/6).
+\]</div><p>With the same pure \(\cos2x\) sampling profile, the reflected neutron relative to <em>this</em> proton gives \(R_{np}=-3a^2/2\), or \(a=0.675761\). Conversely, keep the plain proton and unit-amplitude reflected neutron and let \(w=w_2\cos2x+w_4\cos4x\). Direct substitution gives \(R_{np}=-1+w_4/w_2\), requiring \(w_4/w_2=0.31502065\) for the same numerical target.</p><p>With the profile and orientation fixed, \(a\) and the overall strength use <strong>two continuous numbers for two moment values</strong>. Allowing even one profile-shape ratio gives at least three continuous numbers, in addition to the choices of proton wave and neutron orientation. Neither absolute moment is predicted. The independently derived results are the line readings, their reflection signs, the wrong sign of the unreflected example and the zero of the linear wave.</p><p>To tell the neutral wave from its reflection requires a preparation or reading with a nonzero reflection-odd part. Charge and energy alone cannot do it. The signed baryon reading examined in this series’ document <a href="https://chrisbergstrombeamish.github.io/general-relativity/Attributes/Particle-and-Antiparticle/"><em>What tells a particle from its antiparticle?</em></a> is a candidate for that test. Its association with the reflection of this particular electric wave has to be demonstrated independently. No step assigns separate trajectories or particles to Fourier components. The proton’s conventional factor is \(g_p\simeq5.58570\). The neutron has no cyclotron frequency from its own zero net charge.</p><a id="mg-matter"></a></section>
+<section class="cc mathjax" id="s-13"><h2>13. Iron, paramagnetism and diamagnetism</h2><p>The material calculation uses <a href="#mg-a6">A6</a>, <a href="#mg-a8">A8</a> and <a href="#mg-a10">A10–A12</a>. It fulfils <a href="#mg-o5">MG-O5</a>.</p><h3>What the suspended iron inherits</h3><p>Let \(\mathbf L\) generate rotation of the body, including its attached axes, and let \(\mathbf S_i\) have the brackets in A5. Then \(\mathbf G=\mathbf L+\sum_i\mathbf S_i\) generates a simultaneous rotation of the body and all spins. Indeed \(\delta Z=\{Z,\boldsymbol\theta\cdot\mathbf G\}\) rotates each of these variables by the same infinitesimal angle \(\boldsymbol\theta\). If their interaction energy is invariant under that joint turn, then for all \(\boldsymbol\theta\)</p><div class="display">\[
+0=\delta H=\{H,\boldsymbol\theta\cdot\mathbf G\},
+\qquad\text{hence}\qquad \dot{\mathbf G}=\{\mathbf G,H\}=0 .
+\]</div><p>A5’s \(-\Gamma_i\mathbf n_i\cdot\mathbf S_i\) has this invariance for every packet, including when several axes belong to one body. For an applied axial setting \(B(t)\hat{\mathbf z}\), the extra torque is \(\sum_i\gamma_i\mathbf S_i\times B(t)\hat{\mathbf z}\). Its axial component is identically zero. This establishes the axial balance even while the setting changes. It makes no corresponding assertion for a transverse component in the driven experiment.</p><p>Include external angular impulse and other recipients as in A10. For a spin-only reversal with corrected \(J_{\rm ext}-\Delta J_{\rm other}=0\) and one common signed slope \(\gamma_s\),</p><div class="display">\[
+\Delta J_{\rm rod}=-\sum_i\Delta S_i,\qquad
+\Delta\mu=\gamma_s\sum_i\Delta S_i,\qquad
+\boxed{\frac{\Delta\mu}{\Delta J_{\rm rod}}=-\gamma_s.}
+\]</div><p>The last ratio requires nonzero net transfer. It is independent of the number of packets and the degree of reversal. A pure electron-spin transfer predicts the mechanical factor \(\lvert g_e\rvert\), including its excess over two, from the separate trap measurement. It introduces no second gyromagnetic constant. If another recipient takes a fraction \(b\) of the spin transfer, the ratio becomes \(-\gamma_s/(1-b)\). Rotational symmetry alone cannot identify the recipient or establish a common slope.</p><p>The material departure has a definite <em>conditional</em> interpretation. Suppose electron spin and external orbital motion alone change, their axial angular changes have the same sense, the rod receives their sum, and P7 gives \(g_L=1\). Write \(x=\Delta L/(\Delta S+\Delta L)\). In units \(e/(2M_e)\), the mechanical magnitude and the orbital fraction of the changed moment are</p><div class="display">\[
+G_{\rm rod}=(1-x)g_s+x,\qquad
+x=\frac{g_s-G_{\rm rod}}{g_s-1},\qquad
+\frac{\lvert\Delta\mu_L\rvert}{\lvert\Delta\mu\rvert}=\frac{x}{G_{\rm rod}} .
+\]</div><p>For the numerical example \(G_{\rm rod}=1.919\), \(g_s=2.00231930\), these are \(8.3127\%\) of the reversed angular momentum and \(4.3318\%\) of the changed moment. Here one supplied mechanical ratio determines one fraction. The approximately \(4.2\%\) departure of this example from the spin-only value is not predicted. A separate measurement of the orbital transfer would test the interpretation.</p><h3>What determines the sign in a material</h3><p>At fixed volume \(\mathcal V\), temperature, composition and shape, let \(B\) be the applied setting along a fixed axis. For \(\mu_h=-E'_h(B)\), differentiating the sample magnetization gives</p><div class="display">\[
+\chi_B=\left.\frac{\partial\mathcal M}{\partial B}\right|_0
+=\frac1{\mathcal V}\sum_h[p'_h(0)\mu_h(0)-p_h(0)E''_h(0)].
+\]</div><p>Conversion to a susceptibility quoted against the applied setting \(H\) requires calibration of the setting inside the specimen, which depends on its shape. The first term measures redistribution among pre-existing moments. The second measures a change of the moment of an occupied state, including induced charge circulation where its dynamics produces it.</p><p>Take \(E_\pm=E_0\mp mB+kB^2/2\) and \(p_\pm=(1\pm hB)/2\) near zero. Then \(\mathcal V\chi_B=mh-k\). For \(m=h=1\), \(k=0\) gives \(+1\) and \(k=2\) gives \(-1\) at the same zero-setting moments. Thus both signs can be expressed on existing pattern readings. These numbers specify examples. Neither example predicts the susceptibility of a named specimen.</p><p>A material calculation requires joint occupations, interactions between patterns and the resulting populations and energies. Antisymmetric exchange, if used, excludes duplicate complete states by A12. It gives neither iron’s alignment energy nor the curvature of an occupied orbital energy. Paramagnetic redistribution and diamagnetic induction can both contribute in one specimen.</p><a id="mg-verdict"></a></section>
+<section class="cc mathjax" id="s-14"><h2>14. Does this attribute need an internal space of its own?</h2><p><strong>No, for the magnetic distinctions in §1.</strong> The centre response is carried by the charge and inertia readings on an external path. The spin response is carried by the existing doublet. A single charge interval has neutral whole waves with positive, negative and zero sampled circulation. Material energies and populations can carry either sign of susceptibility.</p><p>Two results make the single-packet conclusion stronger than a table of assigned species constants. First, every Hermitian bilinear vector reading on the doublet is a multiple of \(\mathbf S\). An independent magnetic direction cannot be prepared on that doublet. A second, independently preparable sharp two-valued label would require four joint states. The silver analyzer registers the two branches supplied by the spin channels. Four distinct spots would require an analyzer that resolves four distinct forces. Second, for a regular globally defined P7 comparison,</p><div class="display">\[
+\nabla\cdot\mathbf B=\kappa_Q^{-1}\nabla\cdot(\nabla\times\mathbf a)=0 .
+\]</div><p>The flux through a closed surface is zero by Stokes’ theorem. A confirmed magnetic charge would defeat this description and require an account of an additional signed source reading or different global geometry. MG-D10 found none in its searched sample. A finite null does not settle all future preparations.</p><div class="tablewrap"><table class="mdtab"><tr><th>Author’s possibility</th><th>Verdict</th></tr><tr><td><strong>1 · Constraint on the existing internal spaces</strong></td><td>Beam bending constrains the external dependence of charge coupling. Trap and ring readings constrain spin transport. The two hadron moments give the two equations in §12. Electric-reversal bounds constrain the spin-linked electric slope. Specimen observations constrain occupations, interactions and angular-momentum recipients.</td></tr><tr><td><strong>2 · Natural consequence</strong></td><td>The doublet fixes collinearity. The existing electric spin slope is exactly zero. The charge interval gives \(\overline W_{2m}=-J_m/2\) and the signed neutral examples. Bare boosts give \(1-\gamma\). On P7 the changing-current force, loop angle and orbital \(g_L=1\) follow. On the stated mechanical boundary the rod inherits the one-packet ratio exactly. Each physical antecedent is named in §6.</td></tr><tr><td><strong>3 · New internal space</strong></td><td>None is required for these rows. The gradient and magnetic-charge tests specify what independent distinction an enlarged description would have to carry.</td></tr><tr><td><strong>Not yet understood</strong></td><td>The static charge–centre comparison and its source dynamics, the spin coupling and its excess, the physical hadron waves and their sampling, and the material dynamics that determine transfers and susceptibilities.</td></tr></table></div><p>The two axial spin channels are discrete at fixed packet action. Orientation, charge-wave amplitudes, response slopes and bulk magnetization are continuous on their stated domains. A fractional moment change need not divide a complete particle. The couplings used here relate separately defined source, charge, spin, inertia and apparatus readings.</p><h3>Attribute inventory</h3><div class="tablewrap"><table class="mdtab"><tr><th>Coverage row</th><th>Disposition and remaining comparison</th></tr><tr><td>Silver branches and charged-lepton turning</td><td>Existing spin channels and a constrained source response. Calibrate the centre independently, then compare spin and centre on one clock. Retain the excess and the electric-bend discriminator.</td></tr><tr><td>Permanent electric dipole searches</td><td>Existing exports give zero spin-linked slope. The reversal bounds test the physical construction that accounts for the magnetic slope.</td></tr><tr><td>Proton and neutron moments</td><td>Existing charge profiles carry the signed distinction. Test the common sampling profile, reflection-odd preparation reading and absolute slope on independently identified whole waves.</td></tr><tr><td>Iron reversal</td><td>Conditional consequence of the packet slope and axial closure. Identify the angular impulse received by the rod and by other recipients.</td></tr><tr><td>Paramagnetic and diamagnetic response</td><td>Material response on existing patterns. Quantitative work requires occupations, interactions, temperature and specimen geometry.</td></tr><tr><td>Magnetic-space proposal</td><td><strong>Empty for these rows.</strong> The seven-space baseline carries the observed distinctions. A confirmed independent magnetic charge would reopen the source question.</td></tr></table></div><h3>Law list and GR premise check</h3><div class="tablewrap"><table class="mdtab"><tr><th>Law or physical identification</th><th>Label, what rests on it and disposition</th></tr><tr><td>Fixed-end charge action, \(q=\kappa_QJ_Q\), and EQP4 comparison</td><td><strong>UNTRACED physical roots</strong>, for review. The charge continuity equation, internal force, lack of an external variation and Fourier identities are <strong>DERIVED</strong> within these roots. Additional laws for those implications: <strong>none</strong>.</td></tr><tr><td>One-place Lorentz clock and ruler comparison and IP3 centre clock</td><td><strong>IMPORT</strong> for Lorentz comparison and <strong>UNTRACED</strong> for IP3, for review. They carry the kinetic momentum and frame-dependent rates. Bare-boost carriage is a specified comparison of successive frames. Its \(1-\gamma\) is <strong>DERIVED</strong> on P3 and free transport.</td></tr><tr><td>Spin rotation lift, canonical doublet, T1 and analyzer</td><td><strong>UNTRACED</strong> physical identifications, for review. The brackets, two axis channels and vector-space dimension are <strong>DERIVED</strong> on their stated domain. Physical port identification uses V1. Branch probabilities, if used, also require V2.</td></tr><tr><td>A5 rotor overlap and joint rotation</td><td><strong>UNTRACED</strong> physical interaction, for review. The \(9/2\) common-shift ratio, \(8/9,10/9\) forces and closed packet–rotor balance are <strong>DERIVED</strong>. Joint invariance implies conservation of its generator by the bracket calculation, criterion 1 conditional on that invariance.</td></tr><tr><td>P7 external-path comparison</td><td><strong>UNTRACED</strong>, for review. The magnetic bend, changing-current term, signed loop angle, orbital slope and smooth-curl obstruction are <strong>DERIVED</strong> on P7. The common angle between frames, static rest comparison and additivity for multiple sources are distinct <strong>UNTRACED</strong> physical hypotheses. Only the uses identified in §9 depend on them.</td></tr><tr><td>P8 isotropic magnetic energy and projected generator</td><td><strong>UNTRACED</strong> physical hypotheses, for review. Collinearity follows from the stated interaction class. The two finite-speed formulas follow for the projected generator. No derivation fixes \(k=1\) or either lepton excess.</td></tr><tr><td>P9 detector sampling, common orientation and scale</td><td><strong>UNTRACED</strong>, for review. Physical hadron moment equations depend on these and the specified spin branch. The Fourier and reflection identities need no detector hypothesis.</td></tr><tr><td>The mechanical closure, material energies and populations</td><td><strong>UNTRACED</strong> for the particular specimen, for review. Axial transfer to a sole recipient and one slope carry the spin-only ratio. The numerical orbital share also requires a two-component closure. The susceptibility identity follows from differentiating the specified response.</td></tr><tr><td>Electron pair exchange</td><td><strong>IMPORT</strong> where used, for review. Equal-state exclusion follows algebraically. No single-packet magnetism result depends on this import.</td></tr><tr><td>Experimental reductions and action units</td><td><strong>IMPORT</strong> for the displayed numerical comparisons, for review wherever used numerically. They supply no microscopic dynamics.</td></tr><tr><td>Dirac \(g=2\), QED anomaly calculations and three-constituent moment sums</td><td><strong>IMPORT</strong>, comparison only. Criterion 2 for the structural results. No step of their derivation rests on these laws.</td></tr><tr><td>Internal-space sufficiency</td><td><strong>DERIVED</strong> as a statement about the exhibited states and tested distinctions. Additional unreviewed laws or imports for the logical inference: <strong>none</strong>.</td></tr></table></div><p>The GR premise touched here is the local Lorentz comparison of clocks and rulers. Holding it fixed admits different physical spin transports on exactly the same centre trajectory. It therefore cannot entail equal magnetic spin and velocity turning. Two experiments can probe consequences involving that premise: compare the static and current scales with an independently measured \(C\), and measure \(r_B\) or \(r_E\) versus speed with \(k\) fixed independently. These are joint tests of the stated hypotheses. None of MG-D01–D10 compares escape readings in two frames at a horizon. The GR identification of one event horizon receives no test from these data.</p><a id="mg-ver"></a></section>
+<section class="cc mathjax" id="s-15"><h2>15. Verification</h2><p>The calculation below checks source qualifications when text copies of the seven constructions, the gravity paper and one working note of the particle reconstruction are present; these are not published as text files. Its arithmetic runs independently of those files. It varies the centre action numerically, checks the tetrad and doublet, evaluates the charge waves at 48 spatial midpoints and averages over 32 phases. The additional carriage check advances the four-vectors locally and reconstructs the rest-spin angle independently of the two closed-form ratios. It covers 30 magnetic and electric cases. The generic derivative step is \(10^{-5}\), with comparison tolerance \(2\times10^{-8}(1+\lvert\mathrm{expected}\rvert)\). Numerical samples check the derivations. Experimental values in the code are inputs.</p><details><summary>Complete verification script and PowerShell command</summary><pre class="code"><code data-lang="powershell">@'
+use strict;
+use warnings;
+use List::Util qw(sum);
+use Math::Complex qw(cplx);
+my $pi = 4*atan2(1,1);
+sub near {
+    my ($got,$want)=@_;
+    die "line ".(caller)[2].": $got != $want\n"
+        unless abs($got-$want) &lt; 2e-8*(1+abs($want));
+}
+sub diff { my ($f,$x)=@_; my $h=1e-5; ($f-&gt;($x+$h)-$f-&gt;($x-$h))/(2*$h) }
+
+# Check attribution and scope before doing arithmetic.
+my @source=(
+ ['run_outputs/*_1_Electric*',1644,'Finite energy and fixed ends'],
+ ['run_outputs/*_2_Color*',617,'independent of the external distance'],
+ ['run_outputs/*_3_Flavor*',12,'occupied standing-mode sector'],
+ ['run_outputs/*_4_Spin*',1509,'transport of its rest axes are also required'],
+ ['run_outputs/*_4_Spin*',1294,'A5 chooses an attractive overlap energy'],
+ ['run_outputs/*_5_Inertia*',634,'selected physical relation'],
+ ['run_outputs/*_6_Gravitational*',590,'external tidal tensor'],
+ ['run_outputs/*_7_Charge*',49,'A spatial force requires'],
+ ['run_outputs/*_7_Charge*',202,'selected physical completions'],
+ ['published/gravity_paper.md',1657,'IMPORT'],
+ ['master_corrected.md',493,'underdetermined by the evidence']);
+if (-d 'run_outputs' &amp;&amp; -f 'master_corrected.md') {
+    for (@source) {
+        my ($pattern,$n,$quote)=@$_;
+        my ($file)=glob $pattern;
+        open my $fh,'&lt;',$file or die "$pattern: $!";
+        my $line; $line=&lt;$fh&gt; for 1..$n;
+        die "$file:$n" unless defined($line) &amp;&amp; index($line,$quote)&gt;=0;
+    }
+    print "Source and scope checks: ",scalar(@source),"\n";
+}
+
+my $lag=sub { my $w=shift; ((.3+2*$w)**2+(.8-$w)**2)/2 };
+my $w=.27;
+my $J=(.8-$w)-2*(.3+2*$w);
+near(diff($lag,$w),-$J);
+near(diff(sub {$lag-&gt;(.7*sin($_[0]))},.4),
+     -((.8-.7*sin(.4))-2*(.3+1.4*sin(.4)))*.7*cos(.4));
+my ($C,$v)=(5,1.2);
+my $f=sqrt(1-($v/$C)**2);
+my $rest=(.8**2/$f**2+2)/2;
+near(diff(sub {my $f=sqrt(1-($_[0]/$C)**2); (.8**2/$f-2*$f)/2},$v),
+     $rest*$v/($C**2*$f));
+for my $gauge (0,.4) {
+    for my $j (-2,0,3) {
+        for my $drive (0,.3) {
+            my ($x,$y,$t,$u,$v,$F)=(.2,-.4,.1,.6,-.8,.9);
+            my $ax=sub {-($F/2-$gauge)*$_[1]+$drive*$_[2]};
+            my $ay=sub { ($F/2+$gauge)*$_[0]};
+            my $L=sub {my ($x,$y)=@_; $j*($ax-&gt;($x,$y,$t)*$u+$ay-&gt;($x,$y,$t)*$v-$drive*$x)};
+            my @force;
+            for my $i (0,1) {
+                my $a=($ax,$ay)[$i];
+                my $space=$i ? diff(sub {$L-&gt;($x,$_[0])},$y) : diff(sub {$L-&gt;($_[0],$y)},$x);
+                push @force,$space-$j*diff(sub {my $s=shift; $a-&gt;($x+$s*$u,$y+$s*$v,$t+$s)},0);
+            }
+            near($force[0],$j*($v*$F-2*$drive)); near($force[1],-$j*$u*$F);
+            near($u*$force[0]+$v*$force[1],0) if !$drive;
+        }
+    }
+}
+my ($kap,$j0,$B0,$MI)=(.6,-2,.7,$rest/$C**2);
+my $orb=$kap*$j0*$B0*$f/$MI;
+near(diff(sub {-$MI*$v*sin($orb*$_[0])/$f},0),-$kap*$j0*$B0*$v);
+print "Centre: internal derivative, inertia, spatial variation, reversal and work pass\n";
+
+sub mink {my ($x,$y)=@_; -$x-&gt;[0]*$y-&gt;[0]+sum(map {$x-&gt;[$_]*$y-&gt;[$_]} 1..3)}
+my $U=[1.25,.75,0,0];
+my @axes=([.75,1.25,0,0],[0,0,1,0],[0,0,0,1]);
+my $acc=[.225,.375,.4,0];
+for my $k (0,.5,1,1.4) {
+    my @rot=([0,$k,0],[-$k,0,0],[0,0,0]);
+    my @de;
+    for my $i (0..2) {
+        push @de,[map {my $n=$_; mink($acc,$axes[$i])*$U-&gt;[$n]
+                         +sum(map {$rot[$i][$_]*$axes[$_][$n]} 0..2)} 0..3];
+    }
+    for my $i (0..2) {
+        near(mink($acc,$axes[$i])+mink($U,$de[$i]),0);
+        for my $j (0..2) {near(mink($de[$i],$axes[$j])+mink($axes[$i],$de[$j]),0)}
+    }
+    my ($wc,$t)=(.8,.3);
+    my $a=$k*$wc*$t/2;
+    my ($sx,$sy)=(cos($a)**2-sin($a)**2,-2*cos($a)*sin($a));
+    near(-2*atan2($sy,$sx)/($t*$wc),2*$k);  # g from the readout
+}
+near(-.8-2*(-.8/2),0); near(cos($pi),-1); near(cos(2*$pi),1);
+# Average vector and matrix basis elements over proper signed permutations.
+for my $i (0..2) {
+    for my $j (0..3) {
+        my @avg=(0)x12;
+        for my $s ([1,1,1],[1,-1,-1],[-1,1,-1],[-1,-1,1]) {
+            for my $p (0..2) {
+                my $col=$j==3 ? 3 : ($j+$p)%3;
+                $avg[4*(($i+$p)%3)+$col]+=$s-&gt;[$i]*($j==3 ? 1 : $s-&gt;[$j])/12;
+            }
+        }
+        for my $n (0..11) {near($avg[$n],($i==$j &amp;&amp; $n%5==0) ? 1/3 : 0)}
+    }
+}
+my $iunit=cplx(0,1);
+my @sig=([[0,1],[1,0]],[[0,-$iunit],[$iunit,0]],[[1,0],[0,-1]]);
+for my $i (0..2) {
+    for my $j (0..2) {
+        my $levi=$i==$j ? 0 : (($j-$i+3)%3==1 ? 1 : -1);
+        for my $a (0,1) {for my $b (0,1) {
+            my $comm=sum(map {$sig[$i][$a][$_]*$sig[$j][$_][$b]
+                              -$sig[$j][$a][$_]*$sig[$i][$_][$b]} 0,1);
+            my $rhs=$i==$j ? 0 : 2*$iunit*$levi*$sig[3-$i-$j][$a][$b];
+            near(abs($comm-$rhs),0);
+        }}
+    }
+}
+my ($base,$eps)=(7,.18);
+my $split=2*$eps*$base/9;
+near(($base-(1-$eps)*$base)/$split,4.5);
+my $spinE=sub {my ($s,$b,$e)=@_; 3*sin($e)-.7*$s*$b};
+near(diff(sub {$spinE-&gt;(1,.4,$_[0])-$spinE-&gt;(-1,.4,$_[0])},.2),0);
+for my $s (-.5,.5) {near(-diff(sub {$spinE-&gt;($s,.4+.3*$_[0],.2)},0),.7*$s*.3)}
+print "Axes and doublet: g = 0, 1, 2, 2.8; one invariant slope; electric spin slope = 0\n";
+
+# Mode entries are n, cosine amplitude, sine amplitude, phase.
+my $P=[1,1,1,0]; my $N=[2,1/sqrt(2),-1/sqrt(2),0];
+sub density {
+    my ($x,$t,@lines)=@_;
+    my ($u,$v,$ut,$vt,$ux,$vx,$utt,$vtt,$uxx,$vxx)=(0)x10;
+    for (@lines) {
+        my ($n,$a,$b,$p)=@$_;
+        my ($s,$c,$h,$k)=(sin($n*$x),cos($n*$x),cos($n*$t+$p),sin($n*$t+$p));
+        $u+=$a*$s*$h; $v+=$b*$s*$k; $ut-=$n*$a*$s*$k; $vt+=$n*$b*$s*$h;
+        $ux+=$n*$a*$c*$h; $vx+=$n*$b*$c*$k;
+        $utt+=$a*$s*(-$n**2*$h); $vtt+=$b*$s*(-$n**2*$k);
+        $uxx+=(-$n**2*$s)*$a*$h; $vxx+=(-$n**2*$s)*$b*$k;
+    }
+    near($utt,$uxx); near($vtt,$vxx); near($u*$vtt-$v*$utt,$u*$vxx-$v*$uxx);
+    if ($x==0 || $x==$pi) {near($u,0); near($v,0); near($u*$vx-$v*$ux,0)}
+    return ($u*$vt-$v*$ut,($ut**2+$vt**2+$ux**2+$vx**2)/2);
+}
+sub readings {
+    my ($t,@lines)=@_;
+    my @s=(0)x6; my $cells=48;
+    density(0,$t,@lines); density($pi,$t,@lines);
+    for my $i (0..$cells-1) {
+        my $x=($i+.5)*$pi/$cells;
+        my ($d,$e)=density($x,$t,@lines);
+        my @v=($d,$e,map {$d*cos($_*$x)} (1,2,4,6));
+        $s[$_]+=2*$v[$_]/$cells for 0..5;
+    }
+    return @s;
+}
+for my $t (0,.23,1.1,2.7) {
+    my ($j,$E,$odd,$w2,$w4)=readings($t,$P,$N);
+    near($j,0); near($E,3); near($odd,-cos(3*$t)/(2*sqrt(2)));
+    near($w2,-.5); near($w4,.5); my @pos=readings($t,$P);
+    near($pos[0],1); near($pos[3],-.5);
+    for my $a (.5,1,1.6) {
+        my @reflect=map {[$_-&gt;[0],$a*$_-&gt;[1],-$a*$_-&gt;[2],0]} ($P,$N);
+        my @v=readings($t,@reflect); near($v[0],0); near($v[3],$a*$a/2);
+    }
+    near((readings($t,[1,1,0,0]))[3],0);
+    my $x=.7; my ($raw)=density($x,$t,$P,$N);
+    near($raw,sin($x)**2-sin(2*$x)**2-sin($x)*sin(2*$x)*cos(3*$t)/sqrt(2));
+}
+my @lines=([1,.7,-.3,.2],[2,.4,.8,.9],[3,-.2,.9,-.3]);
+my @sum=(0)x6;
+for my $i (0..31) {
+    my @row=readings(2*$pi*$i/32,@lines);
+    $sum[$_]+=$row[$_]/32 for 0..5;
+}
+for my $l (@lines) {my ($n,$a,$b)=@$l; near($sum[$n+2],-$n*$a*$b/2)}
+near($sum[2],0);
+for my $x (.23,.7,1.2) {
+    my ($left,$right)=(0,0);
+    for my $i (0..31) {
+        $left+=(density($x,2*$pi*$i/32,@lines))[0]/32;
+        $right+=(density($pi-$x,2*$pi*$i/32,@lines))[0]/32;
+    }
+    near($left,$right);
+}
+print "Charge interval: J=0 E=3 W2=-0.5; positive -0.5, reflected +0.5, linear 0; harmonics pass\n";
+
+my ($re,$rm,$mp,$mn)=(1.00115965,1.00116592,2.79285,-1.91304);
+my $ratio=-.68497935;
+my $a=sqrt(-$ratio);
+near((readings(.23,[1,$a,-$a,0],[2,$a/sqrt(2),$a/sqrt(2),0]))[3]/(-.5),$ratio);
+printf "Comparison: g_e=%.8f g_mu=%.8f; excess %.6f%% %.6f%%\n",2*$re,2*$rm,100*($re-1),100*($rm-1);
+printf "Comparison: g_p=%.5f mu_n/mu_p=%.6f; example amplitude=%.6f\n",2*$mp,$ratio,$a;
+my ($cSI,$eSI,$muB,$muN)=(299792458,1.602176634e-19,9.27401e-24,5.05078e-27);
+printf "Imported EDM limits in c*d/abs(mu): %.2g %.2g\n",
+    $cSI*4.1e-30*$eSI*.01/($re*$muB),$cSI*1.8e-26*$eSI*.01/(-$mn*$muN);
+
+my @dS=(.2,-.4,.7); my $gamma=-$re;
+my @axis=(0,0,1); my @spin=(.3,-.4,0);
+for my $i (0..2) {
+    my ($j,$k)=(($i+1)%3,($i+2)%3);
+    my $ds=$split*($spin[$j]*$axis[$k]-$spin[$k]*$axis[$j]);
+    my $dl=$split*($axis[$j]*$spin[$k]-$axis[$k]*$spin[$j]);
+    near($ds+$dl,0);
+}
+near(sum(map {$gamma*$_} @dS)/sum(map {-$_} @dS),-$gamma);
+for my $k (0,2) {
+    my $mag=sub {my $B=shift; sum(map {(1+$_*$B)/2*($_-$k*$B)} (-1,1))};
+    near(diff($mag,0),1-$k);
+}
+my $pair=sub {my ($x,$y)=@_; (1+$x)*$y-(1+$y)*$x};
+near($pair-&gt;(.7,.7),0); near($pair-&gt;(.2,.8),-$pair-&gt;(.8,.2));
+print "Rod transfer, repeated-state exclusion and both susceptibility signs pass\n";
+
+# Uniform source motion. Use a quadratic rest potential and vary the lab action.
+{
+    my $u=.6;
+    my $G=1/sqrt(1-$u*$u);
+    my $potential=sub {my ($x,$y,$t)=@_; $G*(($G*($x-$u*$t))**2+$y*$y)/2};
+    for my $V (-.4,0,.6) {
+        my $fy=diff(sub {- $potential-&gt;(0,$_[0],0)*(1-$u*$V)},1);
+        near($fy/(-$G),1-$u*$V);
+        my ($x,$y,$t,$dt)=(.2,.8,.3,.17);
+        my $x0=$G*($x-$u*$t);
+        my $dt0=$G*(($t+$dt)-$u*($x+$V*$dt))-$G*($t-$u*$x);
+        near(($x0*$x0+$y*$y)*$dt0/2,$potential-&gt;($x,$y,$t)*(1-$u*$V)*$dt);
+    }
+    printf "Uniform source: transverse force share at u=V=0.6 C: %.6f\n",1-$u*$u;
+}
+
+# Advance the four-vectors locally, then undo the lab boost to read the rest spin.
+# Units C=q/M=1. E is transverse and B axial.
+sub bend_ratio {
+    my ($v,$k,$E,$B)=@_;
+    my $g=1/sqrt(1-$v*$v);
+    my $U=[$g,$g*$v,0,0];
+    my $s=[$g*$v,$g,0,0];
+    my $G=sub {my $x=shift; [$E*$x-&gt;[2],$B*$x-&gt;[2],$E*$x-&gt;[0]-$B*$x-&gt;[1],0]};
+    my $acc=$G-&gt;($U);
+    my $gs=$G-&gt;($s);
+    my @ds=map {mink($acc,$s)*$U-&gt;[$_]+$k*($gs-&gt;[$_]+mink($U,$gs)*$U-&gt;[$_])} 0..3;
+    my (@orbit,@spin);
+    for my $h (-1e-6,1e-6) {
+        my @v4=map {$U-&gt;[$_]+$h*$acc-&gt;[$_]} 0..3;
+        my @s4=map {$s-&gt;[$_]+$h*$ds[$_]} 0..3;
+        my @rest=map {$s4[$_]-$v4[$_]*$s4[0]/(1+$v4[0])} 1,2;
+        push @spin,atan2($rest[1],$rest[0]);
+        push @orbit,atan2($v4[2],$v4[1]);
+    }
+    return ($spin[1]-$spin[0])/($orbit[1]-$orbit[0]);
+}
+for my $v (.05,.6,.82) {
+    my $g=1/sqrt(1-$v*$v);
+    for my $k (0,.5,1,$re,1.4) {
+        near(bend_ratio($v,$k,0,.7),1+$g*($k-1));
+        near(bend_ratio($v,$k,.4,0),1-$g+$k*$g*$v*$v);
+    }
+}
+printf "Rest spin: boost-only B at 0.6 C %.6f; k=1 electric at 0.05 C %.8f (30 cases)\n",
+       bend_ratio(.6,0,0,.7),bend_ratio(.05,1,.4,0);
+
+# Homogeneous changing a, a counterclockwise rectangle, and fixed canonical momentum.
+{
+    my ($q,$mass,$b)=(-.8,2,.7);
+    my $can=sub {my ($v,$t)=@_; $mass*$v+$q*.3*$t};
+    near(-diff(sub {$can-&gt;(0,$_[0])},.2),-$q*.3);
+    my @path=([0,0],[2,0],[2,3],[0,3],[0,0]);
+    my $angle=0;
+    for my $i (0..3) {
+        my ($x,$y)=@{$path[$i]};
+        my ($X,$Y)=@{$path[$i+1]};
+        $angle-= $b*(-($Y+$y)*($X-$x)+($X+$x)*($Y-$y))/4;
+    }
+    near($angle,-6*$b);
+    my ($x,$y,$px,$py)=(.7,-.2,.3,.9);
+    my $H=sub {my $B=shift; (($px+$q*$B*$y/2)**2+($py-$q*$B*$x/2)**2)/(2*$mass)};
+    near(-diff($H,0),$q*($x*$py-$y*$px)/(2*$mass));
+    printf "Changing source, signed loop angle %.6f, and orbital g=1 pass\n",$angle;
+}
+
+# Three-line proton, including its constant-profile response.
+my @three=([1,sqrt(2/3),sqrt(2/3),0],[2,sqrt(1/3),sqrt(1/3),$pi/2],[3,1/3,-1/3,$pi]);
+my @avg=(0)x6;
+for my $i (0..31) {
+    my @vals=readings(2*$pi*$i/32,@three);
+    $avg[$_]+=$vals[$_]/32 for 0..5;
+}
+my @target=(1,3,0,-1/3,-1/3,1/6);
+near($avg[$_],$target[$_]) for 0..5;
+my $a3=sqrt(2*abs($ratio)/3);
+near(($a3*$a3/2)/$avg[3],$ratio);
+my @unitn=readings(.31,[1,1,-1,0],[2,1/sqrt(2),1/sqrt(2),0]);
+my @unitp=readings(.31,$P);
+my $eta=1+$ratio;
+near(($unitn[3]+$eta*$unitn[4])/($unitp[3]+$eta*$unitp[4]),$ratio);
+for my $t (.1,.8) {
+    near((readings($t,$P,[3,.2,.2,0]))[3],-.5+.4*cos(2*$t));
+}
+my $Lambda=2*$mp/$avg[3];
+near($Lambda*$avg[3]/2,$mp);
+near($Lambda*($a3*$a3/2)/2,$mp*$ratio);
+my $wp=.3*$avg[0]+$avg[3]+.2*$avg[4];
+near($wp,.3-(1+.2)/3);
+printf "Three-line proton: W2=%.6f W4=%.6f W6=%.6f; neutral amplitude %.6f\n",
+       @avg[3..5],$a3;
+
+for my $m (-.5,.5) {
+    my $raw=-diff(sub {-$base*$_[0]*(1+2*$m/9)},.3)/$base;
+    near($raw,$m&gt;0 ? 10/9 : 8/9);
+}
+# Spin and body can rotate independently about z. Their joint derivative vanishes.
+my $body_energy=sub {
+    my ($s,$n,$applied)=@_;
+    my $dot=cos($s-$n)+.12;
+    return -.4*$dot**2-.3*$dot-$applied*.6;
+};
+my $spin_deriv=diff(sub {$body_energy-&gt;($_[0],.2,.9)},.7);
+my $body_deriv=diff(sub {$body_energy-&gt;(.7,$_[0],.9)},.2);
+near($spin_deriv+$body_deriv,0);
+my $net=sum(@dS);
+near(sum(map {$gamma*$_} @dS)/(-.75*$net),-$gamma/.75);
+my $gFe=1.919;
+my $share=(2*$re-$gFe)/(2*$re-1);
+near((1-$share)*2*$re+$share,$gFe);
+printf "Rotor branches 8/9, 10/9; iron example %.4f%% of angular change, %.4f%% of moment\n",
+       100*$share,100*$share/$gFe;
+print "All checks passed\n";
+'@ | perl -</code></pre></details><p><strong>Output of the verification run, exit code 0</strong></p><pre class="code"><code data-lang="text">Source and scope checks: 11
+Centre: internal derivative, inertia, spatial variation, reversal and work pass
+Axes and doublet: g = 0, 1, 2, 2.8; one invariant slope; electric spin slope = 0
+Charge interval: J=0 E=3 W2=-0.5; positive -0.5, reflected +0.5, linear 0; harmonics pass
+Comparison: g_e=2.00231930 g_mu=2.00233184; excess 0.115965% 0.116592%
+Comparison: g_p=5.58570 mu_n/mu_p=-0.684979; example amplitude=0.827635
+Imported EDM limits in c*d/abs(mu): 2.1e-19 8.9e-13
+Rod transfer, repeated-state exclusion and both susceptibility signs pass
+Uniform source: transverse force share at u=V=0.6 C: 0.640000
+Rest spin: boost-only B at 0.6 C -0.250000; k=1 electric at 0.05 C 0.00125078 (30 cases)
+Changing source, signed loop angle -4.200000, and orbital g=1 pass
+Three-line proton: W2=-0.333333 W4=-0.333333 W6=0.166667; neutral amplitude 0.675761
+Rotor branches 8/9, 10/9; iron example 8.3127% of angular change, 4.3318% of moment
+All checks passed</code></pre></section>
+<section class="cc mathjax" id="s-16"><h2>16. What is not yet understood</h2><ul><li><strong>Static centre force.</strong> The Geometry of the charge-coupling space must produce a comparison that depends on external separation from a resting charge.</li><li><strong>Moving and changing sources.</strong> The Geometry of charge coupling must connect the comparison angle between frames and calculate source motion, multiple-source response and reciprocal momentum transfer.</li><li><strong>Magnetic spin rate.</strong> The Geometry of the spin space and its comparison with the charge-coupling response must determine how the source turns the rest axes and on which particle preparations that response holds.</li><li><strong>Lepton excess and electric slope.</strong> The same spin–source construction must account for the species-dependent residual and determine the electric spin difference after the magnetic response is present.</li><li><strong>Whole hadron preparations.</strong> Charge Geometry must supply the physical profiles. Granularity and Collapse on the relevant existing spaces must explain which whole proton and neutron preparations persist or are produced.</li><li><strong>Neutron orientation.</strong> The hadron construction must relate a separately observable signed reading to the reflection-odd charge density. The proposed baryon reading has yet to establish that correspondence.</li><li><strong>Hadron moment scale.</strong> Charge-coupling Geometry must derive how the source samples the density, how the reading enters the spin energy, and its strength in proton-reference units.</li><li><strong>Silver spot spacing.</strong> Atomic spin and charge-coupling Geometry must give the silver slope. The analyzer Geometry and its Collapse readout must connect the prepared channels to measured positions.</li><li><strong>Iron transfer and domains.</strong> The interacting spin and external orbital geometries must identify actual angular-momentum recipients and slopes. The specimen’s available patterns and their changes require its Granularity and Collapse construction.</li><li><strong>Material susceptibility.</strong> The joint occupations of existing electron patterns, their interactions and their change with temperature and setting must determine \(p'_h\) and \(E''_h\). Antisymmetric exchange alone fixes neither.</li></ul></section>
+<section class="cc mathjax" id="s-17"><h2>17. Observation register</h2><div class="tablewrap"><table class="mdtab"><tr><th>Observation</th><th>Constraint or numerical anchor</th></tr><tr><td><strong>MG-D01 · Silver deposits</strong></td><td><strong>Constraint</strong> on the two-channel analyzer. Registered positions relative to the undeflected line further constrain the common force.</td></tr><tr><td><strong>MG-D02 · Cathode-ray bending</strong></td><td><strong>Constraint</strong> on the spatial centre response. A separately characterized reference beam gives an <strong>anchor for \(B\)</strong> once a construction contains the comparison that P7 tests.</td></tr><tr><td><strong>MG-D03 · Electron resonances</strong></td><td><strong>Constraint</strong> on the spin response, and an <strong>anchor for \(k_e\)</strong> once a construction contains the response that P8 tests, with independently calibrated resonance identification. The seven isolated spaces acquire no numerical spin radius or overlap strength from this operation.</td></tr><tr><td><strong>MG-D04 · Muon count oscillation and NMR</strong></td><td><strong>Constraint</strong> on moving-spin Geometry. The QED-dependent reduced number supplies no anchor.</td></tr><tr><td><strong>MG-D05 · Proton trap</strong></td><td><strong>Constraint</strong> on the whole-proton moment. A future independently identified wave and normalized sampler would allow the absolute slope to anchor their one remaining strength.</td></tr><tr><td><strong>MG-D06 · Neutron resonance, reference precession and charge null</strong></td><td><strong>Constraints</strong> on nonzero magnetic response, opposite sign and small net charge. The illustrative amplitudes obtained from the moment ratio are assigned values.</td></tr><tr><td><strong>MG-D07 · Iron torsion and converse magnetization</strong></td><td><strong>Constraints</strong> on mechanical and magnetic transfer. The spin-only prediction uses the independently measured packet slope. The illustrative orbital fraction uses one supplied specimen ratio.</td></tr><tr><td><strong>MG-D08 · Electric reversals</strong></td><td><strong>Constraints</strong> on the magnitude of any permanent spin-linked electric slope.</td></tr><tr><td><strong>MG-D09 · Specimen motion and temperature dependence</strong></td><td><strong>Constraints</strong> on material interactions, accessible occupations and induced circulation.</td></tr><tr><td><strong>MG-D10 · Persistent-current search</strong></td><td><strong>Constraint</strong> on an additional signed source in the searched preparations and sensitivity range.</td></tr><tr><td><strong>Static/current scale comparison and induction</strong></td><td><strong>Constraints</strong> on the relative source normalization and the response to a changing current. Neither historical comparison is used to supply an unverified numerical anchor.</td></tr></table></div></section>
+<footer><p>A document of <a href="https://chrisbergstrombeamish.github.io/general-relativity/">Physics: Particle Reconstruction and General Relativity</a></p></footer>
+</main>
+</body>
+</html>
