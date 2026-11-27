@@ -6,7 +6,7 @@ RELATIVITY
 * How Compact Notation Hides the Static Reference Frame
   https://chrisbergstrombeamish.github.io/general-relativity/How-Compact-Notation-Hides-the-Static-Reference-Frame/
   Where the reference frame hides in the metric tensor and the coordinate differentials, traced for a photon climbing out of a gravitational field and a mass falling in, with every clock, ruler and energy entry of the F·dr ledger written out.
-  Uploaded 2026-11-27 07:08:10 UTC.
+  Final version uploaded 2026-11-27 13:04:34 UTC.
 
 * Reconciling the Schwarzschild Solution with Conservation of Mass-Energy
   https://chrisbergstrombeamish.github.io/general-relativity/Reconciling-the-Schwarzschild-Solution-with-Conservation-of-Mass-Energy/
