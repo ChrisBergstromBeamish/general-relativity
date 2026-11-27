@@ -4,7 +4,7 @@
   "publication_type": "preprint",
   "access_right": "open",
   "license": "cc-by-4.0",
-  "version": "2.1.1",
+  "version": "2.2.0",
   "publication_date": "2026-11-27",
   "language": "eng",
   "creators": [
@@ -13,7 +13,7 @@
       "affiliation": "Independent Researcher"
     }
   ],
-  "description": "A folder of research papers. Relativity: Reconciling the Schwarzschild Solution with Conservation of Mass-Energy, version 1.0.0, the current paper; Why Is It Impossible to Escape from a Black Hole?, version 1.3.2, superseded by it; How Compact Notation Hides the Static Reference Frame. Validation: the redshift data for observations with large redshifts (Section 19 of the second paper); the pulse-profile calculation on NASA's NICER observations is in its own repository (https://github.com/ChrisBergstromBeamish/fast-nicer-pulse-profile-modeling). Bridge: Geometry: Where, When and What; A Granularity Tensor for the Internal Spin Geometry; Collapse as a Complete Physical Event; A Force-Carrying Geometric Excitation; Granularity, Collapse, Spin and Curvature; How the Geometry Obeys the Constraints from Baryon Numbers. Internal Spaces: Spin from a Specified Internal Geometry; Electric Charge from an Internal Standing Wave. Not peer-reviewed.",
+  "description": "A folder of research papers. Relativity: Reconciling the Schwarzschild Solution with Conservation of Mass-Energy, version 1.0.0, the current paper; Why Is It Impossible to Escape from a Black Hole?, version 1.3.2, superseded by it; How Compact Notation Hides the Static Reference Frame; The Photon and the End of the Rainbow; A Clock on a Rope; A Relay Race to the Edge; What Comes After Forever?; Who Pays for the Falling Stone?; The Pull That Does Not Wait. Validation: the redshift data for observations with large redshifts (Section 19 of the second paper); the pulse-profile calculation on NASA's NICER observations is in its own repository (https://github.com/ChrisBergstromBeamish/fast-nicer-pulse-profile-modeling). Bridge: Geometry: Where, When and What; A Granularity Tensor for the Internal Spin Geometry; Collapse as a Complete Physical Event; A Force-Carrying Geometric Excitation; Granularity, Collapse, Spin and Curvature; How the Geometry Obeys the Constraints from Baryon Numbers. Internal Spaces: Electric Charge from an Internal Standing Wave; Flavor from a Separate Internal Standing-Wave Geometry; Spin from a Specified Internal Geometry; An Independent Internal Space for Inertia; An Independent Internal Space for Gravitational Coupling; An Independent Internal Space for Charge Coupling. Not peer-reviewed.",
   "keywords": [
     "general relativity",
     "Schwarzschild solution",
@@ -28,7 +28,11 @@
     "collapse",
     "electric charge",
     "baryon number",
-    "internal geometry"
+    "internal geometry",
+    "flavour",
+    "inertia",
+    "gravitational coupling",
+    "charge coupling"
   ],
   "related_identifiers": [
     {
@@ -90,7 +94,57 @@
       "identifier": "https://chrisbergstrombeamish.github.io/general-relativity/Bridge/Baryon-Number-Constraints/",
       "relation": "hasPart",
       "resource_type": "publication-preprint"
+    },
+    {
+      "identifier": "https://chrisbergstrombeamish.github.io/general-relativity/Relativity/The-Photon-and-the-End-of-the-Rainbow/",
+      "relation": "hasPart",
+      "resource_type": "publication-preprint"
+    },
+    {
+      "identifier": "https://chrisbergstrombeamish.github.io/general-relativity/Relativity/A-Clock-on-a-Rope/",
+      "relation": "hasPart",
+      "resource_type": "publication-preprint"
+    },
+    {
+      "identifier": "https://chrisbergstrombeamish.github.io/general-relativity/Relativity/A-Relay-Race-to-the-Edge/",
+      "relation": "hasPart",
+      "resource_type": "publication-preprint"
+    },
+    {
+      "identifier": "https://chrisbergstrombeamish.github.io/general-relativity/Relativity/What-Comes-After-Forever/",
+      "relation": "hasPart",
+      "resource_type": "publication-preprint"
+    },
+    {
+      "identifier": "https://chrisbergstrombeamish.github.io/general-relativity/Relativity/Who-Pays-for-the-Falling-Stone/",
+      "relation": "hasPart",
+      "resource_type": "publication-preprint"
+    },
+    {
+      "identifier": "https://chrisbergstrombeamish.github.io/general-relativity/Relativity/The-Pull-That-Does-Not-Wait/",
+      "relation": "hasPart",
+      "resource_type": "publication-preprint"
+    },
+    {
+      "identifier": "https://chrisbergstrombeamish.github.io/general-relativity/Internal-Spaces/Flavor/",
+      "relation": "hasPart",
+      "resource_type": "publication-preprint"
+    },
+    {
+      "identifier": "https://chrisbergstrombeamish.github.io/general-relativity/Internal-Spaces/Inertia/",
+      "relation": "hasPart",
+      "resource_type": "publication-preprint"
+    },
+    {
+      "identifier": "https://chrisbergstrombeamish.github.io/general-relativity/Internal-Spaces/Gravitational-Coupling/",
+      "relation": "hasPart",
+      "resource_type": "publication-preprint"
+    },
+    {
+      "identifier": "https://chrisbergstrombeamish.github.io/general-relativity/Internal-Spaces/Charge-Coupling/",
+      "relation": "hasPart",
+      "resource_type": "publication-preprint"
     }
   ],
-  "notes": "Not peer-reviewed. Versions 1.0.0 to 1.3.2 of this record held the first paper alone, Why Is It Impossible to Escape from a Black Hole? (versions 1.0.0 and 1.1.0 titled 'Do All Frames of Reference Have the Same Yardstick?'; version 1.3.2: DOI 10.5281/zenodo.24544542; the DOIs of every version are in RELEASE.md). Version 2.0.0 is the first to hold the whole folder: the second paper, Reconciling the Schwarzschild Solution with Conservation of Mass-Energy, at version 1.0.0, in a release for the first time; the first paper unchanged but for one line on its folder page saying that it is superseded; the redshift data; and the first document on internal spaces. Version 2.1.0 adds How Compact Notation Hides the Static Reference Frame and the section Bridge, and Electric Charge from an Internal Standing Wave to Internal Spaces. Version 2.1.1 corrects How Compact Notation Hides the Static Reference Frame."
+  "notes": "Not peer-reviewed. Versions 1.0.0 to 1.3.2 of this record held the first paper alone, Why Is It Impossible to Escape from a Black Hole? (versions 1.0.0 and 1.1.0 titled 'Do All Frames of Reference Have the Same Yardstick?'; version 1.3.2: DOI 10.5281/zenodo.24544542; the DOIs of every version are in RELEASE.md). Version 2.0.0 is the first to hold the whole folder: the second paper, Reconciling the Schwarzschild Solution with Conservation of Mass-Energy, at version 1.0.0, in a release for the first time; the first paper unchanged but for one line on its folder page saying that it is superseded; the redshift data; and the first document on internal spaces. Version 2.1.0 adds How Compact Notation Hides the Static Reference Frame and the section Bridge, and Electric Charge from an Internal Standing Wave to Internal Spaces. Version 2.1.1 corrects How Compact Notation Hides the Static Reference Frame. Version 2.2.0 adds articles to Relativity and internal spaces to Internal Spaces, replaces the spin construction with its newer version, and corrects the photon part of How Compact Notation Hides the Static Reference Frame."
 }

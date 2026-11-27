@@ -6,12 +6,42 @@ RELATIVITY
 * How Compact Notation Hides the Static Reference Frame
   https://chrisbergstrombeamish.github.io/general-relativity/How-Compact-Notation-Hides-the-Static-Reference-Frame/
   Where the reference frame hides in the metric tensor and the coordinate differentials, traced for a photon climbing out of a gravitational field and a mass falling in, with every clock, ruler and energy entry of the F·dr ledger written out.
-  Final version uploaded 2026-11-27 13:04:34 UTC.
+  Final version uploaded 2026-11-27 13:54:18 UTC.
 
 * Reconciling the Schwarzschild Solution with Conservation of Mass-Energy
   https://chrisbergstrombeamish.github.io/general-relativity/Reconciling-the-Schwarzschild-Solution-with-Conservation-of-Mass-Energy/
   The current paper. Version 1.0.0, DOI 10.5281/zenodo.24573232 (release v2.0.0 of this folder); not peer-reviewed. Its folder also holds the paper's text as Markdown. Section 20 of the paper holds its full AI audit: the prompt, the results and the discussion with the auditor.
   Final version uploaded 2026-11-26 23:49:16 UTC.
+
+* The Photon and the End of the Rainbow
+  https://chrisbergstrombeamish.github.io/general-relativity/Relativity/The-Photon-and-the-End-of-the-Rainbow/
+  How light gets past a black hole's event horizon, told from the frame of an observer who is not standing still.
+  Uploaded 2026-11-27 13:54:18 UTC.
+
+* A Clock on a Rope
+  https://chrisbergstrombeamish.github.io/general-relativity/Relativity/A-Clock-on-a-Rope/
+  Lower a laboratory toward a black hole, and its clock, its ruler and its scale all change. Cut the rope, and it keeps the ones it had.
+  Uploaded 2026-11-27 13:54:18 UTC.
+
+* A Relay Race to the Edge
+  https://chrisbergstrombeamish.github.io/general-relativity/Relativity/A-Relay-Race-to-the-Edge/
+  How a line of observers hands one photon along, and why, on A's own clock, it reaches the edge only at infinity.
+  Uploaded 2026-11-27 13:54:18 UTC.
+
+* What Comes After Forever?
+  https://chrisbergstrombeamish.github.io/general-relativity/Relativity/What-Comes-After-Forever/
+  A photon slips past the edge of A's observable universe. A cannot watch. A can work it out: past the edge, time runs the other way, distances come out imaginary, and every answer comes in two.
+  Uploaded 2026-11-27 13:54:18 UTC.
+
+* Who Pays for the Falling Stone?
+  https://chrisbergstrombeamish.github.io/general-relativity/Relativity/Who-Pays-for-the-Falling-Stone/
+  General relativity's clocks and rulers in five steps from conservation of energy, and a two-charge machine that shows why every stored energy must be counted, once.
+  Uploaded 2026-11-27 13:54:18 UTC.
+
+* The Pull That Does Not Wait
+  https://chrisbergstrombeamish.github.io/general-relativity/Relativity/The-Pull-That-Does-Not-Wait/
+  A rock comes apart without a flash, and the conservation laws show why every pull, clock and ruler is updated at once, with no light to carry the change.
+  Uploaded 2026-11-27 13:54:18 UTC.
 
 * Why Is It Impossible to Escape from a Black Hole?
   https://chrisbergstrombeamish.github.io/general-relativity/Do-All-Frames-of-Reference-Have-the-Same-Yardstick/
@@ -64,15 +94,35 @@ BRIDGE
 
 INTERNAL SPACES
 
-* Spin from a Specified Internal Geometry
-  https://chrisbergstrombeamish.github.io/general-relativity/Internal-Spaces/Spin-from-Internal-Geometry/
-  The solved internal wave, conservative apparatus interaction and stated clock/curvature response—with complete geometry, reproducible inputs and linked proofs.
-  Final version uploaded 2026-11-27 01:23:35 UTC.
-
 * Electric Charge from an Internal Standing Wave
   https://chrisbergstrombeamish.github.io/general-relativity/Internal-Spaces/Electric-Charge/
   A fully specified separate geometry, a derived signed invariant, explicit numerical anchors and a checked working example.
   Uploaded 2026-11-27 01:23:35 UTC.
+
+* Flavor from a Separate Internal Standing-Wave Geometry
+  https://chrisbergstrombeamish.github.io/general-relativity/Internal-Spaces/Flavor/
+  A solved independent internal space with readable standing-mode types, explicit numerical anchors and a checked transition interface.
+  Uploaded 2026-11-27 13:54:18 UTC.
+
+* Spin from a Specified Internal Geometry
+  https://chrisbergstrombeamish.github.io/general-relativity/Internal-Spaces/Spin-from-Internal-Geometry/
+  The solved internal wave, conservative apparatus interaction and stated clock/curvature response—with complete geometry, reproducible inputs and linked proofs.
+  Final version uploaded 2026-11-27 13:54:18 UTC.
+
+* An Independent Internal Space for Inertia
+  https://chrisbergstrombeamish.github.io/general-relativity/Internal-Spaces/Inertia/
+  A solved standing wave, an explicit geometric motion coupling, a derived momentum–velocity response and a finite impulse with its complete work source.
+  Uploaded 2026-11-27 13:54:18 UTC.
+
+* An Independent Internal Space for Gravitational Coupling
+  https://chrisbergstrombeamish.github.io/general-relativity/Internal-Spaces/Gravitational-Coupling/
+  A solved real wave, a declared tidal metric response, an exact finite orientation change and its complete work account.
+  Uploaded 2026-11-27 13:54:18 UTC.
+
+* An Independent Internal Space for Charge Coupling
+  https://chrisbergstrombeamish.github.io/general-relativity/Internal-Spaces/Charge-Coupling/
+  A solved standing-wave response, a geometric signed coupling, conserved carried charge and a complete account of supplied work.
+  Uploaded 2026-11-27 13:54:18 UTC.
 
 PRIORITY RECORD
 
