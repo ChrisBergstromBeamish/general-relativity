@@ -1,34 +1,32 @@
-# Release v2.0.0 — Frozen Public Record
+# Release v2.1.0 — Frozen Public Record
 
-This page is the **priority stamp**: it asserts that this exact set of files, with these hashes, existed publicly on the date below. This release is the first to hold the whole folder. The releases before it, v1.3.2 back to v1.0.0, held the first paper alone; their records are kept under [Earlier versions](#earlier-versions).
+This page is the **priority stamp**: it asserts that this exact set of files, with these hashes, existed publicly on the date below. The records of the earlier releases are kept under [Earlier versions](#earlier-versions).
 
 | Field | Value |
 |---|---|
 | **Work** | Physics: Particle Reconstruction and General Relativity (the folder) |
-| **Version** | 2.0.0 |
-| **Contents** | Relativity: Reconciling the Schwarzschild Solution with Conservation of Mass-Energy, version 1.0.0, the current paper; Why Is It Impossible to Escape from a Black Hole?, version 1.3.2, superseded by it. Validation: the redshift data for observations with large redshifts. Internal Spaces: Spin from Internal Geometry. |
-| **This version published** | 2026-11-26 23:49 UTC (GitHub Pages) |
+| **Version** | 2.1.0 |
+| **Contents** | Relativity: How Compact Notation Hides the Static Reference Frame, new; Reconciling the Schwarzschild Solution with Conservation of Mass-Energy, version 1.0.0, the current paper, unchanged; Why Is It Impossible to Escape from a Black Hole?, version 1.3.2, superseded by it, unchanged. Validation: the redshift data for observations with large redshifts. Bridge: Geometry: Where, When and What; A Granularity Tensor for the Internal Spin Geometry; Collapse as a Complete Physical Event; A Force-Carrying Geometric Excitation; Granularity, Collapse, Spin and Curvature; How the Geometry Obeys the Constraints from Baryon Numbers. Internal Spaces: Spin from a Specified Internal Geometry; Electric Charge from an Internal Standing Wave. |
+| **This version published** | 2026-11-27 07:08 UTC (GitHub Pages) |
 | **Author** | Chris Bergstrom |
-| **Public pages** | https://chrisbergstrombeamish.github.io/general-relativity/ (the folder); https://chrisbergstrombeamish.github.io/general-relativity/Reconciling-the-Schwarzschild-Solution-with-Conservation-of-Mass-Energy/ (the second paper); https://chrisbergstrombeamish.github.io/general-relativity/Do-All-Frames-of-Reference-Have-the-Same-Yardstick/ (the first paper); https://chrisbergstrombeamish.github.io/general-relativity/Internal-Spaces/Spin-from-Internal-Geometry/ (Spin from Internal Geometry) |
+| **Public pages** | https://chrisbergstrombeamish.github.io/general-relativity/ (the folder); https://chrisbergstrombeamish.github.io/general-relativity/How-Compact-Notation-Hides-the-Static-Reference-Frame/ (How Compact Notation Hides the Static Reference Frame); https://chrisbergstrombeamish.github.io/general-relativity/Bridge/Geometry/ (Geometry: Where, When and What); https://chrisbergstrombeamish.github.io/general-relativity/Bridge/Granularity/ (A Granularity Tensor for the Internal Spin Geometry); https://chrisbergstrombeamish.github.io/general-relativity/Bridge/Collapse/ (Collapse as a Complete Physical Event); https://chrisbergstrombeamish.github.io/general-relativity/Bridge/Force-Carrying-Excitation/ (A Force-Carrying Geometric Excitation); https://chrisbergstrombeamish.github.io/general-relativity/Bridge/Granularity-Collapse-Spin-and-Curvature/ (Granularity, Collapse, Spin and Curvature); https://chrisbergstrombeamish.github.io/general-relativity/Bridge/Baryon-Number-Constraints/ (How the Geometry Obeys the Constraints from Baryon Numbers) |
 | **License** | CC-BY-4.0 |
 | **DOI** | minted by Zenodo when this GitHub release is published (see the Zenodo record); all versions: 10.5281/zenodo.24426897 |
-| **Git tag** | `v2.0.0` |
-| **SHA-256 of the second paper** | `2a64deb13023b8c504e766847c575d94e0214521f689810fca6f3a525290d00c` |
-| **SHA-256 of its text copy** | `65722ef24c484b01a96ee2eb6d8716d532964838fb990431d3eb2f9ceceeba06` |
-| **`HASHES.sha256` manifest digest (SHA-256)** | `3e3327359d5711afc0497571eedca48d45e3430669859203db0b5d8892d8f662` |
-| **Files frozen** | 9: the second paper (`Reconciling-the-Schwarzschild-Solution-with-Conservation-of-Mass-Energy/Reconciling-the-Schwarzschild-Solution-with-Conservation-of-Mass-Energy.html`), its identical folder copy (`index.html` in the same folder) and its text copy (`Reconciling-the-Schwarzschild-Solution-with-Conservation-of-Mass-Energy.md`); the first paper (`Do-All-Frames-of-Reference-Have-the-Same-Yardstick/Do-All-Frames-of-Reference-Have-the-Same-Yardstick.html`, byte-identical to version 1.3.2) and its folder page (`index.html`, the same with one line saying it is superseded); the redshift data (`validation/high-redshift-observations.md`); Spin from Internal Geometry (`Internal-Spaces/Spin-from-Internal-Geometry/Spin-from-Internal-Geometry.html` and its identical `index.html`); and `.nojekyll` |
+| **Git tag** | `v2.1.0` |
+| **`HASHES.sha256` manifest digest (SHA-256)** | `6c8815e679a0d03fe38b8b1d825742806e804eb0922c949294c2bb57c81ebad5` |
+| **Files frozen** | 25: `Reconciling-the-Schwarzschild-Solution-with-Conservation-of-Mass-Energy/Reconciling-the-Schwarzschild-Solution-with-Conservation-of-Mass-Energy.html`; `Reconciling-the-Schwarzschild-Solution-with-Conservation-of-Mass-Energy/index.html`; `Reconciling-the-Schwarzschild-Solution-with-Conservation-of-Mass-Energy/Reconciling-the-Schwarzschild-Solution-with-Conservation-of-Mass-Energy.md`; `Do-All-Frames-of-Reference-Have-the-Same-Yardstick/Do-All-Frames-of-Reference-Have-the-Same-Yardstick.html`; `Do-All-Frames-of-Reference-Have-the-Same-Yardstick/index.html`; `validation/high-redshift-observations.md`; `Internal-Spaces/Spin-from-Internal-Geometry/Spin-from-Internal-Geometry.html`; `Internal-Spaces/Spin-from-Internal-Geometry/index.html`; `Internal-Spaces/Electric-Charge/Electric-Charge.html`; `Internal-Spaces/Electric-Charge/index.html`; `How-Compact-Notation-Hides-the-Static-Reference-Frame/How-Compact-Notation-Hides-the-Static-Reference-Frame.html`; `How-Compact-Notation-Hides-the-Static-Reference-Frame/index.html`; `Bridge/Geometry/Geometry.html`; `Bridge/Geometry/index.html`; `Bridge/Granularity/Granularity.html`; `Bridge/Granularity/index.html`; `Bridge/Collapse/Collapse.html`; `Bridge/Collapse/index.html`; `Bridge/Force-Carrying-Excitation/Force-Carrying-Excitation.html`; `Bridge/Force-Carrying-Excitation/index.html`; `Bridge/Granularity-Collapse-Spin-and-Curvature/Granularity-Collapse-Spin-and-Curvature.html`; `Bridge/Granularity-Collapse-Spin-and-Curvature/index.html`; `Bridge/Baryon-Number-Constraints/Baryon-Number-Constraints.html`; `Bridge/Baryon-Number-Constraints/index.html`; `.nojekyll` |
 | **Status** | Not peer-reviewed |
 
-## Changes from v1.3.2
+## Changes from v2.0.0
 
-- The release holds the whole folder. The second paper, Reconciling the Schwarzschild Solution with Conservation of Mass-Energy, is in a release for the first time, at version 1.0.0; the releases before this one left its folder out.
-- The first paper is unchanged. Its folder page carries one line at the top: "This paper is superseded by Reconciling the Schwarzschild Solution with Conservation of Mass-Energy", with a link. Its file under its own name is byte-identical to version 1.3.2.
-- New: the redshift data for observations with large redshifts (`validation/high-redshift-observations.md`, Section 19 of the second paper), and the section Internal Spaces with its first document, Spin from Internal Geometry.
-- The README, in three forms (`README.md`, `README.txt` and `README.html`), and the landing page list the documents in the sections Relativity, Validation and Internal Spaces, each with the time its final version was uploaded. They are not frozen, because they carry this release's DOI, which Zenodo mints after the release.
+- New: How Compact Notation Hides the Static Reference Frame; Geometry: Where, When and What; A Force-Carrying Geometric Excitation; Granularity, Collapse, Spin and Curvature; How the Geometry Obeys the Constraints from Baryon Numbers.
+- In a release for the first time, uploaded after v2.0.0: A Granularity Tensor for the Internal Spin Geometry; Collapse as a Complete Physical Event, each now with its eight opening sections (scope, method, premises, dependencies, one appendix per premise, mathematical traceability, completeness and its tests, and summaries for three readers) and a Uses / Fulfils line in each derivation section, their content sections unchanged apart from the renumbering; and Electric Charge from an Internal Standing Wave.
+- The second paper, the first paper, the redshift data and Spin from a Specified Internal Geometry are unchanged.
+- The README, in three forms, and the landing page list every document with the time its final version was uploaded. They are not frozen, because they carry this release's DOI, which Zenodo mints after the release.
 
 ## How the priority record works
 
-1. **GitHub**: each tagged release (`v1.0.0`, `v1.1.0`, `v1.2.0`, `v1.2.1`, `v1.2.2`, `v1.2.3`, `v1.3.0`, `v1.3.1`, `v1.3.2`, `v2.0.0`) fixes the commit and the file tree at a timestamp.
+1. **GitHub**: each tagged release (`v1.0.0`, `v1.1.0`, `v1.2.0`, `v1.2.1`, `v1.2.2`, `v1.2.3`, `v1.3.0`, `v1.3.1`, `v1.3.2`, `v2.0.0`, `v2.1.0`) fixes the commit and the file tree at a timestamp.
 2. **`HASHES.sha256`**: the SHA-256 of every frozen file; the digest above covers the manifest itself.
 3. **Zenodo**: each release is archived by Zenodo, which mints a DOI for that version with the deposit date; the concept DOI 10.5281/zenodo.24426897 resolves to the latest version.
 4. **Independent archives**: the Internet Archive's Wayback Machine holds a snapshot of the second paper's public page taken on 2026-11-26 at 23:50:28 UTC (https://web.archive.org/web/20261126235028/https://chrisbergstrombeamish.github.io/general-relativity/Reconciling-the-Schwarzschild-Solution-with-Conservation-of-Mass-Energy/?v=1.0.0), byte-identical to the paper above. The address carries `?v=1.0.0` because the Wayback Machine returns its earlier capture for an address it saved within the last hours; GitHub Pages serves the same file with or without it.
@@ -36,6 +34,12 @@ This page is the **priority stamp**: it asserts that this exact set of files, wi
 To verify a copy: compute its SHA-256 (for example `sha256sum <file>`) and compare it with the value above, or, for an earlier version, with the value in its record below.
 
 ## Earlier versions
+
+**v2.0.0** (2026-11-26, GitHub Pages from 23:49 UTC; tag `v2.0.0`; DOI [10.5281/zenodo.24573232](https://doi.org/10.5281/zenodo.24573232); its stamp is `RELEASE.md` at that tag)
+
+- SHA-256 of the second paper: `2a64deb13023b8c504e766847c575d94e0214521f689810fca6f3a525290d00c`
+- `HASHES.sha256` manifest digest: `3e3327359d5711afc0497571eedca48d45e3430669859203db0b5d8892d8f662`
+- Wayback Machine: the second paper's public page on 2026-11-26 at 23:50:28 UTC (https://web.archive.org/web/20261126235028/https://chrisbergstrombeamish.github.io/general-relativity/Reconciling-the-Schwarzschild-Solution-with-Conservation-of-Mass-Energy/?v=1.0.0), byte-identical to it.
 
 **v1.3.2** (2026-11-25, GitHub Pages from 22:17 UTC; tag `v1.3.2`; DOI [10.5281/zenodo.24544542](https://doi.org/10.5281/zenodo.24544542); its stamp is `RELEASE.md` at that tag)
 

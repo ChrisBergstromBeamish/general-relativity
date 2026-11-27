@@ -3,6 +3,11 @@ Physics: Particle Reconstruction and General Relativity
 
 RELATIVITY
 
+* How Compact Notation Hides the Static Reference Frame
+  https://chrisbergstrombeamish.github.io/general-relativity/How-Compact-Notation-Hides-the-Static-Reference-Frame/
+  Where the reference frame hides in the metric tensor and the coordinate differentials, traced for a photon climbing out of a gravitational field and a mass falling in, with every clock, ruler and energy entry of the F·dr ledger written out.
+  Uploaded 2026-11-27 07:08:10 UTC.
+
 * Reconciling the Schwarzschild Solution with Conservation of Mass-Energy
   https://chrisbergstrombeamish.github.io/general-relativity/Reconciling-the-Schwarzschild-Solution-with-Conservation-of-Mass-Energy/
   The current paper. Version 1.0.0, DOI 10.5281/zenodo.24573232 (release v2.0.0 of this folder); not peer-reviewed. Its folder also holds the paper's text as Markdown. Section 20 of the paper holds its full AI audit: the prompt, the results and the discussion with the auditor.
@@ -27,15 +32,35 @@ VALIDATION
 
 BRIDGE
 
+* Geometry: Where, When and What
+  https://chrisbergstrombeamish.github.io/general-relativity/Bridge/Geometry/
+  Spacetime is the where and when; at every event the internal spaces carry the what. What an internal space is, maximum decoupling with one internal space per attribute, and one section for each step of the construction sequence.
+  Uploaded 2026-11-27 07:08:10 UTC.
+
 * A Granularity Tensor for the Internal Spin Geometry
   https://chrisbergstrombeamish.github.io/general-relativity/Bridge/Granularity/
   From geometric overlap and classical wave action to a tensor with discrete complete-packet action sectors.
-  Uploaded 2026-11-27 01:23:35 UTC.
+  Final version uploaded 2026-11-27 07:08:10 UTC.
 
 * Collapse as a Complete Physical Event
   https://chrisbergstrombeamish.github.io/general-relativity/Bridge/Collapse/
   A finite construction on the internal spin geometry: occurrence, selection, a changed wave, an apparatus record, and a conserved energy and angular-momentum account.
-  Uploaded 2026-11-27 01:23:35 UTC.
+  Final version uploaded 2026-11-27 07:08:10 UTC.
+
+* A Force-Carrying Geometric Excitation
+  https://chrisbergstrombeamish.github.io/general-relativity/Bridge/Force-Carrying-Excitation/
+  One admitted, localized excitation that carries energy, momentum and spin from a source to a receiver: its overlap force, emission and absorption with complete balances, and what conservation establishes for the update of clocks and rulers at once.
+  Uploaded 2026-11-27 07:08:10 UTC.
+
+* Granularity, Collapse, Spin and Curvature
+  https://chrisbergstrombeamish.github.io/general-relativity/Bridge/Granularity-Collapse-Spin-and-Curvature/
+  Spin, events and gravity in one reconciled model: the internal spin geometry, its granularity and collapse, and the curvature response on the gravity paper's clocks.
+  Uploaded 2026-11-27 07:08:10 UTC.
+
+* How the Geometry Obeys the Constraints from Baryon Numbers
+  https://chrisbergstrombeamish.github.io/general-relativity/Bridge/Baryon-Number-Constraints/
+  The observed charges, isospin, flavour and baryon numbers of hadrons as tests for the separate internal spaces, step by step along the construction sequence, with baryon-number conservation as the anchor.
+  Uploaded 2026-11-27 07:08:10 UTC.
 
 INTERNAL SPACES
 
