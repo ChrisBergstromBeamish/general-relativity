@@ -10,38 +10,43 @@ RELATIVITY
 
 * Reconciling the Schwarzschild Solution with Conservation of Mass-Energy
   https://chrisbergstrombeamish.github.io/general-relativity/Reconciling-the-Schwarzschild-Solution-with-Conservation-of-Mass-Energy/
-  The current paper. Version 1.0.0, DOI 10.5281/zenodo.24573232 (release v2.0.0 of this folder); not peer-reviewed. Its folder also holds the paper's text as Markdown. Section 20 of the paper holds its full AI audit: the prompt, the results and the discussion with the auditor.
-  Final version uploaded 2026-11-26 23:49:16 UTC.
+  The current paper. Version 1.0.1 (release v2.3.0 of this folder; version 1.0.0: DOI 10.5281/zenodo.24573232, release v2.0.0); not peer-reviewed. Its folder also holds the paper's text as Markdown. Section 20 of the paper holds its full AI audit: the prompt, the results and the discussion with the auditor.
+  Final version uploaded 2026-11-27 14:49:56 UTC.
+
+* Curved Space from f · dr
+  https://chrisbergstrombeamish.github.io/general-relativity/Relativity/Curved-Space-from-f-dr/
+  The curvature of space, derived step by step from the conservation of mass-energy, set beside Einstein's field equations and merged with them by algebra, with the exact places where the two part.
+  Uploaded 2026-11-27 14:49:56 UTC.
 
 * The Photon and the End of the Rainbow
   https://chrisbergstrombeamish.github.io/general-relativity/Relativity/The-Photon-and-the-End-of-the-Rainbow/
   How light gets past a black hole's event horizon, told from the frame of an observer who is not standing still.
-  Uploaded 2026-11-27 13:54:18 UTC.
+  Final version uploaded 2026-11-27 14:49:56 UTC.
 
 * A Clock on a Rope
   https://chrisbergstrombeamish.github.io/general-relativity/Relativity/A-Clock-on-a-Rope/
   Lower a laboratory toward a black hole, and its clock, its ruler and its scale all change. Cut the rope, and it keeps the ones it had.
-  Uploaded 2026-11-27 13:54:18 UTC.
+  Final version uploaded 2026-11-27 14:49:56 UTC.
 
 * A Relay Race to the Edge
   https://chrisbergstrombeamish.github.io/general-relativity/Relativity/A-Relay-Race-to-the-Edge/
   How a line of observers hands one photon along, and why, on A's own clock, it reaches the edge only at infinity.
-  Uploaded 2026-11-27 13:54:18 UTC.
+  Final version uploaded 2026-11-27 14:49:56 UTC.
 
 * What Comes After Forever?
   https://chrisbergstrombeamish.github.io/general-relativity/Relativity/What-Comes-After-Forever/
   A photon slips past the edge of A's observable universe. A cannot watch. A can work it out: past the edge, time runs the other way, distances come out imaginary, and every answer comes in two.
-  Uploaded 2026-11-27 13:54:18 UTC.
+  Final version uploaded 2026-11-27 14:49:56 UTC.
 
 * Who Pays for the Falling Stone?
   https://chrisbergstrombeamish.github.io/general-relativity/Relativity/Who-Pays-for-the-Falling-Stone/
   General relativity's clocks and rulers in five steps from conservation of energy, and a two-charge machine that shows why every stored energy must be counted, once.
-  Uploaded 2026-11-27 13:54:18 UTC.
+  Final version uploaded 2026-11-27 14:49:56 UTC.
 
 * The Pull That Does Not Wait
   https://chrisbergstrombeamish.github.io/general-relativity/Relativity/The-Pull-That-Does-Not-Wait/
   A rock comes apart without a flash, and the conservation laws show why every pull, clock and ruler is updated at once, with no light to carry the change.
-  Uploaded 2026-11-27 13:54:18 UTC.
+  Final version uploaded 2026-11-27 14:49:56 UTC.
 
 * Why Is It Impossible to Escape from a Black Hole?
   https://chrisbergstrombeamish.github.io/general-relativity/Do-All-Frames-of-Reference-Have-the-Same-Yardstick/
@@ -98,6 +103,11 @@ INTERNAL SPACES
   https://chrisbergstrombeamish.github.io/general-relativity/Internal-Spaces/Electric-Charge/
   A fully specified separate geometry, a derived signed invariant, explicit numerical anchors and a checked working example.
   Uploaded 2026-11-27 01:23:35 UTC.
+
+* Color Charge from a Wave on an Oriented Internal Loop
+  https://chrisbergstrombeamish.github.io/general-relativity/Internal-Spaces/Color/
+  A real wave on an oriented internal loop: a signed colour reading from the energy of its two directions, two sources compared by their relative phase, the proton problem stated from observations, and the interface it exports.
+  Uploaded 2026-11-27 14:49:56 UTC.
 
 * Flavor from a Separate Internal Standing-Wave Geometry
   https://chrisbergstrombeamish.github.io/general-relativity/Internal-Spaces/Flavor/
