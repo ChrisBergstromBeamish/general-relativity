@@ -33,7 +33,7 @@ mjx-container[display="true"]{overflow-x:auto;overflow-y:hidden}
 <p>In standard General Relativity, the static spacetime around a spherical mass \(M\) is written using the Schwarzschild line element:</p>
 <div class="display">\[ds^{2}=-\left(1-\frac{2GM}{c^{2}r}\right)c^{2}dt^{2}+\left(1-\frac{2GM}{c^{2}r}\right)^{-1}dr^{2}+r^{2}d\Omega ^{2}\]</div>
 <p>To simplify the notation, define the redshift factor \(\alpha(r) = \sqrt{1 - \frac{2GM}{c^2 r}}\). Now the line element looks clean and compact:</p>
-<div class="display">\[ds^{2}=-\alpha (r)^{2}c^{2}dt^{2}+\alpha (r)^{-2}dr^{2}\]</div>
+<div class="display">\[ds^{2}=-\alpha (r)^{2}c^{2}dt^{2}+\alpha (r)^{-2}dr^{2}+r^{2}d\Omega ^{2}\]</div>
 <p>When a photon travels radially outward, it follows a null geodesic (\(ds^2 = 0\)), and because the metric has no \(t\)-dependence (\(\partial_t g_{\mu\nu} = 0\)), the geodesic equation gives a conserved coordinate momentum component:</p>
 <div class="display">\[p_{t}=g_{tt}\frac{dt}{d\lambda }=-\alpha (r)^{2}c^{2}\frac{dt}{d\lambda }=\text{constant}\equiv -E_{\infty }\]</div>
 <p>Notice what just happened: the notation hides the fact that \(t\) is the static clock of an observer at infinity. The coordinate energy \(E_{\infty }\) never changes along the flight, so in the compact coordinate ledger, it looks like nothing happened to the photon at all.</p>
@@ -53,7 +53,7 @@ mjx-container[display="true"]{overflow-x:auto;overflow-y:hidden}
 <div class="display">\[\ln \left(\frac{E_{2}}{E_{1}}\right)=\frac{1}{2}\ln \left(1-\frac{2GM}{c^{2}r_{1}}\right)=\ln \alpha (r_{1})\implies E_{2}=\alpha (r_{1})E_{1}\]</div>
 <p class="lead">What this proves:</p>
 <p>In the static coordinate frame (\(t, r\)), the photon's coordinate energy \(E_{\infty }\) was completely constant the entire time—the apparent drop from \(E_{1}\) to \(E_{2}\) was purely the ratio of the local clock rates \(\frac{d\tau_1}{dt} = \alpha(r_1)\).</p>
-<p>In the continuously updated proper frame, the drop from \(E_{1}\) to \(E_{2}\) is accounted for penny-for-penny by the \(\int \mathbf{F} \cdot d\mathbf{r}\) work done against the gravitational potential, which transferred \(\Delta E = E_1 - E_2\) into the gravitational binding energy of the system.</p>
+<p>In the continuously updated proper frame, the drop from \(E_{1}\) to \(E_{2}\) is accounted for penny-for-penny by the \(\int \mathbf{F} \cdot d\mathbf{r}\) work done against the gravitational potential, and in the distant observer's units the photon's energy is the same at both radii, \(\alpha(r_1)E_1=E_2=E_\infty\).</p>
 <p>Compact tensor notation (\(p_t = \text{const}\)) skipped the intermediate step of updating the ruler (\(dr_{\text{proper}} = \alpha^{-1} dr\)) and clock (\(d\tau = \alpha dt\)) along the path—making the conservation law look invisible until you unpack the metric back into explicit mechanics.</p>
 <p>Here is the direct \(\mathbf{F} \cdot d\mathbf{r}\) derivation for a massive particle falling from rest at infinity down to radius \(r\). Watch how every single relativistic metric term—time dilation, radial length contraction, and mass-energy rescaling—appears in plain sight as an explicit physical accounting entry rather than being hidden inside abstract tensor indices.</p>
 <h3>Step 1: Start With Work and Mass-Energy Equivalence</h3>
@@ -72,8 +72,8 @@ mjx-container[display="true"]{overflow-x:auto;overflow-y:hidden}
 <h3>Step 3: Expose the Ruler and Clock Rescaling</h3>
 <p>Look closely at the differential equation we just wrote:</p>
 <div class="display">\[\frac{dE_{\text{local}}}{E_{\text{local}}}=-\frac{GM}{c^{2}r^{2}\sqrt{1-\frac{2GM}{c^{2}r}}}\,dr_{\text{proper}}\]</div>
-<p>If you forgot to update your ruler (\(dr_{\text{proper}} = dr\)), integrating from \(\infty \) to \(r\) would give \(E_{\text{local}} = m_0 c^2 e^{1-\sqrt{1-2GM/c^2 r}}\), which does not match the stationary observers' clock rate \(\alpha(r)\)!</p>
-<p>Why? Because the local ruler itself is stretched by the gravitational field's energy density. To keep the local speed of light constant (\(c = \frac{dr_{\text{proper}}}{d\tau}\)) and balance the spatial curvature created by the field's binding energy, the proper ruler step must stretch relative to the distant coordinate grid by:</p>
+<p>If you forgot to update your ruler (\(dr_{\text{proper}} = dr\)), integrating from \(\infty \) to \(r\) would give \(E_{\text{local}} = m_0 c^2 e^{1-\sqrt{1-2GM/c^2 r}}\), which violates the conservation of Step 1, \(\alpha(r)E_{\text{local}}=m_0c^2\)!</p>
+<p>Why? Because the stationary ruler is updated by the same ledger. By Step 1 the falling mass passes the stationary observer at \(r\) with \(\gamma = E_{\text{local}}/(m_0c^2) = 1/\alpha(r)\): it is in exactly the motion that the same \(\mathbf{F} \cdot d\mathbf{r}\) generates there. The falling mass needs no force, so it keeps the distant observer's clock, rulers and mass. Special relativity at that place, with the local speed of light \(c\), then gives the stationary ruler step along the force, \(dr_{\text{proper}} = dr/\alpha(r)\), stretched relative to the distant coordinate grid by:</p>
 <div class="display">\[dr_{\text{proper}}=\frac{dr}{\sqrt{1-\frac{2GM}{c^{2}r}}}\]</div>
 <p>Substitute this updated ruler into our \(\mathbf{F} \cdot d\mathbf{r}\) equation:</p>
 <div class="display">\[\frac{dE_{\text{local}}}{E_{\text{local}}}=-\frac{GM}{c^{2}r^{2}\left(1-\frac{2GM}{c^{2}r}\right)}\,dr\]</div>
