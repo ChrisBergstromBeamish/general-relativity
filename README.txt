@@ -1,6 +1,13 @@
 Physics: Particle Reconstruction and General Relativity
 =======================================================
 
+DECAY
+
+* Decay by Collapse on Separate Internal Spaces
+  https://chrisbergstrombeamish.github.io/general-relativity/Decay/
+  What decay is: collapse, again and again, until one pattern is two. A particle decays when one of its repeated collapses lands its internal spaces far enough apart to be two complete particles. The same chance at every collapse gives the exponential law; a particle whose short list of outcomes from Granularity holds no two-particle outcome never decays; counting on the particle's own clock gives the longer life of a moving one; and each landing is weighted by the square of the wave function on curved space. No new internal space is needed. The measured lifetimes are anchors: each fixes the rate of its particle. The document lists what the constructions still have to give. First published in release v2.5.0 of this folder.
+  Uploaded 2026-11-27 19:47:29 UTC.
+
 RELATIVITY
 
 * How Compact Notation Hides the Static Reference Frame

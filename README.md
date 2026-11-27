@@ -2,6 +2,10 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24426897.svg)](https://doi.org/10.5281/zenodo.24426897)
 
+## Decay
+
+- [Decay by Collapse on Separate Internal Spaces](https://chrisbergstrombeamish.github.io/general-relativity/Decay/). What decay is: collapse, again and again, until one pattern is two. A particle decays when one of its repeated collapses lands its internal spaces far enough apart to be two complete particles. The same chance at every collapse gives the exponential law; a particle whose short list of outcomes from Granularity holds no two-particle outcome never decays; counting on the particle's own clock gives the longer life of a moving one; and each landing is weighted by the square of the wave function on curved space. No new internal space is needed. The measured lifetimes are anchors: each fixes the rate of its particle. The document lists what the constructions still have to give. First published in release v2.5.0 of this folder. Uploaded 2026-11-27 19:47:29 UTC.
+
 ## Relativity
 
 - [How Compact Notation Hides the Static Reference Frame](https://chrisbergstrombeamish.github.io/general-relativity/How-Compact-Notation-Hides-the-Static-Reference-Frame/). Where the reference frame hides in the metric tensor and the coordinate differentials, traced for a photon climbing out of a gravitational field and a mass falling in, with every clock, ruler and energy entry of the F·dr ledger written out. Final version uploaded 2026-11-27 13:54:18 UTC.
