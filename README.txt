@@ -25,12 +25,29 @@ VALIDATION
   The observations with the highest redshifts of light from the surfaces of compact bodies and from the disks around them, each with its source and status, as in the paper's Section 19; the comparison is in its Section 17.
   Uploaded 2026-11-26 23:49:16 UTC.
 
+BRIDGE
+
+* A Granularity Tensor for the Internal Spin Geometry
+  https://chrisbergstrombeamish.github.io/general-relativity/Bridge/Granularity/
+  From geometric overlap and classical wave action to a tensor with discrete complete-packet action sectors.
+  Uploaded 2026-11-27 01:23:35 UTC.
+
+* Collapse as a Complete Physical Event
+  https://chrisbergstrombeamish.github.io/general-relativity/Bridge/Collapse/
+  A finite construction on the internal spin geometry: occurrence, selection, a changed wave, an apparatus record, and a conserved energy and angular-momentum account.
+  Uploaded 2026-11-27 01:23:35 UTC.
+
 INTERNAL SPACES
 
-* Spin from Internal Geometry
+* Spin from a Specified Internal Geometry
   https://chrisbergstrombeamish.github.io/general-relativity/Internal-Spaces/Spin-from-Internal-Geometry/
-  An internal space that provides spin: an explicit wave construction, with curvature, overlap interactions, geometric readout and gravitational response.
-  Uploaded 2026-11-26 23:49:16 UTC.
+  The solved internal wave, conservative apparatus interaction and stated clock/curvature response—with complete geometry, reproducible inputs and linked proofs.
+  Final version uploaded 2026-11-27 01:23:35 UTC.
+
+* Electric Charge from an Internal Standing Wave
+  https://chrisbergstrombeamish.github.io/general-relativity/Internal-Spaces/Electric-Charge/
+  A fully specified separate geometry, a derived signed invariant, explicit numerical anchors and a checked working example.
+  Uploaded 2026-11-27 01:23:35 UTC.
 
 PRIORITY RECORD
 
