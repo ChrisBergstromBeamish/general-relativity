@@ -511,7 +511,7 @@ p(\Delta)\simeq2\pi\rho|\kappa|^2\Delta,\qquad
 \frac{p(\Delta)}{\Delta}\simeq2\pi\rho|\kappa|^2 .
 \]
 
-The leading rate is independent of the step in this window. For \(B\Delta\ll1\), expansion of the sine gives \(p(\Delta)\simeq2B\rho|\kappa|^2\Delta^2\), recovering short-step suppression. If intervals are random and the rebuilt share depends on their duration, the history average must retain that dependence.
+The leading rate is independent of the step in this window. For \(B\Delta\ll1\), expansion of the sine gives \(p(\Delta)\simeq2B\rho|\kappa|^2\Delta^2\), recovering short-step suppression. The suppression is not special to these two models: in the comparison theory's own unitary dynamics, for every parent state \(\psi\) in the domain of \(H\), with \(P\) the projector onto the parent's states, the share that has left after a time \(u\) is \(\|(1-P)e^{-iHu/\hbar}\psi\|^2=u^2\|(1-P)H\psi\|^2/\hbar^2+o(u^2)\), so every decay there starts with zero hazard, and those dynamics give no constant hazard at short times. If intervals are random and the rebuilt share depends on their duration, the history average must retain that dependence.
 
 ### The single-event preparation as a comparison
 
@@ -571,7 +571,7 @@ w_{12}\int \mathbf1_C\mathbf1_{D_h}
 \tag{LT-V6}
 \]
 
-Both indicators refer to the physical states represented at the map points. The probability-volume metric determines their weight. The measured external ruler determines their separation. Marginalizing over \(x_2\) gives the first daughter’s distribution. Multiplication of two one-daughter marginals gives the joint distribution only when the preparation actually factorizes. A location-tagged fraction *among decays* is obtained by integrating over the intersection of the tag with the split set and dividing by the total split share.
+Both indicators refer to the physical states represented at the map points. The probability-volume metric determines their weight. The measured external ruler determines their separation. Marginalizing over \(x_2\) gives the first daughter’s distribution. Multiplication of two one-daughter marginals gives the joint distribution exactly when the joint position density \(|\varphi_{12}|^2\) factorizes; the wave itself need not (\(\phi(x_1)\eta(x_2)e^{ik\,x_1\cdot x_2}\) with \(k\ne0\) is not a product wave, and its density is a product). A location-tagged fraction *among decays* is obtained by integrating over the intersection of the tag with the split set and dividing by the total split share.
 
 A split can be reconstructed from two outgoing histories that start at the same vertex and become resolvable later. If attaining a physical separation is what makes the split, its time is the first attainment of that condition along the actual motion. A detector’s later resolution time does not fix that instant. Geometry §19 requires external locations at stated clock readings. [Daughter requirements](https://chrisbergstrombeamish.github.io/general-relativity/Bridge/Geometry/)
 
@@ -843,7 +843,7 @@ Reverse the sign of \(a(u)\) after \(u_c=2\bar\tau\log2\). Survival is unchanged
 2\bar\tau\left(1-2e^{-u_c/(2\bar\tau)}\right)=0,
 \]
 
-where the original spectrum was maximal. A coherent rectangular signal of duration \(U\) instead has normalized power \(\operatorname{sinc}^2[(E-E_0)U/(2\hbar)]\). Its half-height root is \(1.391557\), giving \(\Gamma_EU=5.56623\hbar\). A sharp event time alone specifies no signal profile. The Fourier implications are **DERIVED**. Physical application of a width–lifetime conversion depends on LT-P15.
+where the original spectrum was maximal. Its power is \(|A_{\rm r}(E)|^2=16\bar\tau^2\sin^2(z\ln2/2)/(1+z^2)\), with \(A_{\rm r}\) the new transform and \(z=2\bar\tau(E-E_0)/\hbar\): two main side peaks, at \(z=\pm2.10527\), each with its half heights at \(|z|=0.730379\) and \(4.817828\), a full width of \(2.04372\,\hbar/\bar\tau\) each, while survival is the same as on the single line at every time. A coherent rectangular signal of duration \(U\) instead has normalized power \(\operatorname{sinc}^2[(E-E_0)U/(2\hbar)]\). Its half-height root is \(1.391557\), giving \(\Gamma_EU=5.56623\hbar\). A sharp event time alone specifies no signal profile. The Fourier implications are **DERIVED**. Physical application of a width–lifetime conversion depends on LT-P15.
 
 ## 14. Law list and general-relativity comparison
 
